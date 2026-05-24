@@ -11,16 +11,16 @@ cv:
     Teaching Professor at Rensselaer Polytechnic Institute with research expertise in human factors, healthcare systems, transportation safety, workload, stress, burnout, physiological sensing, wearable technologies, eye tracking, simulation, and machine learning. Seven years of research experience, three years as an independent instructor, and four years of industry experience.
   sections:
     Education:
+      - institution: Houston Methodist Hospital, Houston, TX, USA
+        area: Human factors, healthcare systems engineering, patient safety, and patient-centered technology research
+        studyType: Postdoctoral Fellowship
+        start_date: 2020
+        end_date: 2022
       - institution: Western New England University, MA, USA
         area: Engineering Management
         studyType: PhD
         start_date: 2015
         end_date: 2020
-      - institution: Houston Methodist Hospital, Houston, TX, USA
-        area: Human factors, healthcare systems, and patient-centered technology research
-        studyType: Postdoctoral Fellowship
-        start_date: 2020
-        end_date: 2022
       - institution: Western New England University, MA, USA
         area: Engineering Management
         studyType: MS
