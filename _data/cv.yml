@@ -1,0 +1,58 @@
+ cv:
+  name: Maryam Hosseini
+  address:
+    city: Albany
+    region: NY
+  image: ""
+  summary: >
+    Simulation specialist and researcher with a background in modeling, data-driven methods, and optimization. Experienced in leading healthcare and life sciences simulation projects to solve complex real-world problems through interdisciplinary and computational approaches.
+    Currently exploring and learning more in AI research.
+  sections:
+    Education:
+      - institution: Binghamton University, NY, USA
+        area: Industrial and Systems Engineering
+        studyType: PhD
+        start_date: 2019
+        end_date: 2024
+        score: ""
+        courses: ""
+        highlights:
+      - institution: Western New England University, MA, USA
+        area: Engineering Management
+        studyType: MEng
+        start_date: 2018
+        end_date: 2020
+        score: ""
+        courses: ""
+        highlights:
+      - institution: Yazd University, Yazd, Iran
+        area: Industrial Engineering
+        studyType: MSc
+        start_date: 2014
+        end_date: 2016
+      - institution: University of Tehran, Tehran, Iran
+        area: Statistics
+        studyType: BSc
+        start_date: 2008
+        end_date: 2012
+    Experience:
+      - company: Ewing Cole, New York, NY
+        position: Senior Researcher & Simulation Specialist
+        start_date: 2025
+        end_date: 2026
+      - company: Ewing Cole, New York, NY
+        position: Senior RA
+        start_date: 2023
+        end_date: 2025
+      - company: SUNY RF/ Ewing Cole, New York, NY
+        position: RA
+        start_date: 2021
+        end_date: 2023
+      - company: Binghamton University, Binghamton, NY
+        position: PhD Student & TA
+        start_date: 2019
+        end_date: 2021
+      - company: Western New England University, Springfield, MA
+        position: PhD Fellow & TA / Instructor
+        start_date: 2018
+        end_date: 2019
