@@ -77,31 +77,74 @@ cv:
       - bullet: "Rensselaer Polytechnic Institute: ISYE 4260 Human Performance Modeling; ISYE 4210 / ISYE 6600 Design and Analysis of Supply Chains; ISYE 4290 / ISYE 6620 Discrete Event Simulation; ISYE 4330 / ISYE 6020 Design of Experiments; ISYE 4270 / ECSE 4900 / MTLE 4920 Multidisciplinary Capstone Design."
       - bullet: "Western New England University: IE 212 Probability & Statistics; IE 419 Industrial Engineering Computer Applications; ME 205-41 Measurement Computing."
     Skills:
-      - name: Coding
+      - name: Programming, data analytics, and visualization
         keywords:
           - Python
-          - Visual Basic.NET
-          - Visual Basic for Applications (VBA)
-      - name: Data and analysis
-        keywords:
-          - SQL Server
-          - Access
+          - SQL
           - R
-          - Minitab
           - Excel
-      - name: Simulation and modeling
+          - statistical modeling
+          - data cleaning
+          - data visualization
+      - name: Machine learning and AI
+        keywords:
+          - scikit-learn
+          - TensorFlow/Keras
+          - classification
+          - regression
+          - deep learning
+          - model evaluation
+          - feature engineering
+      - name: Statistical and experimental methods
+        keywords:
+          - Design of Experiments
+          - ANOVA
+          - regression analysis
+          - mixed-effects modeling
+          - nonparametric analysis
+          - survey analysis
+          - quantitative and qualitative analysis
+      - name: Simulation and operations modeling
         keywords:
           - FlexSim
-          - Excel Solver
+          - manufacturing and healthcare simulation
+          - discrete-event simulation
           - Monte Carlo simulation
-          - Healthcare and manufacturing simulation
-      - name: Engineering software
+          - queueing analysis
+          - process improvement
+      - name: Human performance and human factors methods
         keywords:
-          - MS Project
-          - AVEVA PDMS
-          - Navisworks
+          - wearable sensor data analysis
+          - eye-tracking analysis
+          - workload assessment
+          - stress measurement
+          - task analysis
+          - observational studies
+          - usability evaluation
+          - ergonomics
+      - name: Research design and study management
+        keywords:
+          - IRB protocol preparation
+          - human-subjects research
+          - patient and clinician data collection
+          - training intervention design
+          - experimental protocol development
+          - literature review
+      - name: Communication and professional skills
+        keywords:
+          - technical writing
+          - research presentation
+          - data storytelling
+          - stakeholder communication
+          - teaching and training
+          - interdisciplinary collaboration
+      - name: Engineering and research software
+        keywords:
+          - Minitab
+          - MATLAB
+          - SPSS
           - AutoCAD
-          - MS Office
+          - Microsoft Project
     Awards:
       - title: Best Paper Student Competition Award, 3rd Place
         date: 2016
