@@ -16,6 +16,11 @@ cv:
         studyType: PhD
         start_date: 2015
         end_date: 2020
+      - institution: Houston Methodist Hospital, Houston, TX, USA
+        area: Human factors, healthcare systems, and patient-centered technology research
+        studyType: Postdoctoral Fellowship
+        start_date: 2020
+        end_date: 2022
       - institution: Western New England University, MA, USA
         area: Engineering Management
         studyType: MS
