@@ -130,6 +130,13 @@ cv:
           - nonparametric analysis
           - survey analysis
           - quantitative and qualitative analysis
+      - name: Safety, risk, and process analysis
+        keywords:
+          - risk assessment
+          - human error analysis
+          - failure mode identification
+          - process risk analysis
+          - root cause analysis
       - name: Simulation and operations modeling
         keywords:
           - FlexSim
