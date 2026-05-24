@@ -1,58 +1,120 @@
- cv:
-  name: Maryam Hosseini
+cv:
+  name: Nima Ahmadi
+  label: Teaching Professor at Rensselaer Polytechnic Institute
+  email: ahmadn4@rpi.edu
+  website: https://ahmadinima1.github.io
   address:
-    city: Albany
+    city: Clifton Park
     region: NY
   image: ""
   summary: >
-    Simulation specialist and researcher with a background in modeling, data-driven methods, and optimization. Experienced in leading healthcare and life sciences simulation projects to solve complex real-world problems through interdisciplinary and computational approaches.
-    Currently exploring and learning more in AI research.
+    Teaching Professor at Rensselaer Polytechnic Institute with research expertise in human factors, healthcare systems, transportation safety, workload, stress, burnout, physiological sensing, wearable technologies, eye tracking, simulation, and machine learning. Seven years of research experience, three years as an independent instructor, and four years of industry experience.
   sections:
     Education:
-      - institution: Binghamton University, NY, USA
-        area: Industrial and Systems Engineering
-        studyType: PhD
-        start_date: 2019
-        end_date: 2024
-        score: ""
-        courses: ""
-        highlights:
       - institution: Western New England University, MA, USA
         area: Engineering Management
-        studyType: MEng
-        start_date: 2018
+        studyType: PhD
+        start_date: 2015
         end_date: 2020
-        score: ""
-        courses: ""
+      - institution: Western New England University, MA, USA
+        area: Engineering Management
+        studyType: MS
+        start_date: 2014
+        end_date: 2015
+      - institution: Azad University Central Tehran Branch, Tehran, Iran
+        area: Mechanical Engineering
+        studyType: BSc
+        start_date: 2001
+        end_date: 2006
+    Experience:
+      - company: Rensselaer Polytechnic Institute
+        position: Teaching Professor
+        start_date: 2022
+        end_date: present
         highlights:
-      - institution: Yazd University, Yazd, Iran
-        area: Industrial Engineering
-        studyType: MSc
+          - Teaching and developing undergraduate and graduate courses.
+          - Chief Engineer for capstone projects.
+          - Leading a team for the HSPI healthcare simulation competition.
+      - company: Houston Methodist
+        position: Faculty appointment, Department of Anesthesia and Critical Care
+        start_date: 2022
+        end_date: present
+        highlights:
+          - Active in ICU-related studies on intensivists and clinical care delivery.
+      - company: Houston Methodist
+        position: Postdoctoral Fellow
+        start_date: 2020
+        end_date: 2022
+        highlights:
+          - Studied burnout and stress among cardiovascular ICU nurses and physicians using wearable technologies.
+          - Evaluated nurses' workload and stress using physiological and ocular data.
+          - Measured physical activity among ICU nurses using accelerometer data.
+          - Studied mindfulness-based stress reduction courses for clinicians' mental health.
+          - Developed and evaluated web-based communication tools for patient behavior and compliance.
+      - company: Western New England University
+        position: Research Assistant
         start_date: 2014
         end_date: 2016
-      - institution: University of Tehran, Tehran, Iran
-        area: Statistics
-        studyType: BSc
-        start_date: 2008
-        end_date: 2012
-    Experience:
-      - company: Ewing Cole, New York, NY
-        position: Senior Researcher & Simulation Specialist
-        start_date: 2025
-        end_date: 2026
-      - company: Ewing Cole, New York, NY
-        position: Senior RA
-        start_date: 2023
-        end_date: 2025
-      - company: SUNY RF/ Ewing Cole, New York, NY
-        position: RA
-        start_date: 2021
-        end_date: 2023
-      - company: Binghamton University, Binghamton, NY
-        position: PhD Student & TA
-        start_date: 2019
-        end_date: 2021
-      - company: Western New England University, Springfield, MA
-        position: PhD Fellow & TA / Instructor
-        start_date: 2018
-        end_date: 2019
+        highlights:
+          - Contributed to research on training and behavior assessment.
+          - Collaborated on the Engaged Driver Training System for teen drivers.
+          - Designed a gaze-based training intervention for student pilots.
+          - Analyzed the NTSB aircraft accident database using a Visual Basic.NET application.
+      - company: APEC, Tehran, Iran
+        position: Project Manager and Coordinator of Piping Department
+        start_date: 2010
+        end_date: 2014
+        highlights:
+          - Worked across basic and detailed engineering design.
+          - Customized SharePoint for project management.
+      - company: COOLSUMMER, Tehran, Iran
+        position: Manager of Heat Exchanger Department
+        start_date: 2009
+        end_date: 2010
+        highlights:
+          - Led design and repair work for plate heat exchangers.
+    Teaching:
+      - bullet: "Rensselaer Polytechnic Institute: ISYE 4260 Human Performance Modeling; ISYE 4210 / ISYE 6600 Design and Analysis of Supply Chains; ISYE 4290 / ISYE 6620 Discrete Event Simulation; ISYE 4330 / ISYE 6020 Design of Experiments; ISYE 4270 / ECSE 4900 / MTLE 4920 Multidisciplinary Capstone Design."
+      - bullet: "Western New England University: IE 212 Probability & Statistics; IE 419 Industrial Engineering Computer Applications; ME 205-41 Measurement Computing."
+    Skills:
+      - name: Coding
+        keywords:
+          - Python
+          - Visual Basic.NET
+          - Visual Basic for Applications (VBA)
+      - name: Data and analysis
+        keywords:
+          - SQL Server
+          - Access
+          - R
+          - Minitab
+          - Excel
+      - name: Simulation and modeling
+        keywords:
+          - FlexSim
+          - Excel Solver
+          - Monte Carlo simulation
+          - Healthcare and manufacturing simulation
+      - name: Engineering software
+        keywords:
+          - MS Project
+          - AVEVA PDMS
+          - Navisworks
+          - AutoCAD
+          - MS Office
+    Awards:
+      - title: Best Paper Student Competition Award, 3rd Place
+        date: 2016
+        summary: Engineering Management Society for Engineering and Management Systems.
+      - title: Engineering Research Assistance Scholarship
+        date: 2016
+        summary: Western New England University.
+    Certificates:
+      - name: Six Sigma Green Belt Program
+        date: 2017
+        issuer: Western New England University
+      - name: Intermediate Data Science with Python
+        date: 2018 - 2019
+        issuer: Springboard
+      - name: Machine Learning with Python
+        date: 2020
