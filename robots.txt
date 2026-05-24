@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://maryamhosseini1.github.io/sitemap.xml
+Sitemap: https://ahmadinima1.github.io/sitemap.xml
