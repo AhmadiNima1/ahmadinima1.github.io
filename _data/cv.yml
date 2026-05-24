@@ -118,6 +118,9 @@ cv:
           - deep learning
           - model evaluation
           - feature engineering
+          - applied generative AI
+          - prompt engineering
+          - LLM-based decision support
       - name: Statistical and experimental methods
         keywords:
           - Design of Experiments
