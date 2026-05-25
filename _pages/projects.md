@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Selected Projects
+title: Projects
 permalink: /projects/
 nav: false
 nav_order: 2

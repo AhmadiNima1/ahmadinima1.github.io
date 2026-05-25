@@ -34,7 +34,7 @@ I am especially interested in roles where I can translate human performance rese
 - **Human performance data:** electrodermal activity, heart rate, pupillary responses, physiological stress indices, voice/acoustic stress analysis, machine learning, deep learning, Python, R, Minitab, Excel, SQL, and applied data analysis.
 - **Teaching and communication:** design of experiments, probability and statistics, technical communication, and translating analytical results for students, collaborators, and decision makers.
 
-## Selected Projects
+## Featured Work
 
 <div class="projects">
   <div class="card mt-3 p-3">
@@ -72,4 +72,3 @@ I am especially interested in roles where I can translate human performance rese
     <p class="card-text">Developed and taught discrete-event simulation approaches for healthcare and manufacturing systems, including patient flow, queueing, bottleneck identification, scenario comparison, FlexSim modeling, and statistical output analysis.</p>
   </div>
 </div>
-
