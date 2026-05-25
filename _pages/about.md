@@ -20,7 +20,7 @@ latest_posts:
   scrollable: true
   limit: 3
 
-selected_papers: true
+selected_papers: false
 social: true
 ---
 I am Nima Ahmadi, a human factors engineer and educator focused on improving the systems that shape how people work, learn, and make decisions. My work connects human factors, industrial engineering, healthcare systems, transportation safety, training design, simulation, and data-driven decision support.
