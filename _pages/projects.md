@@ -21,6 +21,24 @@ nav_order: 2
       <p class="card-text">
         <strong>Methods and skills:</strong> Eye tracking, flight simulation, simulation-based training, situation awareness, visual attention, Shannon entropy, Kullback-Leibler divergence, Python-based data synchronization, experimental design, statistical analysis.
       </p>
+      <div class="row mt-3">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <img
+            class="img-fluid rounded"
+            src="{{ '/assets/img/projects/aviation/eye-tracker.JPG' | relative_url }}"
+            alt="Eye-tracking setup used for gaze-based pilot training"
+          >
+          <p class="caption mt-2 mb-0">Eye-tracking setup used for gaze-based pilot training and data collection.</p>
+        </div>
+        <div class="col-sm-6">
+          <img
+            class="img-fluid rounded"
+            src="{{ '/assets/img/projects/aviation/visual-entropy.png' | relative_url }}"
+            alt="Visual entropy analysis of pilots' scanning behavior"
+          >
+          <p class="caption mt-2 mb-0">Visual entropy analysis showing changes in pilots' scanning behavior before and after training.</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
