@@ -34,9 +34,9 @@ nav_order: 2
           <img
             class="img-fluid rounded"
             src="{{ '/assets/img/projects/aviation/visual-entropy.png' | relative_url }}"
-            alt="Visual entropy analysis of pilots' scanning behavior"
+            alt="Pre-training gaze distribution across cockpit instruments"
           >
-          <p class="caption mt-2 mb-0">Visual entropy analysis showing changes in pilots' scanning behavior before and after training.</p>
+          <p class="caption mt-2 mb-0">Pre-training gaze distribution showing dispersed visual attention across cockpit instruments.</p>
         </div>
       </div>
     </div>
