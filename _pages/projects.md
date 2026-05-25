@@ -33,7 +33,7 @@ nav_order: 2
         <div class="col-sm-6">
           <img
             class="img-fluid rounded"
-            src="{{ '/assets/img/projects/aviation/visual-entropy.png' | relative_url }}"
+            src="{{ '/assets/img/projects/aviation/pre-training-gaze-distribution.png' | relative_url }}"
             alt="Pre-training gaze distribution across cockpit instruments"
           >
           <p class="caption mt-2 mb-0">Pre-training gaze distribution showing dispersed visual attention across cockpit instruments.</p>
