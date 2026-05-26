@@ -6,6 +6,21 @@ nav: false
 nav_order: 2
 ---
 
+<style>
+  .projects .card-text {
+    color: rgba(255, 255, 255, 0.88);
+  }
+
+  .projects .card-text strong,
+  .projects .card-title {
+    color: rgba(255, 255, 255, 0.96);
+  }
+
+  .projects .caption {
+    color: rgba(255, 255, 255, 0.78);
+  }
+</style>
+
 <div class="projects">
   <div class="card mt-3">
     <div class="card-body pb-0">
