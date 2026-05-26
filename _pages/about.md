@@ -2,7 +2,7 @@
 layout: about
 title: Nima Ahmadi
 permalink: /
-subtitle: Human Factors Engineer & Educator
+subtitle: Human Factors Researcher | Human Performance Analytics | Applied AI & Simulation | Educator
 
 profile:
   align: right
