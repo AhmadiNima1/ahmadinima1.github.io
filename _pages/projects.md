@@ -49,4 +49,39 @@ nav_order: 2
       </div>
     </div>
   </div>
+
+  <div class="card mt-3">
+    <img
+      class="card-img-top"
+      src="{{ '/assets/img/projects/driving/driving-simulator.png' | relative_url }}"
+      alt="Driving simulator used for novice teen driver hazard anticipation assessment"
+    >
+    <div class="card-body">
+      <h5 class="card-title">Tablet-Based Hazard Anticipation Training for Novice Teen Drivers</h5>
+      <p class="card-text">
+        As a Graduate Research Assistant in the Center for Advanced Training Research and Naturalistic Studies (ATRANS) at Western New England University, I contributed to a teen driver safety study under the supervision of Dr. Matthew Romoser, in collaboration with Atefeh Katrahmani. The project evaluated the Engaged Driver Training System (EDTS), a tablet-based hazard anticipation training program designed to improve novice teen drivers' ability to detect, understand, and anticipate latent roadway hazards. The study combined tablet-based training, driving simulator assessment, field driving, Tobii eye tracking, and commentary driving/verbal protocol analysis to evaluate situation awareness and transfer of training.
+      </p>
+      <p class="card-text">
+        <strong>Methods and skills:</strong> Eye tracking, driving simulation, field driving assessment, commentary driving, verbal protocol analysis, situation awareness, hazard anticipation, tablet-based training, teen driver safety, human performance assessment, transfer of training.
+      </p>
+      <div class="row mt-3">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <img
+            class="img-fluid rounded"
+            src="{{ '/assets/img/projects/driving/tablet-training-system.png' | relative_url }}"
+            alt="Tablet-based EDTS hazard anticipation training system"
+          >
+          <p class="caption mt-2 mb-0">Tablet-based EDTS training system used to practice identifying latent roadway hazards.</p>
+        </div>
+        <div class="col-sm-6">
+          <img
+            class="img-fluid rounded"
+            src="{{ '/assets/img/projects/driving/field-drive-assessment.png' | relative_url }}"
+            alt="Field driving assessment for teen driver hazard perception"
+          >
+          <p class="caption mt-2 mb-0">Field driving assessment used to evaluate hazard perception and transfer beyond the simulator.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
