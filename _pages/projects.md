@@ -96,4 +96,39 @@ nav_order: 2
       </div>
     </div>
   </div>
+
+  <div class="card mt-3">
+    <img
+      class="card-img-top"
+      src="{{ '/assets/img/projects/icu/icu-wearable-sensor-setup.png' | relative_url }}"
+      alt="Wearable sensor setup for ICU nurse stress and workload monitoring"
+    >
+    <div class="card-body">
+      <h5 class="card-title">Naturalistic Stress and Workload Monitoring in ICU Nurses</h5>
+      <p class="card-text">
+        At Houston Methodist, I worked on naturalistic human factors studies examining stress, workload, and physiological responses among intensive care unit nurses during real 12-hour clinical shifts. This work used wearable sensors and eye-tracking technologies to collect continuous data in ICU environments, including Empatica E4 physiological signals, Tobii Pro Glasses 2 eye movement data, and Axivity-based activity sensing. The studies examined relationships among stress, heart rate, electrodermal activity, skin temperature, gaze behavior, visual entropy, workload, and shift-level clinical demands. This line of work also connected to related longitudinal research on occupational stress and burnout among ICU nurses during the COVID-19 pandemic.
+      </p>
+      <p class="card-text">
+        <strong>Methods and skills:</strong> Naturalistic study design, ICU workflow observation, wearable sensing, Empatica E4, Tobii Pro Glasses 2, Axivity AX3, physiological stress monitoring, electrodermal activity, heart rate, skin temperature, Baevsky stress index, eye tracking, gaze entropy, workload assessment, mixed-effects modeling, ordinal regression, qualitative analysis, IRB-approved clinical research.
+      </p>
+      <div class="row mt-3">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <img
+            class="img-fluid rounded"
+            src="{{ '/assets/img/projects/icu/empatica-e4-wristband.png' | relative_url }}"
+            alt="Empatica E4 wrist sensor for physiological stress monitoring"
+          >
+          <p class="caption mt-2 mb-0">Empatica E4 wrist sensor used to collect physiological stress signals including heart rate, electrodermal activity, and skin temperature.</p>
+        </div>
+        <div class="col-sm-6">
+          <img
+            class="img-fluid rounded"
+            src="{{ '/assets/img/projects/icu/houston-methodist-postdoc-office.JPG' | relative_url }}"
+            alt="Houston Methodist postdoctoral research workspace"
+          >
+          <p class="caption mt-2 mb-0">Postdoctoral research workspace at Houston Methodist Center for Outcomes Research.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
