@@ -7,17 +7,17 @@ nav_order: 2
 ---
 
 <style>
-  .projects .card-text {
-    color: rgba(255, 255, 255, 0.88);
+  .projects .card .card-body .card-text {
+    color: #e0e0e0 !important;
   }
 
-  .projects .card-text strong,
-  .projects .card-title {
-    color: rgba(255, 255, 255, 0.96);
+  .projects .card .card-body .card-text strong,
+  .projects .card .card-title {
+    color: #ffffff !important;
   }
 
-  .projects .caption {
-    color: rgba(255, 255, 255, 0.78);
+  .projects .card .caption {
+    color: #d8dee9 !important;
   }
 </style>
 
