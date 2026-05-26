@@ -13,7 +13,7 @@ nav_order: 2
     </div>
     <img
       class="card-img-top"
-      style="max-height: 360px; object-fit: contain; background: #f8f9fa;"
+      style="height: 320px; object-fit: cover; object-position: center;"
       src="{{ '/assets/img/projects/driving/driving-simulator.png' | relative_url }}"
       alt="Driving simulator used for novice teen driver hazard anticipation assessment"
     >
@@ -59,7 +59,7 @@ nav_order: 2
     </div>
     <img
       class="card-img-top"
-      style="max-height: 360px; object-fit: contain; background: #f8f9fa;"
+      style="height: 320px; object-fit: cover; object-position: center;"
       src="{{ '/assets/img/projects/aviation/flight-simulator.jpg' | relative_url }}"
       alt="Flight simulator cockpit used for general aviation pilot training research"
     >
@@ -109,7 +109,7 @@ nav_order: 2
     </div>
     <img
       class="card-img-top"
-      style="max-height: 360px; object-fit: contain; background: #f8f9fa;"
+      style="height: 320px; object-fit: cover; object-position: center;"
       src="{{ '/assets/img/projects/icu/icu-wearable-sensor-setup.png' | relative_url }}"
       alt="Wearable sensor setup for ICU nurse stress and workload monitoring"
     >
