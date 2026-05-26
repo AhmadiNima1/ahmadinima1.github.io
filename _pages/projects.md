@@ -117,26 +117,26 @@ nav_order: 2
       </div>
       <h6 class="mt-3">Follow-up Multimodal ML and Vocal Stress Analysis</h6>
       <p class="card-text">
-        A follow-up analysis extended this work by using synchronized eye-tracking, flight-control, aircraft-state, and voice data to classify trained versus untrained pilots and assess vocal stress duration. The analysis used Tobii Pro Glasses 2, X-Plane 11 flight simulator data, multimodal machine learning classifiers, and a CNN-based vocal stress model.
+        This follow-up work developed a multimodal framework for evaluating whether a gaze-based aviation training intervention produced measurable changes in pilot behavior and stress regulation. Instead of relying only on self-report or simple pre/post comparisons, the framework integrated eye-tracking, flight-control, aircraft-state, and voice data to assess training effectiveness. Multimodal machine learning classifiers were used to distinguish trained from untrained pilots based on synchronized gaze and flight-simulator data, while pilots' voice data were analyzed separately using a CNN-based vocal stress model. This approach helped evaluate whether training effects extended beyond visual scanning to higher-level piloting behavior and stress regulation during simulated VFR-into-IMC flight.
       </p>
-      <div class="row mt-3">
-        <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="row mt-3 justify-content-center">
+        <div class="col-md-10">
           <img
             class="img-fluid rounded w-100"
-            style="height: 260px; object-fit: cover;"
             src="{{ '/assets/img/projects/aviation/pilot-data-synchronization-flow.png' | relative_url }}"
             alt="Pilot data synchronization workflow for multimodal training analysis"
           >
-          <p class="caption mt-2 mb-0">Pilot data synchronization workflow linking eye-tracking, flight-control, aircraft-state, and voice data.</p>
+          <p class="caption mt-2 mb-0">Pilot data synchronization workflow linking eye-movement, voice, flight-control, aircraft-state, and flight performance data.</p>
         </div>
-        <div class="col-sm-6">
+      </div>
+      <div class="row mt-3 justify-content-center">
+        <div class="col-md-10">
           <img
             class="img-fluid rounded w-100"
-            style="height: 260px; object-fit: cover;"
             src="{{ '/assets/img/projects/aviation/multimodal-pilot-training-vocal-stress.png' | relative_url }}"
             alt="Multimodal pilot training and vocal stress analysis"
           >
-          <p class="caption mt-2 mb-0">Multimodal pilot training and vocal stress analysis using synchronized flight, gaze, and voice data.</p>
+          <p class="caption mt-2 mb-0">Multimodal framework for assessing pilot training effectiveness and vocal stress using synchronized flight, gaze, and voice data.</p>
         </div>
       </div>
     </div>
