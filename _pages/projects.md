@@ -30,13 +30,21 @@ nav_order: 2
           >
           <p class="caption mt-2 mb-0">Eye-tracking setup used for gaze-based pilot training and data collection.</p>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 mb-3 mb-sm-0">
           <img
             class="img-fluid rounded"
             src="{{ '/assets/img/projects/aviation/pre-training-gaze-distribution.png' | relative_url }}"
             alt="Pre-training gaze distribution across cockpit instruments"
           >
           <p class="caption mt-2 mb-0">Pre-training gaze distribution showing dispersed visual attention across cockpit instruments.</p>
+        </div>
+        <div class="col-sm-6">
+          <img
+            class="img-fluid rounded"
+            src="{{ '/assets/img/projects/aviation/post-training-gaze-distribution.png' | relative_url }}"
+            alt="Post-training gaze distribution focused on primary flight instruments"
+          >
+          <p class="caption mt-2 mb-0">Post-training gaze distribution showing more focused visual attention on primary flight instruments.</p>
         </div>
       </div>
     </div>
