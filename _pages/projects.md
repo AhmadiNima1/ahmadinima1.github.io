@@ -21,8 +21,8 @@ nav_order: 2
       <p class="card-text">
         <strong>Methods and skills:</strong> Eye tracking, flight simulation, simulation-based training, situation awareness, visual attention, Shannon entropy, Kullback-Leibler divergence, Python-based data synchronization, experimental design, statistical analysis.
       </p>
-      <div class="row mt-3">
-        <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="row mt-3 justify-content-center">
+        <div class="col-md-8">
           <img
             class="img-fluid rounded"
             src="{{ '/assets/img/projects/aviation/eye-tracker.JPG' | relative_url }}"
@@ -30,21 +30,25 @@ nav_order: 2
           >
           <p class="caption mt-2 mb-0">Eye-tracking setup used for gaze-based pilot training and data collection.</p>
         </div>
+      </div>
+      <div class="row mt-3">
         <div class="col-sm-6 mb-3 mb-sm-0">
           <img
-            class="img-fluid rounded"
+            class="img-fluid rounded w-100"
+            style="height: 260px; object-fit: cover;"
             src="{{ '/assets/img/projects/aviation/pre-training-gaze-distribution.png' | relative_url }}"
             alt="Pre-training gaze distribution across cockpit instruments"
           >
-          <p class="caption mt-2 mb-0">Pre-training gaze distribution showing dispersed visual attention across cockpit instruments.</p>
+          <p class="caption mt-2 mb-0"><strong>Before Training:</strong> Pre-training gaze distribution showing dispersed visual attention across cockpit instruments.</p>
         </div>
         <div class="col-sm-6">
           <img
-            class="img-fluid rounded"
+            class="img-fluid rounded w-100"
+            style="height: 260px; object-fit: cover;"
             src="{{ '/assets/img/projects/aviation/post-training-gaze-distribution.png' | relative_url }}"
             alt="Post-training gaze distribution focused on primary flight instruments"
           >
-          <p class="caption mt-2 mb-0">Post-training gaze distribution showing more focused visual attention on primary flight instruments.</p>
+          <p class="caption mt-2 mb-0"><strong>After Training:</strong> Post-training gaze distribution showing more focused visual attention on primary flight instruments.</p>
         </div>
       </div>
     </div>
