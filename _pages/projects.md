@@ -8,13 +8,16 @@ nav_order: 2
 
 <div class="projects">
   <div class="card mt-3">
+    <div class="card-body pb-0">
+      <h5 class="card-title">Tablet-Based Hazard Anticipation Training for Novice Teen Drivers</h5>
+    </div>
     <img
       class="card-img-top"
+      style="max-height: 360px; object-fit: contain; background: #f8f9fa;"
       src="{{ '/assets/img/projects/driving/driving-simulator.png' | relative_url }}"
       alt="Driving simulator used for novice teen driver hazard anticipation assessment"
     >
     <div class="card-body">
-      <h5 class="card-title">Tablet-Based Hazard Anticipation Training for Novice Teen Drivers</h5>
       <p class="card-text">
         As a Graduate Research Assistant in the Center for Advanced Training Research and Naturalistic Studies (ATRANS) at Western New England University, I contributed to a teen driver safety study under the supervision of Dr. Matthew Romoser, in collaboration with Atefeh Katrahmani. The project evaluated the Engaged Driver Training System (EDTS), a tablet-based hazard anticipation training program designed to improve novice teen drivers' ability to detect, understand, and anticipate latent roadway hazards. The study combined tablet-based training, driving simulator assessment, field driving, Tobii eye tracking, and commentary driving/verbal protocol analysis to evaluate situation awareness and transfer of training.
       </p>
@@ -51,13 +54,16 @@ nav_order: 2
   </div>
 
   <div class="card mt-3">
+    <div class="card-body pb-0">
+      <h5 class="card-title">Gaze-Based Training for General Aviation Pilots in VFR-into-IMC Transitions</h5>
+    </div>
     <img
       class="card-img-top"
+      style="max-height: 360px; object-fit: contain; background: #f8f9fa;"
       src="{{ '/assets/img/projects/aviation/flight-simulator.jpg' | relative_url }}"
       alt="Flight simulator cockpit used for general aviation pilot training research"
     >
     <div class="card-body">
-      <h5 class="card-title">Gaze-Based Training for General Aviation Pilots in VFR-into-IMC Transitions</h5>
       <p class="card-text">
         Developed and evaluated a gaze-based training intervention to improve general aviation student pilots' instrument scanning during inadvertent transition from visual flight rules into instrument meteorological conditions. The study used eye tracking, flight simulation, expert commentary, and 3M training to assess changes in visual attention, situation awareness, and piloting performance. This work was also conducted as part of human performance and training research at the Center for Advanced Training Research and Naturalistic Studies (ATRANS). After training, experimental pilots increased attention to primary instruments, reduced visual search randomness, and maintained aircraft control during IMC scenarios.
       </p>
@@ -98,13 +104,16 @@ nav_order: 2
   </div>
 
   <div class="card mt-3">
+    <div class="card-body pb-0">
+      <h5 class="card-title">Naturalistic Stress and Workload Monitoring in ICU Nurses</h5>
+    </div>
     <img
       class="card-img-top"
+      style="max-height: 360px; object-fit: contain; background: #f8f9fa;"
       src="{{ '/assets/img/projects/icu/icu-wearable-sensor-setup.png' | relative_url }}"
       alt="Wearable sensor setup for ICU nurse stress and workload monitoring"
     >
     <div class="card-body">
-      <h5 class="card-title">Naturalistic Stress and Workload Monitoring in ICU Nurses</h5>
       <p class="card-text">
         At Houston Methodist, I worked on a series of naturalistic human factors studies examining stress, workload, and physiological responses among intensive care unit nurses during real 12-hour clinical shifts. In one study, physiological data from 23 cardiovascular ICU nurses were analyzed using Empatica E4 signals, including heart rate, electrodermal activity, and skin temperature, to examine physiological correlates of occupational stress. In a related workload study, eye-tracking data from 21 ICU nurses, and complete eye-tracking plus physiological data from 15 nurses, were collected across day and night shifts using Tobii Pro Glasses 2 and Empatica E4. These analyses examined workload and stress through gaze behavior, fixation patterns, pupil diameter, gaze entropy, and Baevsky Stress Index. This broader research program also connected to longitudinal work on occupational stress and burnout among ICU nurses during the COVID-19 pandemic, including COVID and non-COVID units, repeated 12-hour shifts, validated questionnaires, wearable physiological data, and qualitative shift-level responses.
       </p>
