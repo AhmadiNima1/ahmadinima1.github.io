@@ -65,7 +65,7 @@ nav_order: 2
         <strong>Methods and skills:</strong> Eye tracking, driving simulation, field driving assessment, commentary driving, verbal protocol analysis, situation awareness, hazard anticipation, tablet-based training, teen driver safety, human performance assessment, transfer of training.
       </p>
       <div class="row mt-3">
-        <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="col-md-4 mb-3 mb-md-0">
           <img
             class="img-fluid rounded"
             src="{{ '/assets/img/projects/driving/tablet-training-system.png' | relative_url }}"
@@ -73,13 +73,21 @@ nav_order: 2
           >
           <p class="caption mt-2 mb-0">Tablet-based EDTS training system used to practice identifying latent roadway hazards.</p>
         </div>
-        <div class="col-sm-6">
+        <div class="col-md-4 mb-3 mb-md-0">
           <img
             class="img-fluid rounded"
             src="{{ '/assets/img/projects/driving/field-drive-assessment.png' | relative_url }}"
             alt="Field driving assessment for teen driver hazard perception"
           >
           <p class="caption mt-2 mb-0">Field driving assessment used to evaluate hazard perception and transfer beyond the simulator.</p>
+        </div>
+        <div class="col-md-4">
+          <img
+            class="img-fluid rounded"
+            src="{{ '/assets/img/projects/driving/on-road-hazard-view.png' | relative_url }}"
+            alt="Driver point-of-view roadway hazard scene"
+          >
+          <p class="caption mt-2 mb-0">Driver point-of-view hazard scene used to assess roadway scanning, hazard anticipation, and situation awareness.</p>
         </div>
       </div>
     </div>
