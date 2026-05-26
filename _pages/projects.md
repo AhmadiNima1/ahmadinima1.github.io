@@ -85,6 +85,10 @@ nav_order: 2
       <p class="card-text">
         <strong>Methods and skills:</strong> Eye tracking, flight simulation, simulation-based training, situation awareness, visual attention, Shannon entropy, Kullback-Leibler divergence, Python-based data synchronization, experimental design, statistical analysis.
       </p>
+      <h6 class="mt-3">Follow-up Multimodal ML and Vocal Stress Analysis</h6>
+      <p class="card-text">
+        A follow-up analysis extended this work by using synchronized eye-tracking, flight-control, aircraft-state, and voice data to classify trained versus untrained pilots and assess vocal stress duration. The analysis used Tobii Pro Glasses 2, X-Plane 11 flight simulator data, multimodal machine learning classifiers, and a CNN-based vocal stress model.
+      </p>
       <div class="row mt-3 justify-content-center">
         <div class="col-md-8">
           <img
