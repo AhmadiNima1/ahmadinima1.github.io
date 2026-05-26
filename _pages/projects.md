@@ -179,4 +179,27 @@ nav_order: 2
       </p>
     </div>
   </div>
+
+  <div class="card mt-3">
+    <div class="card-body pb-0">
+      <h5 class="card-title">Hierarchical Task Analysis of Ultrasound-Guided Vascular Access Procedures</h5>
+    </div>
+    <img
+      class="card-img-top"
+      style="height: 320px; object-fit: cover; object-position: center;"
+      src="{{ '/assets/img/projects/vascular-access/usgva-simulation-procedure.png' | relative_url }}"
+      alt="Simulation-based ultrasound-guided vascular access procedure"
+    >
+    <div class="card-body">
+      <p class="card-text">
+        This project examines ultrasound-guided vascular access procedures performed in a simulation center using first-person video, procedural timing, and hierarchical task analysis. Five fellowship-trained emergency medicine physicians performed four procedures on high-fidelity simulators: peripheral IV placement, single-lumen midline catheter placement, dual-lumen midline catheter placement, and triple-lumen central venous catheter placement. Tobii Pro Glasses 2 recordings were used to identify supraordinate tasks, subtasks, and microskills required for each procedure. The analysis supports future work on procedural efficiency, Lean process improvement, targeted microskill training, and ergonomic assessment using RULA.
+      </p>
+      <p class="card-text">
+        <strong>Methods and skills:</strong> Hierarchical task analysis, healthcare human factors, simulation-based assessment, ultrasound-guided vascular access, emergency medicine procedures, Tobii Pro Glasses 2, first-person video analysis, procedural timing analysis, microskill identification, Lean process improvement, RULA assessment, workflow analysis, clinical training design.
+      </p>
+      <p class="card-text">
+        <strong>Procedures/devices:</strong> Peripheral IV placement; single-lumen midline catheter placement; dual-lumen midline catheter placement; triple-lumen central venous catheter placement.
+      </p>
+    </div>
+  </div>
 </div>
