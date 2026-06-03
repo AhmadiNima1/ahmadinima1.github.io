@@ -129,21 +129,37 @@ td.list-group-category-icon {
 }
 
 td.list-group-name {
+  html:not([data-theme="dark"]) & {
+    color: var(--global-text-color);
+  }
+
   font-size: 0.8rem;
 }
 
 td.list-group-level {
+  html:not([data-theme="dark"]) & {
+    color: var(--global-text-color);
+  }
+
   font-size: 0.8rem;
   padding-left: 0.5rem;
 }
 
 td.list-group-school {
+  html:not([data-theme="dark"]) & {
+    color: var(--global-text-color-light);
+  }
+
   font-size: 0.7rem;
   padding-left: 0.5rem;
   text-align: center;
 }
 
 p.list-group-time {
+  html:not([data-theme="dark"]) & {
+    color: var(--global-text-color-light);
+  }
+
   font-size: 0.7rem;
   padding-left: 0.5rem;
 }

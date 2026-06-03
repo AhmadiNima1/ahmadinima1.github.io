@@ -53,6 +53,29 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+html:not([data-theme="dark"]) {
+  .caption {
+    color: var(--global-text-color-light);
+  }
+
+  .card {
+    color: var(--global-text-color);
+
+    .card-text,
+    .list-group-item,
+    p,
+    li {
+      color: var(--global-text-color);
+    }
+
+    .text-muted,
+    .text-secondary,
+    .font-weight-light {
+      color: var(--global-text-color-light) !important;
+    }
+  }
+}
+
 // Profile
 
 .profile {
@@ -158,6 +181,27 @@ ul.task-list input[type="checkbox"] {
     margin-top: 2rem;
     margin-bottom: 1rem;
     text-align: right;
+  }
+}
+
+html:not([data-theme="dark"]) .projects {
+  .card {
+    border-color: var(--global-divider-color);
+
+    .card-title,
+    h5,
+    h6,
+    strong {
+      color: var(--global-text-color);
+    }
+
+    .card-text {
+      color: var(--global-text-color);
+    }
+
+    .caption {
+      color: var(--global-text-color-light);
+    }
   }
 }
 

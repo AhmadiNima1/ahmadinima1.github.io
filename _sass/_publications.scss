@@ -68,10 +68,18 @@
       }
 
       .title {
+        html:not([data-theme="dark"]) & {
+          color: var(--global-text-color);
+        }
+
         font-weight: bolder;
       }
 
       .author {
+        html:not([data-theme="dark"]) & {
+          color: var(--global-text-color);
+        }
+
         a {
           border-bottom: 1px dashed var(--global-theme-color);
 
@@ -145,6 +153,10 @@
         transition: all 0.15s ease;
 
         p {
+          html:not([data-theme="dark"]) & {
+            color: var(--global-text-color);
+          }
+
           line-height: 1.4em;
           margin: 10px;
         }

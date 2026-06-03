@@ -7,16 +7,46 @@ nav_order: 2
 ---
 
 <style>
-  .projects .card .card-body .card-text {
+  html:not([data-theme="dark"]) .projects .card,
+  html:not([data-theme="dark"]) .projects .card .card-body,
+  html:not([data-theme="dark"]) .project-card,
+  html:not([data-theme="dark"]) .archive__item,
+  html:not([data-theme="dark"]) .page__content {
+    color: #333333 !important;
+  }
+
+  html:not([data-theme="dark"]) .projects .card .card-title,
+  html:not([data-theme="dark"]) .projects .card h5,
+  html:not([data-theme="dark"]) .projects .card h6,
+  html:not([data-theme="dark"]) .projects .card .card-body p,
+  html:not([data-theme="dark"]) .projects .card .card-body .card-text,
+  html:not([data-theme="dark"]) .projects .card .card-body .card-text strong,
+  html:not([data-theme="dark"]) .projects .card .skills,
+  html:not([data-theme="dark"]) .projects .card .skills *,
+  html:not([data-theme="dark"]) .projects .card .tags,
+  html:not([data-theme="dark"]) .projects .card .tags *,
+  html:not([data-theme="dark"]) .projects .card .project-tags,
+  html:not([data-theme="dark"]) .projects .card .project-tags *,
+  html:not([data-theme="dark"]) .project-card p,
+  html:not([data-theme="dark"]) .project-card .card-text,
+  html:not([data-theme="dark"]) .archive__item-excerpt {
+    color: #333333 !important;
+  }
+
+  html:not([data-theme="dark"]) .projects .card .caption {
+    color: #444444 !important;
+  }
+
+  html[data-theme="dark"] .projects .card .card-body .card-text {
     color: #e0e0e0 !important;
   }
 
-  .projects .card .card-body .card-text strong,
-  .projects .card .card-title {
+  html[data-theme="dark"] .projects .card .card-body .card-text strong,
+  html[data-theme="dark"] .projects .card .card-title {
     color: #ffffff !important;
   }
 
-  .projects .card .caption {
+  html[data-theme="dark"] .projects .card .caption {
     color: #d8dee9 !important;
   }
 </style>
