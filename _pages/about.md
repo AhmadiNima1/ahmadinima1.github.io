@@ -77,21 +77,14 @@ social: true
     grid-column: span 2;
   }
 
-  .home-page .method-groups {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1rem;
-  }
-
-  .home-page .home-card,
-  .home-page .method-group {
+  .home-page .home-card {
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 1.25rem;
+    padding: 1.35rem;
     background: var(--global-card-bg-color);
     border: 1px solid var(--global-divider-color);
-    border-radius: 6px;
+    border-radius: 8px;
   }
 
   .home-page .home-card-number {
@@ -103,14 +96,13 @@ social: true
     margin-bottom: 0.9rem;
     color: var(--global-theme-color);
     border: 1px solid var(--global-divider-color);
-    border-radius: 50%;
+    border-radius: 999px;
     font-size: 0.78rem;
     font-weight: 700;
     letter-spacing: 0;
   }
 
-  .home-page .home-card h3,
-  .home-page .method-group h3 {
+  .home-page .home-card h3 {
     margin-bottom: 0.7rem;
     color: var(--global-text-color);
     font-size: 1rem;
@@ -158,6 +150,22 @@ social: true
     color: #333333;
   }
 
+  html:not([data-theme="dark"]) .home-page .home-card {
+    background: #fafafa;
+    border-color: #dedede;
+  }
+
+  html:not([data-theme="dark"]) .home-page .home-card-number {
+    color: #333333;
+    background: #ffffff;
+    border-color: #d6d6d6;
+  }
+
+  html:not([data-theme="dark"]) .home-page .method-tag {
+    background: #ffffff;
+    border-color: #d8d8d8;
+  }
+
   @media (min-width: 901px) {
     .home-page .what-i-do-grid .home-card:nth-child(4) {
       grid-column: 2 / span 2;
@@ -169,8 +177,7 @@ social: true
   }
 
   @media (max-width: 900px) {
-    .home-page .what-i-do-grid,
-    .home-page .method-groups {
+    .home-page .what-i-do-grid {
       grid-template-columns: 1fr;
     }
 
@@ -190,7 +197,8 @@ social: true
     <p class="home-role">Human Factors Engineer &amp; Researcher</p>
     <p class="home-statement">
       I study how people interact with complex healthcare, aviation, and safety-critical systems, using human factors methods,
-      experimental design, multimodal sensing, and data analytics to support safer and more usable technologies.
+      experimental design, multimodal sensing, statistical analysis, and AI-enabled modeling to support safer and more usable
+      technologies.
     </p>
   </section>
 
@@ -280,51 +288,6 @@ social: true
           <span class="method-tag">generative AI</span>
           <span class="method-tag">wearable data</span>
           <span class="method-tag">human performance modeling</span>
-        </div>
-      </article>
-    </div>
-
-  </section>
-
-  <section class="home-section">
-    <h2>Methods Snapshot</h2>
-    <div class="method-groups">
-      <article class="method-group">
-        <h3>Human Factors &amp; Usability</h3>
-        <div class="method-tags">
-          <span class="method-tag">usability testing</span>
-          <span class="method-tag">task analysis</span>
-          <span class="method-tag">workflow analysis</span>
-          <span class="method-tag">observational research</span>
-          <span class="method-tag">formative/summative evaluation</span>
-          <span class="method-tag">use-related risk assessment</span>
-        </div>
-      </article>
-
-      <article class="method-group">
-        <h3>Research Design &amp; Evaluation</h3>
-        <div class="method-tags">
-          <span class="method-tag">design of experiments</span>
-          <span class="method-tag">simulation studies</span>
-          <span class="method-tag">naturalistic studies</span>
-          <span class="method-tag">A/B testing</span>
-          <span class="method-tag">survey design</span>
-          <span class="method-tag">mixed-methods analysis</span>
-          <span class="method-tag">random-effects modeling</span>
-        </div>
-      </article>
-
-      <article class="method-group">
-        <h3>Wearable &amp; Behavioral Data</h3>
-        <div class="method-tags">
-          <span class="method-tag">eye tracking</span>
-          <span class="method-tag">wearable sensing</span>
-          <span class="method-tag">physiological data</span>
-          <span class="method-tag">behavioral data</span>
-          <span class="method-tag">workload assessment</span>
-          <span class="method-tag">Python</span>
-          <span class="method-tag">machine learning</span>
-          <span class="method-tag">deep learning</span>
         </div>
       </article>
     </div>
