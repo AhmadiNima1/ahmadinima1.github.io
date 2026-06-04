@@ -22,7 +22,7 @@ nav_order: 6
 
   .contact-page .contact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1rem;
   }
 
@@ -64,6 +64,28 @@ nav_order: 6
     overflow-wrap: anywhere;
   }
 
+  .contact-page .email-option {
+    margin-top: 0.85rem;
+  }
+
+  .contact-page .email-option:first-of-type {
+    margin-top: 0.55rem;
+  }
+
+  .contact-page .email-label {
+    display: block;
+    margin-bottom: 0.1rem;
+    color: var(--global-text-color);
+    font-size: 0.88rem;
+    font-weight: 700;
+  }
+
+  .contact-page .email-link {
+    white-space: nowrap;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
   .contact-page .contact-card p {
     margin: 0;
     color: var(--global-text-color);
@@ -75,6 +97,7 @@ nav_order: 6
   html:not([data-theme="dark"]) .contact-page .contact-intro,
   html:not([data-theme="dark"]) .contact-page .contact-card,
   html:not([data-theme="dark"]) .contact-page .contact-card h2,
+  html:not([data-theme="dark"]) .contact-page .email-label,
   html:not([data-theme="dark"]) .contact-page .contact-card p {
     color: #333333;
   }
@@ -92,27 +115,28 @@ nav_order: 6
 
 <div class="contact-page">
   <p class="contact-intro">
-    I’m always happy to connect about human factors, healthcare systems, aviation safety, simulation, wearable sensing, applied AI, or research collaboration.
+    I'm happy to connect about research collaboration, human factors, healthcare systems, aviation safety, simulation, wearable sensing, applied AI, or professional opportunities.
   </p>
 
-  <p class="contact-intro">You can reach me in three ways:</p>
+  <p class="contact-intro">You can reach me in two ways:</p>
 
   <div class="contact-grid">
     <article class="contact-card">
-      <span class="contact-icon" aria-hidden="true"><i class="fa-solid fa-building-columns"></i></span>
-      <div>
-        <h2>RPI Email</h2>
-        <a href="mailto:ahmadn4@rpi.edu">ahmadn4@rpi.edu</a>
-        <p>Best for academic, student, or university-related communication.</p>
-      </div>
-    </article>
-
-    <article class="contact-card">
       <span class="contact-icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></span>
       <div>
-        <h2>Gmail</h2>
-        <a href="mailto:ahmadi.nima@gmail.com">ahmadi.nima@gmail.com</a>
-        <p>Best for professional, industry, or general inquiries.</p>
+        <h2>Email Me</h2>
+
+        <div class="email-option">
+          <span class="email-label">RPI:</span>
+          <a class="email-link" href="mailto:ahmadn4@rpi.edu">ahmadn4@rpi.edu</a>
+          <p>For academic collaborations, students, teaching, and university-related communication.</p>
+        </div>
+
+        <div class="email-option">
+          <span class="email-label">Gmail:</span>
+          <a class="email-link" href="mailto:ahmadi.nima@gmail.com">ahmadi.nima@gmail.com</a>
+          <p>For professional, industry, consulting, and general inquiries.</p>
+        </div>
       </div>
     </article>
 
@@ -120,8 +144,8 @@ nav_order: 6
       <span class="contact-icon" aria-hidden="true"><i class="fa-brands fa-linkedin-in"></i></span>
       <div>
         <h2>LinkedIn</h2>
-        <a href="https://www.linkedin.com/in/nimahmadi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">Reach out or connect with me on LinkedIn.</a>
-        <p>Best for networking, job opportunities, and professional conversations.</p>
+        <a href="https://www.linkedin.com/in/nimahmadi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">Connect with me on LinkedIn.</a>
+        <p>Best for networking, job opportunities, professional conversations, and quick introductions.</p>
       </div>
     </article>
 
