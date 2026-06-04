@@ -69,8 +69,12 @@ social: true
 
   .home-page .what-i-do-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 1rem;
+  }
+
+  .home-page .what-i-do-grid .home-card {
+    grid-column: span 2;
   }
 
   .home-page .method-groups {
@@ -81,6 +85,8 @@ social: true
 
   .home-page .home-card,
   .home-page .method-group {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     padding: 1.25rem;
     background: var(--global-card-bg-color);
@@ -88,17 +94,19 @@ social: true
     border-radius: 6px;
   }
 
-  .home-page .home-card-icon {
+  .home-page .home-card-number {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 2.35rem;
-    height: 2.35rem;
+    width: 2rem;
+    height: 2rem;
     margin-bottom: 0.9rem;
     color: var(--global-theme-color);
     border: 1px solid var(--global-divider-color);
     border-radius: 50%;
-    font-size: 1rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0;
   }
 
   .home-page .home-card h3,
@@ -111,7 +119,7 @@ social: true
   }
 
   .home-page .home-card p {
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     color: var(--global-text-color);
     font-size: 0.95rem;
     line-height: 1.65;
@@ -122,6 +130,10 @@ social: true
     flex-wrap: wrap;
     gap: 0.45rem;
     margin-top: 0.85rem;
+  }
+
+  .home-page .home-card .method-tags {
+    margin-top: auto;
   }
 
   .home-page .method-tag {
@@ -146,10 +158,24 @@ social: true
     color: #333333;
   }
 
+  @media (min-width: 901px) {
+    .home-page .what-i-do-grid .home-card:nth-child(4) {
+      grid-column: 2 / span 2;
+    }
+
+    .home-page .what-i-do-grid .home-card:nth-child(5) {
+      grid-column: 4 / span 2;
+    }
+  }
+
   @media (max-width: 900px) {
     .home-page .what-i-do-grid,
     .home-page .method-groups {
       grid-template-columns: 1fr;
+    }
+
+    .home-page .what-i-do-grid .home-card {
+      grid-column: auto;
     }
 
     .home-page .home-hero h1 {
@@ -172,30 +198,89 @@ social: true
     <h2>What I Do</h2>
     <div class="what-i-do-grid">
       <article class="home-card">
-        <span class="home-card-icon" aria-hidden="true"><i class="fa-solid fa-clipboard-check"></i></span>
-        <h3>Human Factors &amp; Usability Evaluation</h3>
+        <span class="home-card-number" aria-hidden="true">01</span>
+        <h3>Research Design &amp; Study Planning</h3>
         <p>
-          Usability testing, task analysis, workflow analysis, observational studies, use-related risk assessment, and
-          human-system interaction evaluation to identify usability barriers, safety risks, and design opportunities.
+          Designing human-subject, simulation, naturalistic, and observational studies using quantitative, qualitative, and
+          mixed-methods approaches to generate evidence for system improvement.
         </p>
+        <div class="method-tags" aria-label="Methods">
+          <span class="method-tag">DOE</span>
+          <span class="method-tag">A/B testing</span>
+          <span class="method-tag">survey design</span>
+          <span class="method-tag">simulation studies</span>
+          <span class="method-tag">naturalistic studies</span>
+          <span class="method-tag">mixed-methods</span>
+          <span class="method-tag">mixed-effects modeling</span>
+        </div>
       </article>
 
       <article class="home-card">
-        <span class="home-card-icon" aria-hidden="true"><i class="fa-solid fa-chart-line"></i></span>
-        <h3>Experimental Design &amp; Research Leadership</h3>
+        <span class="home-card-number" aria-hidden="true">02</span>
+        <h3>Human Factors, UX/UI &amp; Usability Research</h3>
         <p>
-          Human-subject studies, simulation studies, naturalistic studies, A/B testing, survey methods, design of experiments,
-          random-effects modeling, and statistical analysis to generate evidence for system improvement and decision-making.
+          Evaluating user needs, workflows, interfaces, and task performance through usability testing, UX/UI research, task
+          analysis, observational studies, and use-related risk assessment.
         </p>
+        <div class="method-tags" aria-label="Methods">
+          <span class="method-tag">usability testing</span>
+          <span class="method-tag">UX/UI research</span>
+          <span class="method-tag">task analysis</span>
+          <span class="method-tag">workflow analysis</span>
+          <span class="method-tag">risk assessment</span>
+          <span class="method-tag">formative/summative evaluation</span>
+        </div>
       </article>
 
       <article class="home-card">
-        <span class="home-card-icon" aria-hidden="true"><i class="fa-solid fa-eye"></i></span>
+        <span class="home-card-number" aria-hidden="true">03</span>
         <h3>Human Behavior &amp; Performance Assessment</h3>
         <p>
-          Eye tracking, wearable sensor data, physiological data, behavioral data, workload measures, and performance outcomes
-          to understand attention, stress, decision-making, and human performance in complex systems.
+          Assessing attention, workload, stress, decision-making, and performance using eye tracking, wearable sensors,
+          physiological data, behavioral data, and performance measures.
         </p>
+        <div class="method-tags" aria-label="Methods">
+          <span class="method-tag">eye tracking</span>
+          <span class="method-tag">wearable sensing</span>
+          <span class="method-tag">workload</span>
+          <span class="method-tag">stress</span>
+          <span class="method-tag">behavioral data</span>
+          <span class="method-tag">performance measures</span>
+        </div>
+      </article>
+
+      <article class="home-card">
+        <span class="home-card-number" aria-hidden="true">04</span>
+        <h3>Training, Simulation &amp; Performance Support</h3>
+        <p>
+          Designing and evaluating simulation-based training, gaze-based training, feedback systems, instructional materials,
+          and learning interventions to improve situation awareness, performance, and safety.
+        </p>
+        <div class="method-tags" aria-label="Methods">
+          <span class="method-tag">simulation-based training</span>
+          <span class="method-tag">gaze-based training</span>
+          <span class="method-tag">situation awareness</span>
+          <span class="method-tag">feedback</span>
+          <span class="method-tag">instructional design</span>
+          <span class="method-tag">performance support</span>
+        </div>
+      </article>
+
+      <article class="home-card">
+        <span class="home-card-number" aria-hidden="true">05</span>
+        <h3>Statistical Analysis, ML/DL &amp; Generative AI</h3>
+        <p>
+          Applying statistical analysis, machine learning, deep learning, generative AI, and wearable sensor data to model
+          workload, stress, attention, and human performance in complex systems.
+        </p>
+        <div class="method-tags" aria-label="Methods">
+          <span class="method-tag">statistical analysis</span>
+          <span class="method-tag">machine learning</span>
+          <span class="method-tag">deep learning</span>
+          <span class="method-tag">generative AI</span>
+          <span class="method-tag">wearable data</span>
+          <span class="method-tag">human performance modeling</span>
+        </div>
       </article>
     </div>
 
