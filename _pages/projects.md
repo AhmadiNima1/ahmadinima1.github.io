@@ -49,11 +49,49 @@ nav_order: 2
   html[data-theme="dark"] .projects .card .caption {
     color: #d8dee9 !important;
   }
+
+  .projects .project-header {
+    padding-bottom: 0.95rem;
+  }
+
+  .projects .project-category {
+    display: inline-flex;
+    gap: 0.4rem;
+    align-items: center;
+    margin-bottom: 0.45rem;
+    color: var(--global-text-color-light);
+    font-size: 0.78rem;
+    font-weight: 700;
+    line-height: 1.25;
+    text-transform: uppercase;
+    letter-spacing: 0.02rem;
+  }
+
+  .projects .project-category i {
+    color: var(--global-theme-color);
+    font-size: 0.9rem;
+  }
+
+  .projects .project-header .card-title {
+    margin-bottom: 0;
+    color: var(--global-text-color);
+    font-size: 1.18rem;
+    line-height: 1.35;
+  }
+
+  html:not([data-theme="dark"]) .projects .project-category {
+    color: #555555 !important;
+  }
+
+  html:not([data-theme="dark"]) .projects .project-header .card-title {
+    color: #222222 !important;
+  }
 </style>
 
 <div class="projects">
   <div class="card mt-3">
-    <div class="card-body pb-0">
+    <div class="card-body project-header">
+      <div class="project-category"><i class="fa-solid fa-car-side" aria-hidden="true"></i> Driving Safety / Human Performance</div>
       <h5 class="card-title">Tablet-Based Hazard Anticipation Training for Novice Teen Drivers</h5>
     </div>
     <img
@@ -99,7 +137,8 @@ nav_order: 2
   </div>
 
   <div class="card mt-3">
-    <div class="card-body pb-0">
+    <div class="card-body project-header">
+      <div class="project-category"><i class="fa-solid fa-plane-up" aria-hidden="true"></i> Aviation Training / Human Performance</div>
       <h5 class="card-title">Gaze-Based Training for General Aviation Pilots in VFR-into-IMC Transitions</h5>
     </div>
     <img
@@ -173,7 +212,8 @@ nav_order: 2
   </div>
 
   <div class="card mt-3">
-    <div class="card-body pb-0">
+    <div class="card-body project-header">
+      <div class="project-category"><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i> Healthcare Human Factors / Clinical Workflow</div>
       <h5 class="card-title">Naturalistic Stress and Workload Monitoring in ICU Nurses</h5>
     </div>
     <img
@@ -211,7 +251,8 @@ nav_order: 2
   </div>
 
   <div class="card mt-3">
-    <div class="card-body pb-0">
+    <div class="card-body project-header">
+      <div class="project-category"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i> Digital Health / Patient Engagement</div>
       <h5 class="card-title">User-Centered Design of a Digital Patient Navigation Tool for Breast Cancer Care</h5>
     </div>
     <img
@@ -231,7 +272,8 @@ nav_order: 2
   </div>
 
   <div class="card mt-3">
-    <div class="card-body pb-0">
+    <div class="card-body project-header">
+      <div class="project-category"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i> Healthcare Human Factors / Clinical Workflow</div>
       <h5 class="card-title">Hierarchical Task Analysis of Ultrasound-Guided Vascular Access Procedures</h5>
     </div>
     <img
