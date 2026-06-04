@@ -79,12 +79,66 @@ nav_order: 2
     line-height: 1.35;
   }
 
+  .projects .project-subsection {
+    margin: 1.25rem 0;
+    padding: 1rem;
+    color: var(--global-text-color);
+    background: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+  }
+
+  .projects .project-subsection-label {
+    display: inline-flex;
+    gap: 0.4rem;
+    align-items: center;
+    margin-bottom: 0.45rem;
+    color: var(--global-text-color-light);
+    font-size: 0.76rem;
+    font-weight: 700;
+    line-height: 1.25;
+    text-transform: uppercase;
+    letter-spacing: 0.02rem;
+  }
+
+  .projects .project-subsection-label i {
+    color: var(--global-theme-color);
+    font-size: 0.9rem;
+  }
+
+  .projects .project-subsection h6 {
+    margin-bottom: 0.65rem;
+    color: var(--global-text-color);
+    font-size: 1rem;
+    line-height: 1.35;
+    font-weight: 700;
+  }
+
+  .projects .project-subsection .card-text {
+    margin-bottom: 0;
+  }
+
   html:not([data-theme="dark"]) .projects .project-category {
     color: #555555 !important;
   }
 
   html:not([data-theme="dark"]) .projects .project-header .card-title {
     color: #222222 !important;
+  }
+
+  html:not([data-theme="dark"]) .projects .project-subsection {
+    color: #333333 !important;
+    background: #fafafa;
+    border-color: #dedede;
+  }
+
+  html:not([data-theme="dark"]) .projects .project-subsection-label {
+    color: #555555 !important;
+  }
+
+  html:not([data-theme="dark"]) .projects .project-subsection h6,
+  html:not([data-theme="dark"]) .projects .project-subsection .card-text {
+    color: #333333 !important;
   }
 </style>
 
@@ -184,10 +238,13 @@ nav_order: 2
           <p class="caption mt-2 mb-0"><strong>After Training:</strong> Post-training gaze distribution showing more focused visual attention on primary flight instruments.</p>
         </div>
       </div>
-      <h6 class="mt-3">Follow-up Multimodal ML and Vocal Stress Analysis</h6>
-      <p class="card-text">
-        This follow-up work developed a multimodal framework for evaluating whether a gaze-based aviation training intervention produced measurable changes in pilot behavior and stress regulation. Instead of relying only on self-report or simple pre/post comparisons, the framework integrated eye-tracking, flight-control, aircraft-state, and voice data to assess training effectiveness. Multimodal machine learning classifiers were used to distinguish trained from untrained pilots based on synchronized gaze and flight-simulator data, while pilots' voice data were analyzed separately using a CNN-based vocal stress model. This approach helped evaluate whether training effects extended beyond visual scanning to higher-level piloting behavior and stress regulation during simulated VFR-into-IMC flight.
-      </p>
+      <div class="project-subsection">
+        <div class="project-subsection-label"><i class="fa-solid fa-wave-square" aria-hidden="true"></i> Multimodal Analysis / Vocal Stress</div>
+        <h6>Multimodal Assessment of Training Effects and Vocal Stress</h6>
+        <p class="card-text">
+          This follow-up work developed a multimodal framework for evaluating whether a gaze-based aviation training intervention produced measurable changes in pilot behavior and stress regulation. Instead of relying only on self-report or simple pre/post comparisons, the framework integrated eye-tracking, flight-control, aircraft-state, and voice data to assess training effectiveness. Multimodal machine learning classifiers were used to distinguish trained from untrained pilots based on synchronized gaze and flight-simulator data, while pilots' voice data were analyzed separately using a CNN-based vocal stress model. This approach helped evaluate whether training effects extended beyond visual scanning to higher-level piloting behavior and stress regulation during simulated VFR-into-IMC flight.
+        </p>
+      </div>
       <div class="row mt-3 justify-content-center">
         <div class="col-md-10">
           <img
