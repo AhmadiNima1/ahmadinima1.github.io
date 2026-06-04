@@ -61,6 +61,7 @@ nav_order: 6
     display: inline-block;
     margin-bottom: 0.45rem;
     font-weight: 600;
+    overflow-wrap: anywhere;
   }
 
   .contact-page .contact-card p {
