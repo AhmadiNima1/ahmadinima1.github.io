@@ -82,7 +82,7 @@ nav_order: 6
 
   .contact-page .contact-card a.email-link {
     white-space: nowrap;
-    overflow-wrap: normal;
+    overflow-wrap: normal !important;
     word-break: normal;
   }
 
