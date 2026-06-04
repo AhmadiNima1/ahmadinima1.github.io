@@ -85,6 +85,133 @@ div.container-links {
 }
 
 /*****************************
+ * CV grouped section cards
+ *****************************/
+
+.cv-grouped-list,
+.cv-highlight-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.cv-highlight-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.cv-group-card,
+.cv-highlight-card {
+  padding: 1rem;
+  color: var(--global-text-color);
+  background: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+}
+
+.cv-group-header {
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.cv-group-header h4,
+.cv-highlight-card h4 {
+  margin: 0;
+  color: var(--global-text-color);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.cv-group-header span {
+  color: var(--global-text-color-light);
+  font-size: 0.88rem;
+  line-height: 1.4;
+  text-align: right;
+}
+
+.cv-group-label {
+  margin-bottom: 0.35rem;
+  color: var(--global-text-color);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.cv-group-card ul {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.cv-group-card li,
+.cv-highlight-card p {
+  color: var(--global-text-color);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.cv-highlight-card p {
+  margin: 0.55rem 0 0.85rem;
+}
+
+.cv-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.cv-tag-list span {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.5rem;
+  color: var(--global-text-color);
+  background: var(--global-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  line-height: 1.25;
+}
+
+html:not([data-theme="dark"]) {
+  .cv-group-card,
+  .cv-highlight-card {
+    color: #333333;
+    background: #fafafa;
+    border-color: #dedede;
+  }
+
+  .cv-group-header h4,
+  .cv-highlight-card h4,
+  .cv-group-label,
+  .cv-group-card li,
+  .cv-highlight-card p,
+  .cv-tag-list span {
+    color: #333333;
+  }
+
+  .cv-group-header span {
+    color: #4a4a4a;
+  }
+
+  .cv-tag-list span {
+    background: #ffffff;
+    border-color: #d8d8d8;
+  }
+}
+
+@media (max-width: 575px) {
+  .cv-group-header {
+    display: block;
+  }
+
+  .cv-group-header span {
+    display: block;
+    margin-top: 0.25rem;
+    text-align: left;
+  }
+}
+
+/*****************************
  * CV MAP styles
  *****************************/
 

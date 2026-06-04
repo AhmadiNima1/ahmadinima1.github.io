@@ -78,110 +78,121 @@ cv:
         end_date: 2010
         highlights:
           - Led design and repair work for plate heat exchangers.
+    Research Highlights / Ongoing Projects:
+      - title: Albany Medical Center vascular access collaboration
+        summary: >
+          Collaborating on vascular access research focused on task analysis, procedure duration, workflow assessment,
+          and evidence generation for emergency department and clinical operations improvement.
+        keywords:
+          - vascular access
+          - healthcare workflow
+          - task analysis
+          - procedure duration
+      - title: AI applications for medical emergency cases
+        summary: >
+          Developing AI-enabled approaches for medical emergency cases with collaborators from Harvard Medical School
+          and RPI Cognitive Science, connecting human factors, cognitive modeling, and decision support.
+        keywords:
+          - medical emergencies
+          - generative AI
+          - decision support
+          - cognitive science
+      - title: Multimodal human performance research
+        summary: >
+          Using wearable sensors, eye tracking, voice analysis, simulation, and machine learning to evaluate stress,
+          workload, training, and performance in healthcare, aviation, and other safety-critical settings.
+        keywords:
+          - wearable sensing
+          - eye tracking
+          - voice analysis
+          - machine learning
     Teaching Experience:
-      - bullet: "**Rensselaer Polytechnic Institute**"
-      - bullet: |
-          **Human factors and ergonomics:**
+      - institution: Rensselaer Polytechnic Institute (RPI)
+        role: Independent Instructor
+        dates: 2022 - Present
+        label: Courses
+        courses:
           - ISYE 4260 Human Performance Modeling
-          - ISYE 6260 Human Performance Modeling
-      - bullet: |
-          **Probability, statistics, and uncertainty:**
+          - ISYE 4290/6620 Discrete Event Simulation
+          - ISYE 4330/6020 Design of Experiments
+          - ISYE 4210/6600 Design and Analysis of Supply Chains
+          - ISYE 4270/ECSE 4900/MTLE 4920 Multidisciplinary Capstone Design
           - ENGR 2600 Modeling and Analysis of Uncertainty
-      - bullet: |
-          **Industrial engineering and operations:**
-          - ISYE 4210 Design and Analysis of Supply Chains
-          - ISYE 6600 Design and Analysis of Supply Chains
-          - ISYE 4290 Discrete Event Simulation
-          - ISYE 6620 Discrete Event Simulation
-          - ISYE 4330 Design of Experiments
-          - ISYE 6020 Design of Experiments
-      - bullet: |
-          **Capstone and project-based learning:**
-          - ISYE 4270 / ECSE 4900 / MTLE 4920 Multidisciplinary Capstone Design
-      - bullet: "**Western New England University**"
-      - bullet: |
-          **Probability, statistics, and computing:**
-          - IE 212 Probability & Statistics
+      - institution: Western New England University
+        role: Independent Instructor
+        dates: 2016 - 2019
+        label: Courses
+        courses:
+          - IE 212 Probability and Statistics
           - IE 419 Industrial Engineering Computer Applications
-          - ME 205-41 Measurement Computing
-    Skills:
-      - name: Programming, data analytics, and visualization
-        keywords:
-          - Python
-          - SQL
-          - R
-          - Excel
-          - statistical modeling
-          - data cleaning
-          - data visualization
-      - name: Machine learning and AI
-        keywords:
-          - scikit-learn
-          - TensorFlow/Keras
-          - classification
-          - regression
-          - deep learning
-          - model evaluation
-          - feature engineering
-          - applied generative AI
-          - prompt engineering
-          - LLM-based decision support
-      - name: Statistical and experimental methods
-        keywords:
+          - ME 205 Measurement Computing
+      - institution: Western New England University
+        role: Teaching Assistant and Guest Lecturer
+        dates: 2015 - 2016
+        label: Courses/areas
+        courses:
+          - Probability and Statistics
+          - Facility Design and Material Handling
+          - Human Factors Design Engineering
+          - Work Analysis and Design
           - Design of Experiments
-          - ANOVA
-          - regression analysis
-          - mixed-effects modeling
-          - nonparametric analysis
-          - survey analysis
-          - quantitative and qualitative analysis
-      - name: Safety, risk, and process analysis
+    Skills:
+      - name: Human Factors & Research Methods
         keywords:
-          - risk assessment
-          - human error analysis
-          - failure mode identification
-          - process risk analysis
-          - root cause analysis
-      - name: Simulation and operations modeling
+          - usability evaluation
+          - task analysis
+          - workflow analysis
+          - observational research
+          - naturalistic studies
+          - cognitive workload assessment
+          - design of experiments
+          - survey design
+          - mixed-methods research
+          - mixed-effects modeling
+      - name: Simulation & Systems Modeling
         keywords:
           - FlexSim
-          - manufacturing and healthcare simulation
+          - Simio
           - discrete-event simulation
-          - Monte Carlo simulation
-          - queueing analysis
+          - queueing systems
           - process improvement
-      - name: Human performance and human factors methods
+          - healthcare systems modeling
+      - name: Programming, Data Science & ML
         keywords:
-          - wearable sensor data analysis
-          - eye-tracking analysis
-          - workload assessment
-          - stress measurement
-          - task analysis
-          - observational studies
-          - usability evaluation
-          - ergonomics
-      - name: Research design and study management
+          - Python
+          - NumPy
+          - Pandas
+          - Scikit-learn
+          - Keras
+          - TensorFlow
+          - machine learning
+          - deep learning
+          - signal processing
+          - statistical modeling
+      - name: Statistics & Visualization
         keywords:
-          - IRB protocol preparation
-          - human-subjects research
-          - patient and clinician data collection
-          - training intervention design
-          - experimental protocol development
-          - literature review
-      - name: Communication and professional skills
-        keywords:
-          - technical writing
-          - research presentation
-          - data storytelling
-          - stakeholder communication
-          - teaching and training
-          - interdisciplinary collaboration
-      - name: Engineering and research software
-        keywords:
+          - R
           - Minitab
-          - MATLAB
+          - JMP
+          - SPSS
+          - Power BI
+          - Tableau
+          - Excel Solver
+      - name: Generative AI & LLM Tools
+        keywords:
+          - ChatGPT
+          - OpenAI API
+          - prompt design
+          - AI-assisted coding
+          - AI-enabled educational tools
+      - name: Database, Project & Design Tools
+        keywords:
+          - SQL/MySQL
+          - MongoDB
+          - JSON
+          - MS Project
           - AutoCAD
-          - Microsoft Project
+          - Figma
     Awards:
       - title: Best Paper Student Competition Award, 3rd Place
         date: 2016
@@ -189,12 +200,14 @@ cv:
       - title: Engineering Research Assistance Scholarship
         date: 2016
         summary: Western New England University.
-    Certificates:
+    Certifications and Additional Training:
       - name: Six Sigma Green Belt Program
         date: 2017
         issuer: Western New England University
-      - name: Intermediate Data Science with Python
+      - name: "Springboard: Intermediate Data Science - Python"
         date: 2018 - 2019
         issuer: Springboard
       - name: Machine Learning with Python
         date: 2020
+      - name: Neural Networks and Deep Learning
+        date: 2023

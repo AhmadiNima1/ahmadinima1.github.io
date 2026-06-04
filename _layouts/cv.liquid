@@ -80,7 +80,9 @@ layout: default
               {% if cv.email %}
                 <tr>
                   <td class="p-1 pr-2 font-weight-bold"><b>Email</b></td>
-                  <td class="p-1 pl-2 font-weight-light"><a href="mailto:{{ cv.email }}">{{ cv.email }}</a></td>
+                  <td class="p-1 pl-2 font-weight-light">
+                    <a href="mailto:{{ cv.email }}">{{ cv.email }}</a>
+                  </td>
                 </tr>
               {% endif %}
               {% if cv.phone %}
@@ -163,13 +165,53 @@ layout: default
               {% elsif section_title == 'Skills' %}
                 {% assign entries = section_entries %}
                 {% include cv/skills.liquid %}
+              {% elsif section_title == 'Teaching Experience' %}
+                <div class="cv-grouped-list">
+                  {% for entry in section_entries %}
+                    <article class="cv-group-card">
+                      <div class="cv-group-header">
+                        <h4>{{ entry.institution }}</h4>
+                        <span>
+                          {{- entry.role -}}
+                          {%- if entry.dates %}, {{ entry.dates }}{% endif -%}
+                        </span>
+                      </div>
+                      {% if entry.label %}
+                        <p class="cv-group-label">{{ entry.label }}:</p>
+                      {% endif %}
+                      {% if entry.courses %}
+                        <ul>
+                          {% for course in entry.courses %}
+                            <li>{{ course }}</li>
+                          {% endfor %}
+                        </ul>
+                      {% endif %}
+                    </article>
+                  {% endfor %}
+                </div>
+              {% elsif section_title == 'Research Highlights / Ongoing Projects' %}
+                <div class="cv-highlight-grid">
+                  {% for entry in section_entries %}
+                    <article class="cv-highlight-card">
+                      <h4>{{ entry.title }}</h4>
+                      <p>{{ entry.summary }}</p>
+                      {% if entry.keywords %}
+                        <div class="cv-tag-list">
+                          {% for keyword in entry.keywords %}
+                            <span>{{ keyword }}</span>
+                          {% endfor %}
+                        </div>
+                      {% endif %}
+                    </article>
+                  {% endfor %}
+                </div>
               {% elsif section_title == 'Languages' %}
                 {% assign entries = section_entries %}
                 {% include cv/languages.liquid %}
               {% elsif section_title == 'Interests' or section_title == 'Academic Interests' %}
                 {% assign entries = section_entries %}
                 {% include cv/interests.liquid %}
-              {% elsif section_title == 'Certificates' %}
+              {% elsif section_title == 'Certificates' or section_title == 'Certifications and Additional Training' %}
                 {% assign entries = section_entries %}
                 {% include cv/certificates.liquid %}
               {% elsif section_title == 'Projects' or section_title == 'Open Source Projects' %}
@@ -220,7 +262,9 @@ layout: default
               {% if basics.email %}
                 <tr>
                   <td class="p-1 pr-2 font-weight-bold"><b>Email</b></td>
-                  <td class="p-1 pl-2 font-weight-light"><a href="mailto:{{ basics.email }}">{{ basics.email }}</a></td>
+                  <td class="p-1 pl-2 font-weight-light">
+                    <a href="mailto:{{ basics.email }}">{{ basics.email }}</a>
+                  </td>
                 </tr>
               {% endif %}
               {% if basics.phone %}
