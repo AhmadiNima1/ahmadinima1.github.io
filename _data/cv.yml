@@ -26,9 +26,8 @@ cv:
         studyType: MS
         start_date: 2014
         end_date: 2015
-      - institution: Azad University Central Branch
-        area: Mechanical Engineering
-        studyType: BSc
+      - institution: Azad University, Central Tehran Branch
+        studyType: B.S. in Mechanical Engineering
         start_date: 2001
         end_date: 2006
     Experience:

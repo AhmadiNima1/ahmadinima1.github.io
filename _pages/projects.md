@@ -252,7 +252,7 @@ nav_order: 2
 
   <div class="card mt-3">
     <div class="card-body project-header">
-      <div class="project-category"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i> Digital Health / Patient Engagement</div>
+      <div class="project-category"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i> Digital Health UX/UI / Patient Engagement</div>
       <h5 class="card-title">User-Centered Design of a Digital Patient Navigation Tool for Breast Cancer Care</h5>
     </div>
     <img
@@ -263,10 +263,10 @@ nav_order: 2
     >
     <div class="card-body">
       <p class="card-text">
-        During my postdoctoral fellowship at Houston Methodist Center for Outcomes Research, I contributed to a Stand Up To Cancer project focused on the user-centered design of a culturally tailored, app-enhanced patient navigation tool for breast cancer care. The project aimed to support Black/African American women with ER+ breast cancer by improving education, hormonal therapy adherence, side-effect monitoring, patient-provider communication, and access to support resources. The work included semi-structured stakeholder interviews, qualitative thematic analysis, functional information requirement analysis, prototype development, and formative usability testing of a refined CareSense pathway and mobile application concepts.
+        During my postdoctoral fellowship at Houston Methodist Center for Outcomes Research, I contributed to a Stand Up To Cancer project focused on the user-centered design and UX/UI evaluation of a culturally tailored, app-enhanced patient navigation tool for breast cancer care. The project examined patient needs, education, hormonal therapy adherence, side-effect monitoring, patient-provider communication workflows, and access to support resources for Black/African American women with ER+ breast cancer. The work included semi-structured stakeholder interviews, qualitative thematic analysis, functional information requirement analysis, prototype development, and formative usability testing of refined CareSense pathway and mobile application concepts to support digital health engagement.
       </p>
       <p class="card-text">
-        <strong>Methods and skills:</strong> User-centered design, healthcare UX research, digital health, patient navigation, breast cancer care, stakeholder interviews, semi-structured interviews, qualitative coding, thematic analysis, MAXQDA, functional information requirement analysis, prototype development, usability testing, CareSense pathway design, patient-centered communication, health equity.
+        <strong>Methods and skills:</strong> User-centered design, UX/UI evaluation, healthcare UX research, digital health engagement, patient navigation, breast cancer care, stakeholder interviews, patient needs assessment, communication workflow analysis, semi-structured interviews, qualitative coding, thematic analysis, MAXQDA, functional information requirement analysis, prototype development, usability testing, CareSense pathway design, patient-centered communication, health equity.
       </p>
     </div>
   </div>
