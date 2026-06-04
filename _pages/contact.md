@@ -80,7 +80,7 @@ nav_order: 6
     font-weight: 700;
   }
 
-  .contact-page .email-link {
+  .contact-page .contact-card a.email-link {
     white-space: nowrap;
     overflow-wrap: normal;
     word-break: normal;
