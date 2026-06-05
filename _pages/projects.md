@@ -462,8 +462,8 @@ nav_order: 2
         <div class="project-overview-image-wrap">
           <img
             class="project-overview-image"
-            src="{{ '/assets/img/projects/houston_methodist/HMH.jpg' | relative_url }}"
-            alt="Houston Methodist facility"
+            src="{{ '/assets/img/projects/houston_methodist/nurse-workflow.jpg' | relative_url }}"
+            alt="Clinical human factors and hospital workflow setting"
             onerror="this.style.display='none';"
           >
         </div>

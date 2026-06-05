@@ -210,6 +210,23 @@ social: true
     font-weight: 700;
   }
 
+  .home-page .journey-card h3.journey-title-long {
+    font-size: 0.9rem;
+  }
+
+  .home-page .journey-affiliation {
+    display: grid;
+    gap: 0.12rem;
+    margin: -0.05rem 0 0.45rem;
+    color: var(--global-text-color);
+    font-size: 0.78rem;
+    line-height: 1.35;
+  }
+
+  .home-page .journey-affiliation span:first-child {
+    font-weight: 700;
+  }
+
   .home-page .journey-card p {
     margin-bottom: 0.85rem;
     color: var(--global-text-color);
@@ -421,6 +438,7 @@ social: true
   html:not([data-theme="dark"]) .home-page .home-card p,
   html:not([data-theme="dark"]) .home-page .journey-card p,
   html:not([data-theme="dark"]) .home-page .journey-card h3,
+  html:not([data-theme="dark"]) .home-page .journey-affiliation,
   html:not([data-theme="dark"]) .home-page .journey-tag,
   html:not([data-theme="dark"]) .home-page .method-tag {
     color: #333333;
@@ -557,12 +575,16 @@ social: true
           <img
             class="journey-image"
             src="{{ '/assets/img/projects/atrans/WNEU.JPG' | relative_url }}"
-            alt="Western New England University campus associated with ATRANS Lab"
+            alt="Western New England University campus associated with ATRANS"
             onerror="this.style.display='none';"
           />
         </div>
         <div class="journey-content">
-          <h3>ATRANS Lab</h3>
+          <h3 class="journey-title-long">Center for Advanced Training Research and Naturalistic Studies (ATRANS)</h3>
+          <div class="journey-affiliation" aria-label="Institution and department">
+            <span>Western New England University</span>
+            <span>Department of Industrial Engineering and Engineering Management</span>
+          </div>
           <span class="journey-years">2015&ndash;2020</span>
           <div class="journey-meta">
             <span>Springfield, MA</span>
@@ -570,8 +592,9 @@ social: true
             <span class="journey-theme">Transportation Human Factors</span>
           </div>
           <p>
-            My human factors work began at ATRANS Lab, where I worked with Dr. Matthew Romoser on transportation safety studies
-            involving teen driver training, aviation simulation, eye tracking, and human performance.
+            My human factors work began at the Center for Advanced Training Research and Naturalistic Studies (ATRANS) at Western
+            New England University, where I worked with Dr. Matthew Romoser on transportation safety studies involving teen driver
+            training, aviation simulation, eye tracking, and human performance.
           </p>
           <div class="journey-tags" aria-label="Focus areas">
             <span class="journey-tag">Driving Safety</span>
@@ -585,7 +608,7 @@ social: true
             target="_blank"
             rel="noopener noreferrer"
           >
-            View ATRANS Lab
+            View ATRANS
           </a>
         </div>
       </article>
@@ -600,7 +623,10 @@ social: true
           />
         </div>
         <div class="journey-content">
-          <h3>Houston Methodist | Center for Outcomes Research</h3>
+          <h3>Houston Methodist Hospital</h3>
+          <div class="journey-affiliation" aria-label="Center">
+            <span>Center for Outcomes Research</span>
+          </div>
           <span class="journey-years">2020&ndash;2022</span>
           <div class="journey-meta">
             <span>Houston, TX</span>
@@ -609,8 +635,8 @@ social: true
           </div>
           <p>
             I then moved to Houston, Texas, where I worked as a postdoctoral researcher with Dr. Farzan Sasangohar at Houston
-            Methodist&rsquo;s Center for Outcomes Research, applying human factors methods to clinical workflow, clinician workload,
-            stress, well-being, and patient safety.
+            Methodist Hospital&rsquo;s Center for Outcomes Research, applying human factors methods to clinical workflow, clinician
+            workload, stress, well-being, and patient safety.
           </p>
           <div class="journey-tags" aria-label="Focus areas">
             <span class="journey-tag">Clinical HF</span>
@@ -640,6 +666,9 @@ social: true
         </div>
         <div class="journey-content">
           <h3>Rensselaer Polytechnic Institute</h3>
+          <div class="journey-affiliation" aria-label="Department">
+            <span>Department of Industrial and Systems Engineering</span>
+          </div>
           <span class="journey-years">2022&ndash;Present</span>
           <div class="journey-meta">
             <span>Troy, NY</span>
@@ -671,7 +700,7 @@ social: true
         </div>
         <div class="journey-content">
           <h3>Albany Medical Center</h3>
-          <span class="journey-years">2023&ndash;Present</span>
+          <span class="journey-years">2023&ndash;Present Collaboration</span>
           <div class="journey-meta">
             <span>Albany, NY</span>
             <span aria-hidden="true">&middot;</span>
