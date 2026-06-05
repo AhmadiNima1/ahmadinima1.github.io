@@ -51,7 +51,7 @@ nav_order: 2
   }
 
   .projects .project-header {
-    padding-bottom: 0.95rem;
+    padding: 1.2rem 1.25rem 0.95rem;
   }
 
   .projects .project-category {
@@ -75,8 +75,21 @@ nav_order: 2
   .projects .project-header .card-title {
     margin-bottom: 0;
     color: var(--global-text-color);
-    font-size: 1.18rem;
+    font-size: 1.28rem;
     line-height: 1.35;
+  }
+
+  .projects > .card {
+    overflow: hidden;
+    background: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-left: 4px solid var(--global-theme-color);
+    border-radius: 8px;
+  }
+
+  .projects > .card .card-img-top {
+    border-top: 1px solid var(--global-divider-color);
+    border-bottom: 1px solid var(--global-divider-color);
   }
 
   .projects .project-subsection {
@@ -165,6 +178,7 @@ nav_order: 2
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1rem;
+    --project-accent: #2f5068;
   }
 
   .projects .project-overview-card {
@@ -176,6 +190,7 @@ nav_order: 2
     color: var(--global-text-color);
     background: var(--global-card-bg-color);
     border: 1px solid var(--global-divider-color);
+    border-top: 3px solid var(--project-accent);
     border-radius: 8px;
     transition:
       transform 160ms ease,
@@ -185,7 +200,8 @@ nav_order: 2
 
   .projects .project-overview-card:hover {
     transform: translateY(-2px);
-    border-color: var(--global-theme-color);
+    border-color: var(--global-divider-color);
+    border-top-color: var(--project-accent);
     box-shadow: 0 0.45rem 1.25rem rgba(0, 0, 0, 0.08);
   }
 
@@ -194,6 +210,44 @@ nav_order: 2
     overflow: hidden;
     background: var(--global-bg-color);
     border-bottom: 1px solid var(--global-divider-color);
+  }
+
+  .projects .project-overview-placeholder,
+  .projects .project-detail-placeholder {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    padding: 1rem;
+    color: var(--global-text-color);
+    background:
+      linear-gradient(135deg, rgba(47, 80, 104, 0.14), rgba(47, 80, 104, 0.04)),
+      var(--global-bg-color);
+    text-align: center;
+  }
+
+  .projects .project-detail-placeholder {
+    height: 320px;
+    border-top: 1px solid var(--global-divider-color);
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+
+  .projects .project-overview-placeholder i,
+  .projects .project-detail-placeholder i {
+    color: var(--global-theme-color);
+    font-size: 1.6rem;
+  }
+
+  .projects .project-overview-placeholder span,
+  .projects .project-detail-placeholder span {
+    max-width: 18rem;
+    color: var(--global-text-color);
+    font-size: 0.9rem;
+    line-height: 1.35;
+    font-weight: 700;
   }
 
   .projects .project-overview-image {
@@ -214,7 +268,7 @@ nav_order: 2
     display: inline-flex;
     align-items: center;
     margin-bottom: 0.45rem;
-    color: var(--global-theme-color);
+    color: var(--project-accent);
     font-size: 0.76rem;
     line-height: 1.25;
     font-weight: 700;
@@ -241,7 +295,8 @@ nav_order: 2
     display: flex;
     flex-wrap: wrap;
     gap: 0.35rem;
-    margin-top: auto;
+    margin-top: 0;
+    margin-bottom: 0.9rem;
   }
 
   .projects .project-overview-tag {
@@ -258,9 +313,9 @@ nav_order: 2
 
   .projects .project-overview-link {
     align-self: flex-start;
-    margin-top: 0.9rem;
+    margin-top: auto;
     padding: 0.34rem 0.62rem;
-    color: var(--global-theme-color);
+    color: var(--project-accent);
     background: var(--global-bg-color);
     border: 1px solid var(--global-divider-color);
     border-radius: 999px;
@@ -270,7 +325,7 @@ nav_order: 2
   }
 
   .projects .project-overview-link:hover {
-    color: var(--global-theme-color);
+    color: var(--project-accent);
     text-decoration: none;
   }
 
@@ -287,11 +342,25 @@ nav_order: 2
   html:not([data-theme="dark"]) .projects .project-overview-card {
     background: #fafafa;
     border-color: #dedede;
+    border-top-color: #2f5068;
   }
 
   html:not([data-theme="dark"]) .projects .project-overview-image-wrap {
     background: #f1f1f1;
     border-color: #dedede;
+  }
+
+  html:not([data-theme="dark"]) .projects .project-overview-placeholder,
+  html:not([data-theme="dark"]) .projects .project-detail-placeholder {
+    color: #333333;
+    background:
+      linear-gradient(135deg, rgba(47, 80, 104, 0.12), rgba(47, 80, 104, 0.035)),
+      #f5f7f8;
+  }
+
+  html:not([data-theme="dark"]) .projects .project-overview-placeholder span,
+  html:not([data-theme="dark"]) .projects .project-detail-placeholder span {
+    color: #333333;
   }
 
   html:not([data-theme="dark"]) .projects .project-overview-label,
@@ -396,7 +465,7 @@ nav_order: 2
         </div>
         <div class="project-overview-content">
           <span class="project-overview-label">Clinical Human Factors</span>
-          <h3>Clinician Stress, Workload &amp; Well-being</h3>
+          <h3>Clinician Stress, Workload &amp; Well-Being</h3>
           <p>
             Applied human factors, wearable sensing, surveys, and statistical modeling to study clinician stress, workload,
             well-being, and clinical work systems.
@@ -441,12 +510,10 @@ nav_order: 2
 
       <article class="project-overview-card">
         <div class="project-overview-image-wrap">
-          <img
-            class="project-overview-image"
-            src="{{ '/assets/img/projects/vascular-access/usgva-simulation-procedure.png' | relative_url }}"
-            alt="Healthcare systems workflow and vascular access simulation"
-            onerror="this.style.display='none';"
-          >
+          <div class="project-overview-placeholder" role="img" aria-label="Patient access, live chat, and appointment compliance graphic">
+            <i class="fa-solid fa-comments" aria-hidden="true"></i>
+            <span>Patient Access / Live Chat / Appointment Compliance</span>
+          </div>
         </div>
         <div class="project-overview-content">
           <span class="project-overview-label">Healthcare Operations</span>
@@ -707,12 +774,10 @@ nav_order: 2
       <div class="project-category"><i class="fa-solid fa-comments" aria-hidden="true"></i> Healthcare Operations / Patient Access</div>
       <h5 class="card-title">Outpatient Appointment Compliance and Live Chat Communication</h5>
     </div>
-    <img
-      class="card-img-top"
-      style="height: 320px; object-fit: cover; object-position: center;"
-      src="{{ '/assets/img/projects/vascular-access/usgva-simulation-procedure.png' | relative_url }}"
-      alt="Healthcare systems workflow and clinical process improvement"
-    >
+    <div class="project-detail-placeholder" role="img" aria-label="Patient access, live chat, and appointment compliance graphic">
+      <i class="fa-solid fa-comments" aria-hidden="true"></i>
+      <span>Patient Access / Live Chat / Appointment Compliance</span>
+    </div>
     <div class="card-body">
       <p class="card-text">
         This healthcare systems project evaluates how a multi-modal patient communication system, including live chat and

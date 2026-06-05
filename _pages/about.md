@@ -83,11 +83,18 @@ social: true
     line-height: 1.6;
   }
 
+  .home-page .journey-section {
+    padding: 1.35rem 0 1.55rem;
+    border-top: 1px solid var(--global-divider-color);
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+
   .home-page .journey-grid {
     position: relative;
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.15rem 1.35rem;
+    margin-top: 1.4rem;
   }
 
   .home-page .journey-card {
@@ -111,10 +118,8 @@ social: true
     box-shadow: 0 0.45rem 1.25rem rgba(0, 0, 0, 0.08);
   }
 
-  .home-page .journey-card:not(:last-child)::after {
+  .home-page .journey-card::after {
     position: absolute;
-    top: 5.2rem;
-    right: -0.75rem;
     z-index: 2;
     width: 0.9rem;
     height: 0.9rem;
@@ -127,6 +132,22 @@ social: true
     font-weight: 900;
     line-height: 0.84rem;
     text-align: center;
+  }
+
+  .home-page .journey-card:nth-child(1)::after,
+  .home-page .journey-card:nth-child(3)::after {
+    top: 5.2rem;
+    right: -1.12rem;
+  }
+
+  .home-page .journey-card:nth-child(2)::after {
+    right: 50%;
+    bottom: -1.04rem;
+    transform: translateX(50%) rotate(90deg);
+  }
+
+  .home-page .journey-card:nth-child(4)::after {
+    display: none;
   }
 
   .home-page .journey-image-wrap {
@@ -159,6 +180,21 @@ social: true
     color: var(--global-text-color-light);
     font-size: 0.78rem;
     line-height: 1.35;
+  }
+
+  .home-page .journey-years {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.55rem;
+    padding: 0.22rem 0.48rem;
+    color: var(--global-theme-color);
+    background: var(--global-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 999px;
+    font-size: 0.76rem;
+    line-height: 1.25;
+    font-weight: 700;
   }
 
   .home-page .journey-theme {
@@ -435,6 +471,7 @@ social: true
   }
 
   html:not([data-theme="dark"]) .home-page .journey-tag,
+  html:not([data-theme="dark"]) .home-page .journey-years,
   html:not([data-theme="dark"]) .home-page .journey-link,
   html:not([data-theme="dark"]) .home-page .method-tag {
     background: #ffffff;
@@ -442,6 +479,7 @@ social: true
   }
 
   html:not([data-theme="dark"]) .home-page .journey-link,
+  html:not([data-theme="dark"]) .home-page .journey-years,
   html:not([data-theme="dark"]) .home-page .journey-theme {
     color: #2f5068;
   }
@@ -461,7 +499,9 @@ social: true
       grid-template-columns: 1fr;
     }
 
-    .home-page .journey-card:not(:last-child)::after {
+    .home-page .journey-card:nth-child(1)::after,
+    .home-page .journey-card:nth-child(2)::after,
+    .home-page .journey-card:nth-child(3)::after {
       top: auto;
       right: 50%;
       bottom: -0.72rem;
@@ -498,7 +538,7 @@ social: true
     </p>
   </section>
 
-  <section class="home-section">
+  <section class="home-section journey-section">
     <h2>Experience Across High-Stakes Human Systems</h2>
     <p class="home-section-kicker">
       From transportation human factors in Springfield, MA to clinical outcomes research in Houston, TX, engineering education
@@ -523,6 +563,7 @@ social: true
         </div>
         <div class="journey-content">
           <h3>ATRANS Lab</h3>
+          <span class="journey-years">2015&ndash;2020</span>
           <div class="journey-meta">
             <span>Springfield, MA</span>
             <span aria-hidden="true">&middot;</span>
@@ -560,6 +601,7 @@ social: true
         </div>
         <div class="journey-content">
           <h3>Houston Methodist | Center for Outcomes Research</h3>
+          <span class="journey-years">2020&ndash;2022</span>
           <div class="journey-meta">
             <span>Houston, TX</span>
             <span aria-hidden="true">&middot;</span>
@@ -598,6 +640,7 @@ social: true
         </div>
         <div class="journey-content">
           <h3>Rensselaer Polytechnic Institute</h3>
+          <span class="journey-years">2022&ndash;Present</span>
           <div class="journey-meta">
             <span>Troy, NY</span>
             <span aria-hidden="true">&middot;</span>
@@ -628,6 +671,7 @@ social: true
         </div>
         <div class="journey-content">
           <h3>Albany Medical Center</h3>
+          <span class="journey-years">2023&ndash;Present</span>
           <div class="journey-meta">
             <span>Albany, NY</span>
             <span aria-hidden="true">&middot;</span>

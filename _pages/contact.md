@@ -35,6 +35,7 @@ nav_order: 6
     color: var(--global-text-color);
     background: var(--global-card-bg-color);
     border: 1px solid var(--global-divider-color);
+    border-top: 3px solid var(--global-theme-color);
     border-radius: 8px;
     transition:
       transform 160ms ease,
