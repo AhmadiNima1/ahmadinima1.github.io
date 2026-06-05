@@ -140,10 +140,360 @@ nav_order: 2
   html:not([data-theme="dark"]) .projects .project-subsection .card-text {
     color: #333333 !important;
   }
+
+  .projects .project-overview {
+    margin-bottom: 2rem;
+  }
+
+  .projects .project-overview h2 {
+    margin-bottom: 0.45rem;
+    color: var(--global-text-color);
+    font-size: 1.45rem;
+    line-height: 1.3;
+    font-weight: 700;
+  }
+
+  .projects .project-overview-intro {
+    max-width: 860px;
+    margin-bottom: 1.25rem;
+    color: var(--global-text-color);
+    font-size: 0.98rem;
+    line-height: 1.65;
+  }
+
+  .projects .project-overview-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .projects .project-overview-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: 100%;
+    overflow: hidden;
+    color: var(--global-text-color);
+    background: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+    transition:
+      transform 160ms ease,
+      border-color 160ms ease,
+      box-shadow 160ms ease;
+  }
+
+  .projects .project-overview-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--global-theme-color);
+    box-shadow: 0 0.45rem 1.25rem rgba(0, 0, 0, 0.08);
+  }
+
+  .projects .project-overview-image-wrap {
+    height: 10.5rem;
+    overflow: hidden;
+    background: var(--global-bg-color);
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+
+  .projects .project-overview-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .projects .project-overview-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .projects .project-overview-label {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 0.45rem;
+    color: var(--global-theme-color);
+    font-size: 0.76rem;
+    line-height: 1.25;
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+    text-transform: uppercase;
+  }
+
+  .projects .project-overview-card h3 {
+    margin-bottom: 0.55rem;
+    color: var(--global-text-color);
+    font-size: 1rem;
+    line-height: 1.35;
+    font-weight: 700;
+  }
+
+  .projects .project-overview-card p {
+    margin-bottom: 0.85rem;
+    color: var(--global-text-color);
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
+  .projects .project-overview-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-top: auto;
+  }
+
+  .projects .project-overview-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.22rem 0.48rem;
+    color: var(--global-text-color);
+    background: var(--global-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 999px;
+    font-size: 0.76rem;
+    line-height: 1.25;
+  }
+
+  .projects .project-overview-link {
+    align-self: flex-start;
+    margin-top: 0.9rem;
+    padding: 0.34rem 0.62rem;
+    color: var(--global-theme-color);
+    background: var(--global-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 999px;
+    font-size: 0.8rem;
+    line-height: 1.25;
+    font-weight: 600;
+  }
+
+  .projects .project-overview-link:hover {
+    color: var(--global-theme-color);
+    text-decoration: none;
+  }
+
+  html:not([data-theme="dark"]) .projects .project-overview,
+  html:not([data-theme="dark"]) .projects .project-overview h2,
+  html:not([data-theme="dark"]) .projects .project-overview-intro,
+  html:not([data-theme="dark"]) .projects .project-overview-card,
+  html:not([data-theme="dark"]) .projects .project-overview-card h3,
+  html:not([data-theme="dark"]) .projects .project-overview-card p,
+  html:not([data-theme="dark"]) .projects .project-overview-tag {
+    color: #333333 !important;
+  }
+
+  html:not([data-theme="dark"]) .projects .project-overview-card {
+    background: #fafafa;
+    border-color: #dedede;
+  }
+
+  html:not([data-theme="dark"]) .projects .project-overview-image-wrap {
+    background: #f1f1f1;
+    border-color: #dedede;
+  }
+
+  html:not([data-theme="dark"]) .projects .project-overview-label,
+  html:not([data-theme="dark"]) .projects .project-overview-link {
+    color: #2f5068 !important;
+  }
+
+  html:not([data-theme="dark"]) .projects .project-overview-tag,
+  html:not([data-theme="dark"]) .projects .project-overview-link {
+    background: #ffffff;
+    border-color: #d8d8d8;
+  }
+
+  @media (max-width: 1000px) {
+    .projects .project-overview-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 680px) {
+    .projects .project-overview-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .projects .project-overview-image-wrap {
+      height: 11rem;
+    }
+  }
 </style>
 
 <div class="projects">
-  <div class="card mt-3">
+  <section class="project-overview" id="selected-projects">
+    <h2>Selected Projects</h2>
+    <p class="project-overview-intro">
+      Applied human factors, healthcare systems, simulation, usability, and performance research across transportation,
+      aviation, clinical, and educational settings.
+    </p>
+
+    <div class="project-overview-grid">
+      <article class="project-overview-card">
+        <div class="project-overview-image-wrap">
+          <img
+            class="project-overview-image"
+            src="{{ '/assets/img/projects/driving/driving-simulator.png' | relative_url }}"
+            alt="Driving simulator used for novice teen driver hazard anticipation assessment"
+            onerror="this.style.display='none';"
+          >
+        </div>
+        <div class="project-overview-content">
+          <span class="project-overview-label">Driving Safety / Human Performance</span>
+          <h3>Tablet-Based Hazard Anticipation Training for Novice Teen Drivers</h3>
+          <p>
+            Studied teen driver training and hazard anticipation using driving simulation, eye tracking, and performance-based
+            assessment to evaluate situation awareness and transfer of training.
+          </p>
+          <div class="project-overview-tags" aria-label="Methods">
+            <span class="project-overview-tag">Driving Simulation</span>
+            <span class="project-overview-tag">Teen Driver Training</span>
+            <span class="project-overview-tag">Eye Tracking</span>
+            <span class="project-overview-tag">Situation Awareness</span>
+            <span class="project-overview-tag">Training Evaluation</span>
+          </div>
+          <a class="project-overview-link" href="#driving-safety">View Project</a>
+        </div>
+      </article>
+
+      <article class="project-overview-card">
+        <div class="project-overview-image-wrap">
+          <img
+            class="project-overview-image"
+            src="{{ '/assets/img/projects/aviation/flight-simulator.jpg' | relative_url }}"
+            alt="Flight simulator cockpit used for general aviation pilot training research"
+            onerror="this.style.display='none';"
+          >
+        </div>
+        <div class="project-overview-content">
+          <span class="project-overview-label">Aviation Human Factors</span>
+          <h3>Gaze-Based Training for General Aviation Pilots</h3>
+          <p>
+            Evaluated pilot attention, scan patterns, workload, and performance in simulator-based aviation studies using eye
+            tracking and human performance analytics.
+          </p>
+          <div class="project-overview-tags" aria-label="Methods">
+            <span class="project-overview-tag">Aviation HF</span>
+            <span class="project-overview-tag">Flight Simulation</span>
+            <span class="project-overview-tag">Eye Tracking</span>
+            <span class="project-overview-tag">Workload</span>
+            <span class="project-overview-tag">Human Performance</span>
+          </div>
+          <a class="project-overview-link" href="#aviation-human-factors">View Project</a>
+        </div>
+      </article>
+
+      <article class="project-overview-card">
+        <div class="project-overview-image-wrap">
+          <img
+            class="project-overview-image"
+            src="{{ '/assets/img/projects/houston_methodist/HMH.jpg' | relative_url }}"
+            alt="Houston Methodist facility"
+            onerror="this.style.display='none';"
+          >
+        </div>
+        <div class="project-overview-content">
+          <span class="project-overview-label">Clinical Human Factors</span>
+          <h3>Clinician Stress, Workload &amp; Well-being</h3>
+          <p>
+            Applied human factors, wearable sensing, surveys, and statistical modeling to study clinician stress, workload,
+            well-being, and clinical work systems.
+          </p>
+          <div class="project-overview-tags" aria-label="Methods">
+            <span class="project-overview-tag">Clinical HF</span>
+            <span class="project-overview-tag">Wearables</span>
+            <span class="project-overview-tag">Workload</span>
+            <span class="project-overview-tag">Stress</span>
+            <span class="project-overview-tag">Mixed-Effects Modeling</span>
+          </div>
+          <a class="project-overview-link" href="#clinician-stress-workload">View Project</a>
+        </div>
+      </article>
+
+      <article class="project-overview-card">
+        <div class="project-overview-image-wrap">
+          <img
+            class="project-overview-image"
+            src="{{ '/assets/img/projects/vascular-access/usgva-simulation-procedure.png' | relative_url }}"
+            alt="Simulation-based ultrasound-guided vascular access procedure"
+            onerror="this.style.display='none';"
+          >
+        </div>
+        <div class="project-overview-content">
+          <span class="project-overview-label">Healthcare Systems</span>
+          <h3>Emergency Department Vascular Access Workflow</h3>
+          <p>
+            Used task analysis, clinical observation, simulation, and workflow methods to study emergency department vascular
+            access, provider performance, and process improvement.
+          </p>
+          <div class="project-overview-tags" aria-label="Methods">
+            <span class="project-overview-tag">Healthcare Systems</span>
+            <span class="project-overview-tag">ED Workflow</span>
+            <span class="project-overview-tag">Task Analysis</span>
+            <span class="project-overview-tag">HTA</span>
+            <span class="project-overview-tag">Patient Safety</span>
+          </div>
+          <a class="project-overview-link" href="#vascular-access-workflow">View Project</a>
+        </div>
+      </article>
+
+      <article class="project-overview-card">
+        <div class="project-overview-image-wrap">
+          <img
+            class="project-overview-image"
+            src="{{ '/assets/img/projects/vascular-access/usgva-simulation-procedure.png' | relative_url }}"
+            alt="Healthcare systems workflow and vascular access simulation"
+            onerror="this.style.display='none';"
+          >
+        </div>
+        <div class="project-overview-content">
+          <span class="project-overview-label">Healthcare Operations</span>
+          <h3>Outpatient Appointment Compliance &amp; Live Chat Intervention</h3>
+          <p>
+            Analyzed large-scale outpatient appointment data to evaluate live chat/text-based communication and its association
+            with attendance and no-show patterns.
+          </p>
+          <div class="project-overview-tags" aria-label="Methods">
+            <span class="project-overview-tag">Healthcare Operations</span>
+            <span class="project-overview-tag">Interrupted Time Series</span>
+            <span class="project-overview-tag">Patient Access</span>
+            <span class="project-overview-tag">Data Analysis</span>
+            <span class="project-overview-tag">Process Improvement</span>
+          </div>
+          <a class="project-overview-link" href="#outpatient-compliance-live-chat">View Project</a>
+        </div>
+      </article>
+
+      <article class="project-overview-card">
+        <div class="project-overview-image-wrap">
+          <img
+            class="project-overview-image"
+            src="{{ '/assets/img/projects/su2c/patient-navigation-app.png' | relative_url }}"
+            alt="Digital patient navigation app for breast cancer care"
+            onerror="this.style.display='none';"
+          >
+        </div>
+        <div class="project-overview-content">
+          <span class="project-overview-label">Digital Health / Usability</span>
+          <h3>SU2C Mobile App Usability &amp; Patient Engagement</h3>
+          <p>Evaluated usability, patient-facing digital health design, and engagement considerations for mobile health technology.</p>
+          <div class="project-overview-tags" aria-label="Methods">
+            <span class="project-overview-tag">Digital Health</span>
+            <span class="project-overview-tag">UX/UI</span>
+            <span class="project-overview-tag">Usability</span>
+            <span class="project-overview-tag">Patient Engagement</span>
+            <span class="project-overview-tag">Mobile Health</span>
+          </div>
+          <a class="project-overview-link" href="#digital-health-usability">View Project</a>
+        </div>
+      </article>
+    </div>
+
+  </section>
+
+  <div class="card mt-3" id="driving-safety">
     <div class="card-body project-header">
       <div class="project-category"><i class="fa-solid fa-car-side" aria-hidden="true"></i> Driving Safety / Human Performance</div>
       <h5 class="card-title">Tablet-Based Hazard Anticipation Training for Novice Teen Drivers</h5>
@@ -190,7 +540,7 @@ nav_order: 2
     </div>
   </div>
 
-  <div class="card mt-3">
+  <div class="card mt-3" id="aviation-human-factors">
     <div class="card-body project-header">
       <div class="project-category"><i class="fa-solid fa-plane-up" aria-hidden="true"></i> Aviation Training / Human Performance</div>
       <h5 class="card-title">Gaze-Based Training for General Aviation Pilots in VFR-into-IMC Transitions</h5>
@@ -268,7 +618,7 @@ nav_order: 2
     </div>
   </div>
 
-  <div class="card mt-3">
+  <div class="card mt-3" id="clinician-stress-workload">
     <div class="card-body project-header">
       <div class="project-category"><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i> Healthcare Human Factors / Clinical Workflow</div>
       <h5 class="card-title">Naturalistic Stress and Workload Monitoring in ICU Nurses</h5>
@@ -307,7 +657,7 @@ nav_order: 2
     </div>
   </div>
 
-  <div class="card mt-3">
+  <div class="card mt-3" id="digital-health-usability">
     <div class="card-body project-header">
       <div class="project-category"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i> Digital Health UX/UI / Patient Engagement</div>
       <h5 class="card-title">User-Centered Design of a Digital Patient Navigation Tool for Breast Cancer Care</h5>
@@ -328,7 +678,7 @@ nav_order: 2
     </div>
   </div>
 
-  <div class="card mt-3">
+  <div class="card mt-3" id="vascular-access-workflow">
     <div class="card-body project-header">
       <div class="project-category"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i> Healthcare Human Factors / Clinical Workflow</div>
       <h5 class="card-title">Hierarchical Task Analysis of Ultrasound-Guided Vascular Access Procedures</h5>
@@ -348,6 +698,31 @@ nav_order: 2
       </p>
       <p class="card-text">
         <strong>Procedures/devices:</strong> Peripheral IV placement; single-lumen midline catheter placement; dual-lumen midline catheter placement; triple-lumen central venous catheter placement.
+      </p>
+    </div>
+  </div>
+
+  <div class="card mt-3" id="outpatient-compliance-live-chat">
+    <div class="card-body project-header">
+      <div class="project-category"><i class="fa-solid fa-comments" aria-hidden="true"></i> Healthcare Operations / Patient Access</div>
+      <h5 class="card-title">Outpatient Appointment Compliance and Live Chat Communication</h5>
+    </div>
+    <img
+      class="card-img-top"
+      style="height: 320px; object-fit: cover; object-position: center;"
+      src="{{ '/assets/img/projects/vascular-access/usgva-simulation-procedure.png' | relative_url }}"
+      alt="Healthcare systems workflow and clinical process improvement"
+    >
+    <div class="card-body">
+      <p class="card-text">
+        This healthcare systems project evaluates how a multi-modal patient communication system, including live chat and
+        text-based reminders, was associated with outpatient appointment attendance, cancellations, rescheduling, and no-show
+        patterns in a large healthcare setting. The work connects patient access, digital communication workflows, and operational
+        analytics to understand opportunities for improving appointment compliance.
+      </p>
+      <p class="card-text">
+        <strong>Methods and skills:</strong> Healthcare operations, outpatient appointment data, live chat intervention, text
+        reminders, patient access, interrupted time series, quasi-experimental evaluation, data analysis, process improvement.
       </p>
     </div>
   </div>
