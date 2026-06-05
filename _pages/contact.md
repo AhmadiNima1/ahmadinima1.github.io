@@ -24,6 +24,7 @@ nav_order: 6
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1rem;
+    align-items: stretch;
   }
 
   .contact-page .contact-card {
@@ -31,6 +32,7 @@ nav_order: 6
     flex-direction: column;
     gap: 0.85rem;
     height: 100%;
+    min-height: 15.5rem;
     padding: 1.15rem;
     color: var(--global-text-color);
     background: var(--global-card-bg-color);
@@ -130,6 +132,7 @@ nav_order: 6
   html:not([data-theme="dark"]) .contact-page .contact-card {
     background: #fafafa;
     border-color: #dedede;
+    border-top-color: #2f5068;
   }
 
   html:not([data-theme="dark"]) .contact-page .contact-card:hover {

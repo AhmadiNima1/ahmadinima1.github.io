@@ -19,7 +19,7 @@ social: true
 ---
 
 <style>
-  .post-header:has(+ article .home-page) {
+  .post-header {
     display: none;
   }
 
@@ -675,6 +675,7 @@ social: true
         <div class="journey-content">
           <h3>Rensselaer Polytechnic Institute</h3>
           <div class="journey-affiliation" aria-label="Department">
+            <span>Rensselaer Polytechnic Institute</span>
             <span>Department of Industrial and Systems Engineering</span>
           </div>
           <span class="journey-years">2022&ndash;Present</span>

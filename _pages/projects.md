@@ -397,7 +397,6 @@ nav_order: 2
 
 <div class="projects">
   <section class="project-overview" id="selected-projects">
-    <h2>Selected Projects</h2>
     <p class="project-overview-intro">
       Applied human factors, healthcare systems, simulation, usability, and performance research across transportation,
       aviation, clinical, and educational settings.
