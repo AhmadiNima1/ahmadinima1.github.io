@@ -173,9 +173,8 @@ social: true
   }
 
   .home-page .journey-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.35rem;
+    display: grid;
+    gap: 0.18rem;
     margin-bottom: 0.55rem;
     color: var(--global-text-color-light);
     font-size: 0.78rem;
@@ -199,6 +198,11 @@ social: true
 
   .home-page .journey-theme {
     color: var(--global-theme-color);
+    font-weight: 700;
+  }
+
+  .home-page .journey-focus-label {
+    color: var(--global-text-color);
     font-weight: 700;
   }
 
@@ -587,9 +591,11 @@ social: true
           </div>
           <span class="journey-years">2015&ndash;2020</span>
           <div class="journey-meta">
-            <span>Springfield, MA</span>
-            <span aria-hidden="true">&middot;</span>
-            <span class="journey-theme">Transportation Human Factors</span>
+            <div class="journey-location">Springfield, MA</div>
+            <div class="journey-focus">
+              <span class="journey-focus-label">Focus:</span>
+              <span class="journey-theme">Transportation Human Factors</span>
+            </div>
           </div>
           <p>
             My human factors work began at the Center for Advanced Training Research and Naturalistic Studies (ATRANS) at Western
@@ -629,9 +635,11 @@ social: true
           </div>
           <span class="journey-years">2020&ndash;2022</span>
           <div class="journey-meta">
-            <span>Houston, TX</span>
-            <span aria-hidden="true">&middot;</span>
-            <span class="journey-theme">Clinical Human Factors &amp; Health Systems Research</span>
+            <div class="journey-location">Houston, TX</div>
+            <div class="journey-focus">
+              <span class="journey-focus-label">Focus:</span>
+              <span class="journey-theme">Clinical Human Factors &amp; Health Systems Research</span>
+            </div>
           </div>
           <p>
             I then moved to Houston, Texas, where I worked as a postdoctoral researcher with Dr. Farzan Sasangohar at Houston
@@ -671,9 +679,11 @@ social: true
           </div>
           <span class="journey-years">2022&ndash;Present</span>
           <div class="journey-meta">
-            <span>Troy, NY</span>
-            <span aria-hidden="true">&middot;</span>
-            <span class="journey-theme">Teaching, Research &amp; Engineering Education</span>
+            <div class="journey-location">Troy, NY</div>
+            <div class="journey-focus">
+              <span class="journey-focus-label">Focus:</span>
+              <span class="journey-theme">Teaching, Research &amp; Engineering Education</span>
+            </div>
           </div>
           <p>
             At RPI, I continued this work through teaching, mentoring, and applied research in human factors, simulation, design
@@ -702,9 +712,11 @@ social: true
           <h3>Albany Medical Center</h3>
           <span class="journey-years">2023&ndash;Present Collaboration</span>
           <div class="journey-meta">
-            <span>Albany, NY</span>
-            <span aria-hidden="true">&middot;</span>
-            <span class="journey-theme">Healthcare Systems &amp; Clinical Workflow Improvement</span>
+            <div class="journey-location">Albany, NY</div>
+            <div class="journey-focus">
+              <span class="journey-focus-label">Focus:</span>
+              <span class="journey-theme">Healthcare Systems &amp; Clinical Workflow Improvement</span>
+            </div>
           </div>
           <p>
             Through collaborations with Albany Medical Center, I worked on healthcare systems research focused on emergency
