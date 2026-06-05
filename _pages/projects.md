@@ -87,6 +87,10 @@ nav_order: 2
     border-radius: 8px;
   }
 
+  html[data-theme="light"] .projects > .card {
+    border-left-color: #2f5068;
+  }
+
   .projects > .card .card-img-top {
     border-top: 1px solid var(--global-divider-color);
     border-bottom: 1px solid var(--global-divider-color);
