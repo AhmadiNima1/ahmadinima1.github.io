@@ -226,6 +226,67 @@ social: true
 
   .home-page .what-i-do-grid .home-card {
     grid-column: span 2;
+    position: relative;
+    overflow: hidden;
+    --home-card-accent: var(--global-theme-color);
+    --home-card-tint: transparent;
+    --home-card-badge-bg: var(--global-bg-color);
+    --home-card-badge-border: var(--global-divider-color);
+    border-top: 3px solid var(--home-card-accent);
+    background:
+      linear-gradient(180deg, var(--home-card-tint) 0, transparent 4.75rem),
+      var(--global-card-bg-color);
+    transition:
+      transform 160ms ease,
+      border-color 160ms ease,
+      box-shadow 160ms ease;
+  }
+
+  .home-page .what-i-do-grid .home-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.45rem 1.25rem rgba(0, 0, 0, 0.08);
+  }
+
+  .home-page .what-i-do-grid .home-card:nth-child(1) {
+    --home-card-accent: #2f7d87;
+    --home-card-tint: rgba(47, 125, 135, 0.08);
+    --home-card-badge-bg: rgba(47, 125, 135, 0.1);
+    --home-card-badge-border: rgba(47, 125, 135, 0.28);
+  }
+
+  .home-page .what-i-do-grid .home-card:nth-child(2) {
+    --home-card-accent: #8b5f8e;
+    --home-card-tint: rgba(139, 95, 142, 0.08);
+    --home-card-badge-bg: rgba(139, 95, 142, 0.1);
+    --home-card-badge-border: rgba(139, 95, 142, 0.28);
+  }
+
+  .home-page .what-i-do-grid .home-card:nth-child(3) {
+    --home-card-accent: #4f8461;
+    --home-card-tint: rgba(79, 132, 97, 0.08);
+    --home-card-badge-bg: rgba(79, 132, 97, 0.1);
+    --home-card-badge-border: rgba(79, 132, 97, 0.28);
+  }
+
+  .home-page .what-i-do-grid .home-card:nth-child(4) {
+    --home-card-accent: #9a762d;
+    --home-card-tint: rgba(154, 118, 45, 0.08);
+    --home-card-badge-bg: rgba(154, 118, 45, 0.1);
+    --home-card-badge-border: rgba(154, 118, 45, 0.28);
+  }
+
+  .home-page .what-i-do-grid .home-card:nth-child(5) {
+    --home-card-accent: #526783;
+    --home-card-tint: rgba(82, 103, 131, 0.08);
+    --home-card-badge-bg: rgba(82, 103, 131, 0.1);
+    --home-card-badge-border: rgba(82, 103, 131, 0.28);
+  }
+
+  .home-page .what-i-do-grid .home-card .home-card-number,
+  .home-page .what-i-do-grid .home-card .home-card-icon {
+    color: var(--home-card-accent);
+    background: var(--home-card-badge-bg);
+    border-color: var(--home-card-badge-border);
   }
 
   .home-page .home-card {
@@ -334,10 +395,17 @@ social: true
     color: #4a4a4a;
   }
 
-  html:not([data-theme="dark"]) .home-page .home-card,
   html:not([data-theme="dark"]) .home-page .journey-card {
     background: #fafafa;
     border-color: #dedede;
+  }
+
+  html:not([data-theme="dark"]) .home-page .home-card {
+    border-color: #dedede;
+  }
+
+  html:not([data-theme="dark"]) .home-page .what-i-do-grid .home-card {
+    border-top-color: var(--home-card-accent);
   }
 
   html:not([data-theme="dark"]) .home-page .journey-card:hover {
@@ -350,15 +418,20 @@ social: true
   }
 
   html:not([data-theme="dark"]) .home-page .home-card-number {
-    color: #333333;
     background: #ffffff;
     border-color: #d6d6d6;
   }
 
   html:not([data-theme="dark"]) .home-page .home-card-icon {
-    color: #3f5870;
     background: #ffffff;
     border-color: #d6d6d6;
+  }
+
+  html:not([data-theme="dark"]) .home-page .what-i-do-grid .home-card .home-card-number,
+  html:not([data-theme="dark"]) .home-page .what-i-do-grid .home-card .home-card-icon {
+    color: var(--home-card-accent);
+    background: var(--home-card-badge-bg);
+    border-color: var(--home-card-badge-border);
   }
 
   html:not([data-theme="dark"]) .home-page .journey-tag,
