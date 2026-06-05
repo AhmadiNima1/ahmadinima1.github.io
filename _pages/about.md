@@ -102,6 +102,30 @@ social: true
     letter-spacing: 0;
   }
 
+  .home-page .home-card-top {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .home-page .home-card-top .home-card-number {
+    margin-bottom: 0;
+  }
+
+  .home-page .home-card-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    color: var(--global-theme-color);
+    background: var(--global-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 999px;
+    font-size: 0.85rem;
+  }
+
   .home-page .home-card h3 {
     margin-bottom: 0.7rem;
     color: var(--global-text-color);
@@ -161,6 +185,12 @@ social: true
     border-color: #d6d6d6;
   }
 
+  html:not([data-theme="dark"]) .home-page .home-card-icon {
+    color: #3f5870;
+    background: #ffffff;
+    border-color: #d6d6d6;
+  }
+
   html:not([data-theme="dark"]) .home-page .method-tag {
     background: #ffffff;
     border-color: #d8d8d8;
@@ -206,7 +236,10 @@ social: true
     <h2>What I Do</h2>
     <div class="what-i-do-grid">
       <article class="home-card">
-        <span class="home-card-number" aria-hidden="true">01</span>
+        <div class="home-card-top" aria-hidden="true">
+          <span class="home-card-number">01</span>
+          <span class="home-card-icon"><i class="fa-solid fa-flask"></i></span>
+        </div>
         <h3>Research Design &amp; Study Planning</h3>
         <p>
           Designing human-subject, simulation, naturalistic, and observational studies using quantitative, qualitative, and
@@ -224,7 +257,10 @@ social: true
       </article>
 
       <article class="home-card">
-        <span class="home-card-number" aria-hidden="true">02</span>
+        <div class="home-card-top" aria-hidden="true">
+          <span class="home-card-number">02</span>
+          <span class="home-card-icon"><i class="fa-solid fa-user-check"></i></span>
+        </div>
         <h3>Human Factors, UX/UI &amp; Usability Research</h3>
         <p>
           Evaluating user needs, workflows, interfaces, and task performance through usability testing, UX/UI research, task
@@ -241,7 +277,10 @@ social: true
       </article>
 
       <article class="home-card">
-        <span class="home-card-number" aria-hidden="true">03</span>
+        <div class="home-card-top" aria-hidden="true">
+          <span class="home-card-number">03</span>
+          <span class="home-card-icon"><i class="fa-solid fa-eye"></i></span>
+        </div>
         <h3>Human Behavior &amp; Performance Assessment</h3>
         <p>
           Assessing attention, workload, stress, decision-making, and performance using eye tracking, wearable sensors,
@@ -258,7 +297,10 @@ social: true
       </article>
 
       <article class="home-card">
-        <span class="home-card-number" aria-hidden="true">04</span>
+        <div class="home-card-top" aria-hidden="true">
+          <span class="home-card-number">04</span>
+          <span class="home-card-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+        </div>
         <h3>Training, Simulation &amp; Performance Support</h3>
         <p>
           Designing and evaluating simulation-based training, gaze-based training, feedback systems, instructional materials,
@@ -275,7 +317,10 @@ social: true
       </article>
 
       <article class="home-card">
-        <span class="home-card-number" aria-hidden="true">05</span>
+        <div class="home-card-top" aria-hidden="true">
+          <span class="home-card-number">05</span>
+          <span class="home-card-icon"><i class="fa-solid fa-brain"></i></span>
+        </div>
         <h3>Statistical Analysis, ML/DL &amp; Generative AI</h3>
         <p>
           Applying statistical analysis, machine learning, deep learning, generative AI, and wearable sensor data to model

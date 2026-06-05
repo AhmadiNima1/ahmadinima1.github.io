@@ -60,6 +60,32 @@ nav_order: 3
     line-height: 1.65;
   }
 
+  .publication-page .publication-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin: -0.15rem 0 0.95rem;
+  }
+
+  .publication-page .publication-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.28rem 0.58rem;
+    color: var(--global-theme-color);
+    background: var(--global-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 999px;
+    font-size: 0.82rem;
+    line-height: 1.25;
+    font-weight: 600;
+  }
+
+  .publication-page .publication-link:hover {
+    color: var(--global-theme-color);
+    text-decoration: none;
+  }
+
   .publication-page .publication-tags {
     display: flex;
     flex-wrap: wrap;
@@ -96,9 +122,14 @@ nav_order: 3
     color: #4a4a4a;
   }
 
-  html:not([data-theme="dark"]) .publication-page .publication-tag {
+  html:not([data-theme="dark"]) .publication-page .publication-tag,
+  html:not([data-theme="dark"]) .publication-page .publication-link {
     background: #ffffff;
     border-color: #d8d8d8;
+  }
+
+  html:not([data-theme="dark"]) .publication-page .publication-link {
+    color: #2f5068;
   }
 </style>
 
@@ -110,9 +141,9 @@ nav_order: 3
       <h3 class="publication-title">
         A multi-modal communication system incorporating live chat to improve outpatient appointment compliance in a large healthcare setting: a quasi-experimental study
       </h3>
-      <div class="publication-meta">Under review · International Journal for Quality in Health Care</div>
+      <div class="publication-meta">Under review &middot; International Journal for Quality in Health Care</div>
       <p class="publication-description">
-        Evaluates how live chat and related digital communication tools can support outpatient appointment compliance in a large healthcare system. The work contributes evidence on digital workflow interventions for reducing access and scheduling barriers.
+        Missed or delayed outpatient appointments create access, scheduling, and workflow challenges for large healthcare systems. This manuscript evaluates a multi-modal communication intervention incorporating live chat in a quasi-experimental outpatient setting. It contributes practical evidence on how patient-facing digital communication workflows can support appointment compliance and reduce barriers to care access.
       </p>
       <div class="publication-tags">
         <span class="publication-tag">healthcare</span>
@@ -126,9 +157,9 @@ nav_order: 3
       <h3 class="publication-title">
         Positive Psychological Interventions in Practice: Effects of a Mobile App on Emotional Experience and Mental Health in Healthcare Workers
       </h3>
-      <div class="publication-meta">Under review · IISE Transactions on Occupational Ergonomics and Human Factors</div>
+      <div class="publication-meta">Under review &middot; IISE Transactions on Occupational Ergonomics and Human Factors</div>
       <p class="publication-description">
-        Studies how a mobile intervention may support emotional experience and mental health among healthcare workers. The manuscript contributes applied evidence on digital well-being tools in occupational and healthcare settings.
+        Healthcare workers face sustained emotional and mental health demands in high-pressure clinical environments. This manuscript studies a mobile positive-psychology intervention and its effects on emotional experience and mental health in practice. It contributes applied evidence on evaluating lightweight digital well-being tools in occupational healthcare contexts.
       </p>
       <div class="publication-tags">
         <span class="publication-tag">healthcare</span>
@@ -140,9 +171,9 @@ nav_order: 3
 
     <article class="publication-card">
       <h3 class="publication-title">Multimodal Machine Learning Assessment of Instrument Monitoring Training and Vocal Stress in General Aviation Pilots</h3>
-      <div class="publication-meta">Under review · IEEE Transactions on Human-Machine Systems</div>
+      <div class="publication-meta">Under review &middot; IEEE Transactions on Human-Machine Systems</div>
       <p class="publication-description">
-        Uses multimodal data and machine learning to evaluate pilot training and vocal stress during aviation scenarios. The work links gaze behavior, flight performance, and stress-related signals to training assessment.
+        General aviation training needs objective ways to evaluate whether training changes behavior and stress responses during challenging flight scenarios. This manuscript uses synchronized gaze, flight-simulator, aircraft-state, and voice data with multimodal machine learning and vocal stress modeling. It contributes a framework for assessing transfer of training beyond visual scanning behavior alone.
       </p>
       <div class="publication-tags">
         <span class="publication-tag">aviation</span>
@@ -160,10 +191,13 @@ nav_order: 3
     <h3 class="publication-year">2025</h3>
     <article class="publication-card">
       <h3 class="publication-title">Comparison of Procedural Duration Among Ultrasound-Guided IVs, Mini-Midline Catheters, and Central Venous Catheters Inserted in the Emergency Department</h3>
-      <div class="publication-meta">The Journal of Vascular Access · 2025</div>
+      <div class="publication-meta">The Journal of Vascular Access &middot; 2025</div>
       <p class="publication-description">
-        Compares the duration of several ultrasound-guided vascular access procedures in the emergency department. The study supports understanding procedural efficiency and workflow demands across device types.
+        Patients with difficult IV access often require ultrasound-guided vascular access in emergency care, where procedure duration affects workflow, staffing, and patient flow. This prospective observational study used direct time-motion observations and chart review to compare ultrasound-guided peripheral IVs, mini-midline catheters, and central venous catheters inserted in a Level 1 trauma center ED. The work helps clarify efficiency and utilization differences across access options and supports workflow-aware vascular access planning.
       </p>
+      <div class="publication-links">
+        <a class="publication-link" href="https://doi.org/10.1177/11297298251395137" target="_blank" rel="noopener noreferrer">DOI</a>
+      </div>
       <div class="publication-tags">
         <span class="publication-tag">healthcare</span>
         <span class="publication-tag">vascular access</span>
@@ -175,10 +209,13 @@ nav_order: 3
     <h3 class="publication-year">2024</h3>
     <article class="publication-card">
       <h3 class="publication-title">Quantifying Workload and Stress in Intensive Care Unit Nurses: Preliminary Evaluation Using Continuous Eye-Tracking</h3>
-      <div class="publication-meta">Human Factors · 2024</div>
+      <div class="publication-meta">Human Factors &middot; 2024</div>
       <p class="publication-description">
-        Uses continuous eye-tracking data to quantify workload and stress among ICU nurses. The paper contributes methods for measuring clinician attention and workload in naturalistic healthcare environments.
+        ICU nursing work is cognitively demanding, but workload and stress are difficult to measure continuously during real clinical care. This Human Factors study uses continuous eye-tracking during 12-hour ICU nursing shifts to evaluate mental workload and stress in a naturalistic healthcare environment. It contributes objective measurement approaches for clinician workload assessment in complex care settings.
       </p>
+      <div class="publication-links">
+        <a class="publication-link" href="https://doi.org/10.1177/00187208221085335" target="_blank" rel="noopener noreferrer">DOI</a>
+      </div>
       <div class="publication-tags">
         <span class="publication-tag">healthcare</span>
         <span class="publication-tag">eye tracking</span>
@@ -190,10 +227,13 @@ nav_order: 3
     <h3 class="publication-year">2023</h3>
     <article class="publication-card">
       <h3 class="publication-title">Exploring Cognitive Stress-Related Tasks of Intensive Care Unit Nurses: A Comparison Study</h3>
-      <div class="publication-meta">Proceedings of the Human Factors and Ergonomics Society Annual Meeting · 2023</div>
+      <div class="publication-meta">Proceedings of the Human Factors and Ergonomics Society Annual Meeting &middot; 2023</div>
       <p class="publication-description">
-        Examines tasks associated with cognitive stress among ICU nurses and compares stress-related work demands. The study helps identify task conditions that may contribute to clinician workload.
+        ICU nurses perform many tasks that may differ in cognitive stress demands. This conference paper uses task analysis of stress-related nursing activities during full shifts to compare where cognitive demands may arise. It supports more targeted workload, staffing, and workflow interventions in clinical settings.
       </p>
+      <div class="publication-links">
+        <a class="publication-link" href="https://doi.org/10.1177/21695067231192711" target="_blank" rel="noopener noreferrer">DOI</a>
+      </div>
       <div class="publication-tags">
         <span class="publication-tag">healthcare</span>
         <span class="publication-tag">stress</span>
@@ -204,10 +244,13 @@ nav_order: 3
 
     <article class="publication-card">
       <h3 class="publication-title">AI-Powered Human Digital Twins in Virtual Therapeutic Sessions</h3>
-      <div class="publication-meta">Proceedings of the International Symposium on Human Factors and Ergonomics · 2023</div>
+      <div class="publication-meta">Proceedings of the International Symposium on Human Factors and Ergonomics &middot; 2023</div>
       <p class="publication-description">
-        Explores AI-powered human digital twins as a concept for virtual therapeutic interactions. The work contributes to emerging discussions around AI, simulation, and human-centered digital health systems.
+        Virtual therapeutic sessions can be limited when patients are hesitant to speak openly with clinicians. This paper explores AI-powered human digital twins for therapeutic interactions, using tools such as computer vision, 3D scanning, Metahumans, and Unreal Engine to create realistic patient and therapist representations. It contributes early thinking about how AI, simulation, and human-centered design may support digital health experiences.
       </p>
+      <div class="publication-links">
+        <a class="publication-link" href="https://doi.org/10.1177/2327857923121000" target="_blank" rel="noopener noreferrer">DOI</a>
+      </div>
       <div class="publication-tags">
         <span class="publication-tag">digital health</span>
         <span class="publication-tag">machine learning</span>
@@ -219,10 +262,13 @@ nav_order: 3
     <h3 class="publication-year">2022</h3>
     <article class="publication-card">
       <h3 class="publication-title">Real-Time Stress Monitoring for Intensive Care Unit (ICU) Nurses</h3>
-      <div class="publication-meta">Proceedings of the Human Factors and Ergonomics Society Annual Meeting · 2022</div>
+      <div class="publication-meta">Proceedings of the Human Factors and Ergonomics Society Annual Meeting &middot; 2022</div>
       <p class="publication-description">
-        Presents an approach for monitoring stress among ICU nurses in real time. The paper contributes to wearable and physiological sensing methods for understanding clinical work demands.
+        Real-time stress monitoring could help identify demanding moments in ICU nursing work, but clinical environments make continuous measurement difficult. This paper explores stress monitoring models for ICU nurses using physiological features collected in healthcare work. It contributes methods for connecting real-time signals with clinical workload and staff well-being.
       </p>
+      <div class="publication-links">
+        <a class="publication-link" href="https://doi.org/10.1177/1071181322661457" target="_blank" rel="noopener noreferrer">DOI</a>
+      </div>
       <div class="publication-tags">
         <span class="publication-tag">healthcare</span>
         <span class="publication-tag">stress</span>
@@ -233,10 +279,13 @@ nav_order: 3
 
     <article class="publication-card">
       <h3 class="publication-title">Improving the Tactical Scanning of Student Pilots: A Gaze-Based Training Intervention for Transition from Visual Flight into Instrument Meteorological Conditions</h3>
-      <div class="publication-meta">Applied Ergonomics · 2022</div>
+      <div class="publication-meta">Applied Ergonomics &middot; 2022</div>
       <p class="publication-description">
-        Evaluates a gaze-based training intervention designed to improve instrument scanning during challenging flight transitions. The study shows how eye tracking and simulation can support aviation training and safety.
+        Student pilots can struggle to shift from visual flight references to instrument scanning during inadvertent VFR-into-IMC conditions. This Applied Ergonomics study evaluates a gaze-based training intervention using flight simulation and eye-tracking data. It shows how human factors training and objective gaze measures can support aviation safety and skill transfer.
       </p>
+      <div class="publication-links">
+        <a class="publication-link" href="https://doi.org/10.1016/j.apergo.2021.103642" target="_blank" rel="noopener noreferrer">DOI</a>
+      </div>
       <div class="publication-tags">
         <span class="publication-tag">aviation</span>
         <span class="publication-tag">eye tracking</span>
@@ -247,10 +296,13 @@ nav_order: 3
 
     <article class="publication-card">
       <h3 class="publication-title">Quantifying Occupational Stress in Intensive Care Unit Nurses: An Applied Naturalistic Study of Correlations Among Stress, Heart Rate, Electrodermal Activity, and Skin Temperature</h3>
-      <div class="publication-meta">Human Factors · 2022</div>
+      <div class="publication-meta">Human Factors &middot; 2022</div>
       <p class="publication-description">
-        Studies occupational stress in ICU nurses using physiological measures collected in naturalistic clinical work. The paper contributes evidence on how wearable sensor signals relate to stress in healthcare environments.
+        ICU nurses face occupational stress that may be reflected in physiological signals during real shifts. This Human Factors study collects 12-hour naturalistic wearable data from 23 ICU nurses, including heart rate, electrodermal activity, and skin temperature, to examine relationships with stress. It contributes evidence on using wearable sensing to study clinician stress outside the laboratory.
       </p>
+      <div class="publication-links">
+        <a class="publication-link" href="https://doi.org/10.1177/00187208211040889" target="_blank" rel="noopener noreferrer">DOI</a>
+      </div>
       <div class="publication-tags">
         <span class="publication-tag">healthcare</span>
         <span class="publication-tag">wearable sensing</span>
@@ -262,9 +314,9 @@ nav_order: 3
     <h3 class="publication-year">2021</h3>
     <article class="publication-card">
       <h3 class="publication-title">Physiologic Stress and Critical Care Nursing: Complex Technology Use in the Intensive Care Unit</h3>
-      <div class="publication-meta">2021 Annual Research Meeting · 2021</div>
+      <div class="publication-meta">2021 Annual Research Meeting &middot; 2021</div>
       <p class="publication-description">
-        Examines physiological stress and technology use in critical care nursing. The work highlights the human factors challenges of complex clinical technology environments.
+        Critical care nurses work with complex technologies while managing high-acuity patient care. This research presentation focuses on physiological stress and technology use in the ICU, highlighting human factors concerns in technology-rich clinical environments. It helps frame stress measurement as part of understanding clinician interaction with complex systems.
       </p>
       <div class="publication-tags">
         <span class="publication-tag">healthcare</span>
@@ -277,10 +329,13 @@ nav_order: 3
     <h3 class="publication-year">2020</h3>
     <article class="publication-card">
       <h3 class="publication-title">Rapid Implementation and Innovative Applications of a Virtual Intensive Care Unit During the COVID-19 Pandemic: Case Study</h3>
-      <div class="publication-meta">Journal of Medical Internet Research · 2020</div>
+      <div class="publication-meta">Journal of Medical Internet Research &middot; 2020</div>
       <p class="publication-description">
-        Describes rapid implementation and use of a virtual ICU during the COVID-19 pandemic. The case study contributes lessons on tele-critical care, digital health, and healthcare system adaptation.
+        The COVID-19 pandemic required rapid expansion of remote critical care support. This JMIR case study describes the rapid implementation and innovative use of a virtual ICU during the pandemic. It contributes practical lessons on tele-critical care deployment, digital health adaptation, and maintaining critical care support under crisis conditions.
       </p>
+      <div class="publication-links">
+        <a class="publication-link" href="https://doi.org/10.2196/20143" target="_blank" rel="noopener noreferrer">DOI</a>
+      </div>
       <div class="publication-tags">
         <span class="publication-tag">healthcare</span>
         <span class="publication-tag">digital health</span>
@@ -291,10 +346,13 @@ nav_order: 3
 
     <article class="publication-card">
       <h3 class="publication-title">Use of Telecritical Care for Family Visitation to ICU During the COVID-19 Pandemic: An Interview Study and Sentiment Analysis</h3>
-      <div class="publication-meta">BMJ Quality &amp; Safety · 2020</div>
+      <div class="publication-meta">BMJ Quality &amp; Safety &middot; 2020</div>
       <p class="publication-description">
-        Investigates telecritical care as a way to support ICU family visitation during the COVID-19 pandemic. The study combines interviews and sentiment analysis to understand experiences with remote communication.
+        Family visitation restrictions during COVID-19 created communication and emotional challenges in intensive care. This BMJ Quality &amp; Safety study uses interviews and sentiment analysis to examine telecritical care for ICU family visitation. It contributes evidence on how remote communication technologies can support family connection and care experience during restricted access.
       </p>
+      <div class="publication-links">
+        <a class="publication-link" href="https://doi.org/10.1136/bmjqs-2020-011604" target="_blank" rel="noopener noreferrer">DOI</a>
+      </div>
       <div class="publication-tags">
         <span class="publication-tag">healthcare</span>
         <span class="publication-tag">digital health</span>
@@ -306,10 +364,13 @@ nav_order: 3
     <h3 class="publication-year">2019</h3>
     <article class="publication-card">
       <h3 class="publication-title">The Application of Clustering Analysis in the Assessment of Eye Movements During Flight Training Intervention</h3>
-      <div class="publication-meta">International Conference on Applied Human Factors and Ergonomics · 2019</div>
+      <div class="publication-meta">International Conference on Applied Human Factors and Ergonomics &middot; 2019</div>
       <p class="publication-description">
-        Applies clustering analysis to eye-movement data collected during flight training. The study contributes methods for interpreting gaze patterns and training effects in aviation contexts.
+        Eye-tracking data from flight training can be difficult to interpret because pilots scan many cockpit areas over time. This paper applies K-means clustering to pilots' gaze points collected during a flight training intervention. It contributes a faster analytic approach for classifying gaze behavior and assessing training-related changes in aviation.
       </p>
+      <div class="publication-links">
+        <a class="publication-link" href="https://doi.org/10.1007/978-3-030-20135-7_31" target="_blank" rel="noopener noreferrer">DOI</a>
+      </div>
       <div class="publication-tags">
         <span class="publication-tag">aviation</span>
         <span class="publication-tag">eye tracking</span>
@@ -321,10 +382,13 @@ nav_order: 3
     <h3 class="publication-year">2018</h3>
     <article class="publication-card">
       <h3 class="publication-title">Service Quality Assessment via Enhanced Data-Driven MCDM Model</h3>
-      <div class="publication-meta">INFORMS International Conference on Service Science · 2018</div>
+      <div class="publication-meta">INFORMS International Conference on Service Science &middot; 2018</div>
       <p class="publication-description">
-        Presents a data-driven multiple-criteria decision-making model for assessing service quality. The work contributes analytical methods for evaluating complex service systems.
+        Tourism and hospitality service quality depends on multiple user expectations, operational factors, and competing evaluation criteria. This paper uses surveys, AHP, fuzzy set theory, and TOPSIS within an enhanced data-driven multiple-criteria decision-making model to compare hotel service quality. It contributes a structured analytical approach for ranking and assessing service systems.
       </p>
+      <div class="publication-links">
+        <a class="publication-link" href="https://doi.org/10.1007/978-3-030-04726-9_22" target="_blank" rel="noopener noreferrer">DOI</a>
+      </div>
       <div class="publication-tags">
         <span class="publication-tag">analytics</span>
         <span class="publication-tag">service systems</span>
@@ -335,10 +399,13 @@ nav_order: 3
 
     <article class="publication-card">
       <h3 class="publication-title">Short and Long-Term Transfer of Training in a Tablet-Based Teen Driver Hazard Perception Training Program</h3>
-      <div class="publication-meta">Proceedings of the Human Factors and Ergonomics Society Annual Meeting · 2018</div>
+      <div class="publication-meta">Proceedings of the Human Factors and Ergonomics Society Annual Meeting &middot; 2018</div>
       <p class="publication-description">
-        Evaluates whether tablet-based hazard perception training transfers to short- and long-term driving performance. The study contributes evidence on training design for teen driver safety.
+        Novice teen drivers need training that transfers beyond a tablet or simulator into hazard anticipation during real driving. This HFES paper evaluates short- and long-term transfer from a tablet-based hazard perception training program. It contributes evidence on training design and assessment for young driver safety.
       </p>
+      <div class="publication-links">
+        <a class="publication-link" href="https://doi.org/10.1177/1541931218621445" target="_blank" rel="noopener noreferrer">DOI</a>
+      </div>
       <div class="publication-tags">
         <span class="publication-tag">training</span>
         <span class="publication-tag">driving safety</span>
@@ -349,10 +416,13 @@ nav_order: 3
 
     <article class="publication-card">
       <h3 class="publication-title">Application of Eye Tracking Technology in Naturalistic Usability Assessment of an Academic Library Website</h3>
-      <div class="publication-meta">International Conference on Applied Human Factors and Ergonomics · 2018</div>
+      <div class="publication-meta">International Conference on Applied Human Factors and Ergonomics &middot; 2018</div>
       <p class="publication-description">
-        Uses eye tracking to assess usability of an academic library website in a naturalistic setting. The work demonstrates how gaze data can reveal interface barriers and user attention patterns.
+        Academic library websites can be difficult to evaluate using only self-report or click data. This paper uses eye tracking in a naturalistic usability assessment with novice student users and expert librarians completing information-search tasks. It demonstrates how gaze data, task time, and learning behavior can reveal attention patterns, navigation barriers, and interface opportunities.
       </p>
+      <div class="publication-links">
+        <a class="publication-link" href="https://doi.org/10.1007/978-3-319-94947-5_72" target="_blank" rel="noopener noreferrer">DOI</a>
+      </div>
       <div class="publication-tags">
         <span class="publication-tag">usability</span>
         <span class="publication-tag">eye tracking</span>
@@ -364,10 +434,13 @@ nav_order: 3
     <h3 class="publication-year">2017</h3>
     <article class="publication-card">
       <h3 class="publication-title">Using Situation Awareness as a Measure of Driver Hazard Perception Ability</h3>
-      <div class="publication-meta">Driving Assessment Conference · 2017</div>
+      <div class="publication-meta">Driving Assessment Conference &middot; 2017</div>
       <p class="publication-description">
-        Examines situation awareness as a way to evaluate driver hazard perception. The study contributes measurement ideas for understanding safety-critical driver performance.
+        Driver hazard perception is closely tied to situation awareness, especially for novice or developing drivers. This Driving Assessment paper examines situation awareness as a measure of hazard perception ability. It contributes a measurement perspective for evaluating driver training and safety-critical performance.
       </p>
+      <div class="publication-links">
+        <a class="publication-link" href="https://doi.org/10.17077/drivingassessment.1644" target="_blank" rel="noopener noreferrer">DOI</a>
+      </div>
       <div class="publication-tags">
         <span class="publication-tag">driving safety</span>
         <span class="publication-tag">situation awareness</span>
@@ -379,9 +452,9 @@ nav_order: 3
     <h3 class="publication-year">2016</h3>
     <article class="publication-card">
       <h3 class="publication-title">Highlighting the Main Factors of Internet Banking via Multiple Criteria Decision Analysis</h3>
-      <div class="publication-meta">Proceedings of the 2016 Industrial and Systems Engineering Research Conference · 2016</div>
+      <div class="publication-meta">Proceedings of the 2016 Industrial and Systems Engineering Research Conference &middot; 2016</div>
       <p class="publication-description">
-        Applies multiple-criteria decision analysis to identify key factors in internet banking. The paper contributes a structured approach for evaluating digital service quality and decision priorities.
+        Internet banking quality depends on multiple user, service, and system factors. This paper applies multiple-criteria decision analysis to identify and prioritize main factors affecting internet banking. It contributes a structured decision-support approach for evaluating digital service quality.
       </p>
       <div class="publication-tags">
         <span class="publication-tag">digital systems</span>
