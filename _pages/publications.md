@@ -138,48 +138,54 @@ nav_order: 3
     <h2>Manuscripts Under Review</h2>
 
     <article class="publication-card">
-      <h3 class="publication-title">
-        A multi-modal communication system incorporating live chat to improve outpatient appointment compliance in a large healthcare setting: a quasi-experimental study
-      </h3>
-      <div class="publication-meta">Under review &middot; International Journal for Quality in Health Care</div>
+      <h3 class="publication-title">Healthcare Communication and Outpatient Appointment Compliance</h3>
+      <div class="publication-meta">Under review</div>
       <p class="publication-description">
-        Missed or delayed outpatient appointments create access, scheduling, and workflow challenges for large healthcare systems. This manuscript evaluates a multi-modal communication intervention incorporating live chat in a quasi-experimental outpatient setting. It contributes practical evidence on how patient-facing digital communication workflows can support appointment compliance and reduce barriers to care access.
+        This study evaluates how a multi-modal patient communication system, including live chat and text-based reminders, was
+        associated with outpatient appointment attendance, cancellations, rescheduling, and no-show patterns in a large healthcare
+        setting.
       </p>
       <div class="publication-tags">
-        <span class="publication-tag">healthcare</span>
-        <span class="publication-tag">digital health</span>
-        <span class="publication-tag">workflow</span>
-        <span class="publication-tag">communication</span>
+        <span class="publication-tag">healthcare systems</span>
+        <span class="publication-tag">patient engagement</span>
+        <span class="publication-tag">appointment compliance</span>
+        <span class="publication-tag">live chat</span>
+        <span class="publication-tag">text reminders</span>
+        <span class="publication-tag">quasi-experimental study</span>
       </div>
     </article>
 
     <article class="publication-card">
-      <h3 class="publication-title">
-        Positive Psychological Interventions in Practice: Effects of a Mobile App on Emotional Experience and Mental Health in Healthcare Workers
-      </h3>
-      <div class="publication-meta">Under review &middot; IISE Transactions on Occupational Ergonomics and Human Factors</div>
+      <h3 class="publication-title">Mobile Positive Emotion Intervention for Healthcare Workers</h3>
+      <div class="publication-meta">Under review</div>
       <p class="publication-description">
-        Healthcare workers face sustained emotional and mental health demands in high-pressure clinical environments. This manuscript studies a mobile positive-psychology intervention and its effects on emotional experience and mental health in practice. It contributes applied evidence on evaluating lightweight digital well-being tools in occupational healthcare contexts.
+        This study examines an app-based positive emotion intervention for healthcare workers, focusing on emotional experience,
+        mental health outcomes, engagement, and opportunities to improve digital wellness interventions in clinical environments.
       </p>
       <div class="publication-tags">
-        <span class="publication-tag">healthcare</span>
         <span class="publication-tag">digital health</span>
-        <span class="publication-tag">stress</span>
-        <span class="publication-tag">occupational ergonomics</span>
+        <span class="publication-tag">healthcare workers</span>
+        <span class="publication-tag">mental health</span>
+        <span class="publication-tag">mobile app</span>
+        <span class="publication-tag">engagement</span>
+        <span class="publication-tag">intervention evaluation</span>
       </div>
     </article>
 
     <article class="publication-card">
-      <h3 class="publication-title">Multimodal Machine Learning Assessment of Instrument Monitoring Training and Vocal Stress in General Aviation Pilots</h3>
-      <div class="publication-meta">Under review &middot; IEEE Transactions on Human-Machine Systems</div>
+      <h3 class="publication-title">Multimodal Assessment of Aviation Training and Pilot Stress</h3>
+      <div class="publication-meta">Under review</div>
       <p class="publication-description">
-        General aviation training needs objective ways to evaluate whether training changes behavior and stress responses during challenging flight scenarios. This manuscript uses synchronized gaze, flight-simulator, aircraft-state, and voice data with multimodal machine learning and vocal stress modeling. It contributes a framework for assessing transfer of training beyond visual scanning behavior alone.
+        This study develops a multimodal framework to evaluate transfer of training in general aviation by integrating eye-tracking,
+        simulator, aircraft-state, and vocal stress data to assess whether training effects extend beyond visual scanning behavior.
       </p>
       <div class="publication-tags">
         <span class="publication-tag">aviation</span>
+        <span class="publication-tag">eye tracking</span>
+        <span class="publication-tag">training transfer</span>
         <span class="publication-tag">machine learning</span>
-        <span class="publication-tag">stress</span>
-        <span class="publication-tag">training</span>
+        <span class="publication-tag">vocal stress</span>
+        <span class="publication-tag">human performance</span>
       </div>
     </article>
 
