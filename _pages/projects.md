@@ -239,7 +239,7 @@ nav_order: 2
         </div>
       </div>
       <div class="project-subsection">
-        <div class="project-subsection-label"><i class="fa-solid fa-wave-square" aria-hidden="true"></i> Multimodal Analysis / Vocal Stress</div>
+        <div class="project-subsection-label"><i class="fa-solid fa-wave-square" aria-hidden="true"></i> MULTIMODAL ANALYSIS / VOCAL STRESS</div>
         <h6>Multimodal Assessment of Training Effects and Vocal Stress</h6>
         <p class="card-text">
           This work developed a multimodal framework to evaluate whether gaze-based aviation training produced measurable transfer of training beyond visual scanning behavior. The framework integrated eye-tracking data, flight-control behavior, aircraft-state data, and voice data to assess training effectiveness during simulated VFR-into-IMC flight. Multimodal machine learning classifiers were used to distinguish trained from untrained pilots based on synchronized gaze and flight-simulator data, while voice data were analyzed separately using a CNN-based vocal stress model. This approach helped evaluate whether training effects extended to higher-level piloting behavior, stress regulation, and performance under challenging flight conditions.
