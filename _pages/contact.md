@@ -195,6 +195,10 @@ nav_order: 6
     border-color: #dedede;
   }
 
+  html:not([data-theme="dark"]) .contact-page .contact-intro {
+    border-left-color: #2f5068;
+  }
+
   html:not([data-theme="dark"]) .contact-page .contact-icon {
     color: #2f5068;
     background: #ffffff;
