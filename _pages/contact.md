@@ -14,7 +14,7 @@ nav_order: 6
 
   .contact-page .contact-intro {
     max-width: 820px;
-    margin-bottom: 1.3rem;
+    margin-bottom: 1.45rem;
     color: var(--text-secondary);
     font-size: 0.98rem;
     line-height: 1.65;
@@ -23,19 +23,23 @@ nav_order: 6
   .contact-page .contact-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1rem;
+    gap: 1.1rem;
     align-items: stretch;
   }
 
   .contact-page .contact-card {
+    position: relative;
     display: flex;
     flex-direction: column;
-    gap: 0.85rem;
+    gap: 0.95rem;
     height: 100%;
-    min-height: 15.5rem;
-    padding: 1.15rem;
+    min-height: 17rem;
+    overflow: hidden;
+    padding: 1.35rem;
     color: var(--text-secondary);
-    background: var(--card-bg);
+    background:
+      linear-gradient(180deg, var(--accent-soft) 0, transparent 4.25rem),
+      var(--card-bg);
     border: 1px solid var(--border);
     border-top: 3px solid var(--accent);
     border-radius: 8px;
@@ -51,17 +55,24 @@ nav_order: 6
     box-shadow: 0 0.45rem 1.25rem rgba(0, 0, 0, 0.08);
   }
 
+  .contact-page .contact-card-header {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+  }
+
   .contact-page .contact-icon {
+    flex: 0 0 auto;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 2.2rem;
-    height: 2.2rem;
+    width: 2.45rem;
+    height: 2.45rem;
     color: var(--accent);
     background: var(--page-bg);
     border: 1px solid var(--border);
     border-radius: 999px;
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 
   .contact-page .contact-card h2 {
@@ -75,8 +86,9 @@ nav_order: 6
   .contact-page .contact-content-link {
     display: inline-flex;
     align-self: flex-start;
-    margin: 0.1rem 0 0.2rem;
+    margin: 0.05rem 0 0.1rem;
     color: var(--accent);
+    font-size: 0.95rem;
     font-weight: 600;
     overflow-wrap: anywhere;
   }
@@ -130,7 +142,9 @@ nav_order: 6
   }
 
   html:not([data-theme="dark"]) .contact-page .contact-card {
-    background: #fafafa;
+    background:
+      linear-gradient(180deg, rgba(47, 80, 104, 0.08) 0, transparent 4.25rem),
+      #fafafa;
     border-color: #dedede;
     border-top-color: #2f5068;
   }
@@ -174,15 +188,19 @@ nav_order: 6
 
   <div class="contact-grid">
     <article class="contact-card">
-      <span class="contact-icon" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></span>
-      <h2>Academic / RPI</h2>
+      <div class="contact-card-header">
+        <span class="contact-icon" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></span>
+        <h2>Academic / RPI</h2>
+      </div>
       <a class="contact-content-link email-link" href="mailto:ahmadn4@rpi.edu">ahmadn4@rpi.edu</a>
       <p>For teaching, students, academic collaborations, and university-related communication.</p>
     </article>
 
     <article class="contact-card">
-      <span class="contact-icon" aria-hidden="true"><i class="fa-solid fa-briefcase"></i></span>
-      <h2>Professional / Industry</h2>
+      <div class="contact-card-header">
+        <span class="contact-icon" aria-hidden="true"><i class="fa-solid fa-briefcase"></i></span>
+        <h2>Professional / Industry</h2>
+      </div>
       <a class="contact-content-link email-link" href="mailto:ahmadi.nima@gmail.com">ahmadi.nima@gmail.com</a>
       <p>
         For industry roles, consulting, human factors opportunities, healthcare systems, usability research, aviation safety,
@@ -191,9 +209,10 @@ nav_order: 6
     </article>
 
     <article class="contact-card">
-      <span class="contact-icon" aria-hidden="true"><i class="fa-brands fa-linkedin-in"></i></span>
-      <h2>LinkedIn</h2>
-      <p>Connect with me on LinkedIn.</p>
+      <div class="contact-card-header">
+        <span class="contact-icon" aria-hidden="true"><i class="fa-brands fa-linkedin-in"></i></span>
+        <h2>LinkedIn</h2>
+      </div>
       <p>Best for networking, referrals, job opportunities, and quick introductions.</p>
       <a class="contact-button" href="https://www.linkedin.com/in/nimahmadi" target="_blank" rel="noopener noreferrer" aria-label="Connect on LinkedIn">
         Connect on LinkedIn

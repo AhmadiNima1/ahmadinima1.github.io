@@ -10,6 +10,23 @@
   padding-top: 0.2rem !important;
   padding-bottom: 0.2rem !important;
 }
+.navbar .navbar-brand.title {
+  color: var(--text-primary);
+  font-weight: 600;
+  white-space: nowrap;
+}
+.navbar .navbar-collapse {
+  min-width: 0;
+}
+.navbar .navbar-nav {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.navbar .navbar-nav .nav-link {
+  padding-right: 0.55rem;
+  padding-left: 0.55rem;
+  font-size: 0.95rem;
+}
 .navbar .dropdown-menu,
 .btn-group.dropdown .dropdown-menu {
   background-color: var(--global-bg-color);
