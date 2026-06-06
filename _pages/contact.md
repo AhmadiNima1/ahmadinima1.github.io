@@ -9,15 +9,15 @@ nav_order: 6
 
 <style>
   .contact-page {
-    color: var(--global-text-color);
+    color: var(--text-secondary);
   }
 
   .contact-page .contact-intro {
     max-width: 820px;
     margin-bottom: 1.3rem;
-    color: var(--global-text-color);
-    font-size: 1rem;
-    line-height: 1.7;
+    color: var(--text-secondary);
+    font-size: 0.98rem;
+    line-height: 1.65;
   }
 
   .contact-page .contact-grid {
@@ -34,10 +34,10 @@ nav_order: 6
     height: 100%;
     min-height: 15.5rem;
     padding: 1.15rem;
-    color: var(--global-text-color);
-    background: var(--global-card-bg-color);
-    border: 1px solid var(--global-divider-color);
-    border-top: 3px solid var(--global-theme-color);
+    color: var(--text-secondary);
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--accent);
     border-radius: 8px;
     transition:
       transform 160ms ease,
@@ -47,7 +47,7 @@ nav_order: 6
 
   .contact-page .contact-card:hover {
     transform: translateY(-2px);
-    border-color: var(--global-theme-color);
+    border-color: var(--accent);
     box-shadow: 0 0.45rem 1.25rem rgba(0, 0, 0, 0.08);
   }
 
@@ -57,26 +57,26 @@ nav_order: 6
     justify-content: center;
     width: 2.2rem;
     height: 2.2rem;
-    color: var(--global-theme-color);
-    background: var(--global-bg-color);
-    border: 1px solid var(--global-divider-color);
+    color: var(--accent);
+    background: var(--page-bg);
+    border: 1px solid var(--border);
     border-radius: 999px;
     font-size: 0.95rem;
   }
 
   .contact-page .contact-card h2 {
     margin: 0;
-    color: var(--global-text-color);
-    font-size: 1.05rem;
+    color: var(--text-primary);
+    font-size: 1.1rem;
     line-height: 1.35;
-    font-weight: 700;
+    font-weight: 600;
   }
 
   .contact-page .contact-content-link {
     display: inline-flex;
     align-self: flex-start;
     margin: 0.1rem 0 0.2rem;
-    color: var(--global-theme-color);
+    color: var(--accent);
     font-weight: 600;
     overflow-wrap: anywhere;
   }
@@ -89,9 +89,9 @@ nav_order: 6
 
   .contact-page .contact-card p {
     margin: 0;
-    color: var(--global-text-color);
-    font-size: 0.92rem;
-    line-height: 1.55;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
 
   .contact-page .contact-button {
@@ -100,9 +100,9 @@ nav_order: 6
     align-self: flex-start;
     margin-top: auto;
     padding: 0.36rem 0.68rem;
-    color: var(--global-theme-color);
-    background: var(--global-bg-color);
-    border: 1px solid var(--global-divider-color);
+    color: var(--accent);
+    background: var(--page-bg);
+    border: 1px solid var(--border);
     border-radius: 999px;
     font-size: 0.82rem;
     line-height: 1.25;
@@ -110,13 +110,13 @@ nav_order: 6
   }
 
   .contact-page .contact-button:hover {
-    color: var(--global-theme-color);
+    color: var(--accent);
     text-decoration: none;
   }
 
   .contact-page .contact-closing {
     margin: 1.25rem 0 0;
-    color: var(--global-text-color-light);
+    color: var(--text-muted);
     font-size: 0.95rem;
     line-height: 1.6;
   }

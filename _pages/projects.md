@@ -59,32 +59,43 @@ nav_order: 2
     gap: 0.4rem;
     align-items: center;
     margin-bottom: 0.45rem;
-    color: var(--global-text-color-light);
-    font-size: 0.78rem;
+    color: var(--text-muted);
+    font-size: 0.82rem;
     font-weight: 700;
     line-height: 1.25;
     text-transform: uppercase;
-    letter-spacing: 0.02rem;
+    letter-spacing: 0.04em;
   }
 
   .projects .project-category i {
-    color: var(--global-theme-color);
+    color: var(--accent);
     font-size: 0.9rem;
   }
 
   .projects .project-header .card-title {
     margin-bottom: 0;
-    color: var(--global-text-color);
-    font-size: 1.28rem;
+    color: var(--text-primary);
+    font-size: 1.2rem;
     line-height: 1.35;
+    font-weight: 600;
   }
 
   .projects > .card {
     overflow: hidden;
-    background: var(--global-card-bg-color);
-    border: 1px solid var(--global-divider-color);
-    border-left: 4px solid var(--global-theme-color);
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
     border-radius: 8px;
+    transition:
+      transform 160ms ease,
+      border-color 160ms ease,
+      box-shadow 160ms ease;
+  }
+
+  .projects > .card:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+    box-shadow: 0 0.45rem 1.25rem rgba(0, 0, 0, 0.08);
   }
 
   html[data-theme="light"] .projects > .card {
@@ -92,16 +103,16 @@ nav_order: 2
   }
 
   .projects > .card .card-img-top {
-    border-top: 1px solid var(--global-divider-color);
-    border-bottom: 1px solid var(--global-divider-color);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
   }
 
   .projects .project-subsection {
     margin: 1.25rem 0;
     padding: 1rem;
-    color: var(--global-text-color);
-    background: var(--global-card-bg-color);
-    border: 1px solid var(--global-divider-color);
+    color: var(--text-secondary);
+    background: var(--card-bg);
+    border: 1px solid var(--border);
     border-radius: 8px;
   }
 
@@ -110,29 +121,34 @@ nav_order: 2
     gap: 0.4rem;
     align-items: center;
     margin-bottom: 0.45rem;
-    color: var(--global-text-color-light);
-    font-size: 0.76rem;
+    color: var(--text-muted);
+    font-size: 0.8rem;
     font-weight: 700;
     line-height: 1.25;
     text-transform: uppercase;
-    letter-spacing: 0.02rem;
+    letter-spacing: 0.04em;
   }
 
   .projects .project-subsection-label i {
-    color: var(--global-theme-color);
+    color: var(--accent);
     font-size: 0.9rem;
   }
 
   .projects .project-subsection h6 {
     margin-bottom: 0.65rem;
-    color: var(--global-text-color);
-    font-size: 1rem;
+    color: var(--text-primary);
+    font-size: 1.1rem;
     line-height: 1.35;
-    font-weight: 700;
+    font-weight: 600;
   }
 
   .projects .project-subsection .card-text {
     margin-bottom: 0;
+  }
+
+  .projects .card-body .card-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
 
   html:not([data-theme="dark"]) .projects .project-category {
@@ -164,16 +180,16 @@ nav_order: 2
 
   .projects .project-overview h2 {
     margin-bottom: 0.45rem;
-    color: var(--global-text-color);
-    font-size: 1.45rem;
+    color: var(--text-primary);
+    font-size: 1.6rem;
     line-height: 1.3;
-    font-weight: 700;
+    font-weight: 600;
   }
 
   .projects .project-overview-intro {
     max-width: 860px;
     margin-bottom: 1.25rem;
-    color: var(--global-text-color);
+    color: var(--text-secondary);
     font-size: 0.98rem;
     line-height: 1.65;
   }
@@ -191,9 +207,9 @@ nav_order: 2
     min-width: 0;
     height: 100%;
     overflow: hidden;
-    color: var(--global-text-color);
-    background: var(--global-card-bg-color);
-    border: 1px solid var(--global-divider-color);
+    color: var(--text-secondary);
+    background: var(--card-bg);
+    border: 1px solid var(--border);
     border-top: 3px solid var(--project-accent);
     border-radius: 8px;
     transition:
@@ -204,7 +220,7 @@ nav_order: 2
 
   .projects .project-overview-card:hover {
     transform: translateY(-2px);
-    border-color: var(--global-divider-color);
+    border-color: var(--border);
     border-top-color: var(--project-accent);
     box-shadow: 0 0.45rem 1.25rem rgba(0, 0, 0, 0.08);
   }
@@ -212,8 +228,8 @@ nav_order: 2
   .projects .project-overview-image-wrap {
     height: 10.5rem;
     overflow: hidden;
-    background: var(--global-bg-color);
-    border-bottom: 1px solid var(--global-divider-color);
+    background: var(--page-bg);
+    border-bottom: 1px solid var(--border);
   }
 
   .projects .project-overview-placeholder,
@@ -226,29 +242,29 @@ nav_order: 2
     justify-content: center;
     gap: 0.45rem;
     padding: 1rem;
-    color: var(--global-text-color);
+    color: var(--text-secondary);
     background:
       linear-gradient(135deg, rgba(47, 80, 104, 0.14), rgba(47, 80, 104, 0.04)),
-      var(--global-bg-color);
+      var(--page-bg);
     text-align: center;
   }
 
   .projects .project-detail-placeholder {
     height: 320px;
-    border-top: 1px solid var(--global-divider-color);
-    border-bottom: 1px solid var(--global-divider-color);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
   }
 
   .projects .project-overview-placeholder i,
   .projects .project-detail-placeholder i {
-    color: var(--global-theme-color);
+    color: var(--accent);
     font-size: 1.6rem;
   }
 
   .projects .project-overview-placeholder span,
   .projects .project-detail-placeholder span {
     max-width: 18rem;
-    color: var(--global-text-color);
+    color: var(--text-primary);
     font-size: 0.9rem;
     line-height: 1.35;
     font-weight: 700;
@@ -273,26 +289,26 @@ nav_order: 2
     align-items: center;
     margin-bottom: 0.45rem;
     color: var(--project-accent);
-    font-size: 0.76rem;
+    font-size: 0.82rem;
     line-height: 1.25;
     font-weight: 700;
-    letter-spacing: 0.02rem;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
   }
 
   .projects .project-overview-card h3 {
     margin-bottom: 0.55rem;
-    color: var(--global-text-color);
-    font-size: 1rem;
+    color: var(--text-primary);
+    font-size: 1.1rem;
     line-height: 1.35;
-    font-weight: 700;
+    font-weight: 600;
   }
 
   .projects .project-overview-card p {
     margin-bottom: 0.85rem;
-    color: var(--global-text-color);
-    font-size: 0.9rem;
-    line-height: 1.55;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
 
   .projects .project-overview-tags {
@@ -306,24 +322,24 @@ nav_order: 2
   .projects .project-overview-tag {
     display: inline-flex;
     align-items: center;
-    padding: 0.22rem 0.48rem;
-    color: var(--global-text-color);
-    background: var(--global-bg-color);
-    border: 1px solid var(--global-divider-color);
+    padding: 0.24rem 0.52rem;
+    color: var(--text-secondary);
+    background: var(--page-bg);
+    border: 1px solid var(--border);
     border-radius: 999px;
-    font-size: 0.76rem;
+    font-size: 0.78rem;
     line-height: 1.25;
   }
 
   .projects .project-overview-link {
     align-self: flex-start;
     margin-top: auto;
-    padding: 0.34rem 0.62rem;
+    padding: 0.36rem 0.68rem;
     color: var(--project-accent);
-    background: var(--global-bg-color);
-    border: 1px solid var(--global-divider-color);
+    background: var(--page-bg);
+    border: 1px solid var(--border);
     border-radius: 999px;
-    font-size: 0.8rem;
+    font-size: 0.82rem;
     line-height: 1.25;
     font-weight: 600;
   }

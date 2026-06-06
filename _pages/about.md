@@ -24,7 +24,7 @@ social: true
   }
 
   .home-page {
-    color: var(--global-text-color);
+    color: var(--text-secondary);
   }
 
   .home-page .home-hero {
@@ -35,15 +35,15 @@ social: true
 
   .home-page .home-hero h1 {
     margin-bottom: 0.45rem;
-    color: var(--global-text-color);
-    font-size: 2.65rem;
+    color: var(--text-primary);
+    font-size: 2.5rem;
     line-height: 1.1;
-    font-weight: 700;
+    font-weight: 600;
   }
 
   .home-page .home-hero .home-role {
     margin-bottom: 1.2rem;
-    color: var(--global-theme-color);
+    color: var(--accent);
     font-size: 1.15rem;
     font-weight: 600;
   }
@@ -51,9 +51,9 @@ social: true
   .home-page .home-hero .home-statement {
     max-width: 790px;
     margin-bottom: 0;
-    color: var(--global-text-color);
-    font-size: 1.08rem;
-    line-height: 1.7;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.65;
   }
 
   .home-page .home-section {
@@ -62,23 +62,23 @@ social: true
 
   .home-page .home-section h2 {
     margin-bottom: 1.15rem;
-    color: var(--global-text-color);
-    font-size: 1.45rem;
-    font-weight: 700;
+    color: var(--text-primary);
+    font-size: 1.6rem;
+    font-weight: 600;
   }
 
   .home-page .home-section-intro {
     max-width: 860px;
     margin: -0.35rem 0 1.25rem;
-    color: var(--global-text-color);
+    color: var(--text-secondary);
     font-size: 0.98rem;
-    line-height: 1.7;
+    line-height: 1.65;
   }
 
   .home-page .home-section-kicker {
     max-width: 860px;
     margin: -0.75rem 0 0.75rem;
-    color: var(--global-text-color-light);
+    color: var(--text-muted);
     font-size: 0.95rem;
     line-height: 1.6;
   }
@@ -103,8 +103,8 @@ social: true
     flex-direction: column;
     min-width: 0;
     height: 100%;
-    background: var(--global-card-bg-color);
-    border: 1px solid var(--global-divider-color);
+    background: var(--card-bg);
+    border: 1px solid var(--border);
     border-radius: 8px;
     transition:
       transform 160ms ease,
@@ -114,7 +114,7 @@ social: true
 
   .home-page .journey-card:hover {
     transform: translateY(-2px);
-    border-color: var(--global-theme-color);
+    border-color: var(--accent);
     box-shadow: 0 0.45rem 1.25rem rgba(0, 0, 0, 0.08);
   }
 
@@ -123,9 +123,9 @@ social: true
     z-index: 2;
     width: 0.9rem;
     height: 0.9rem;
-    color: var(--global-theme-color);
-    background: var(--global-bg-color);
-    border: 1px solid var(--global-divider-color);
+    color: var(--accent);
+    background: var(--page-bg);
+    border: 1px solid var(--border);
     border-radius: 999px;
     content: ">";
     font-size: 0.52rem;
@@ -153,8 +153,8 @@ social: true
   .home-page .journey-image-wrap {
     min-height: 8.7rem;
     overflow: hidden;
-    background: var(--global-bg-color);
-    border-bottom: 1px solid var(--global-divider-color);
+    background: var(--page-bg);
+    border-bottom: 1px solid var(--border);
     border-radius: 8px 8px 0 0;
   }
 
@@ -176,8 +176,8 @@ social: true
     display: grid;
     gap: 0.18rem;
     margin-bottom: 0.55rem;
-    color: var(--global-text-color-light);
-    font-size: 0.78rem;
+    color: var(--text-muted);
+    font-size: 0.86rem;
     line-height: 1.35;
   }
 
@@ -186,10 +186,10 @@ social: true
     align-items: center;
     justify-content: center;
     margin-bottom: 0.55rem;
-    padding: 0.22rem 0.48rem;
-    color: var(--global-theme-color);
-    background: var(--global-bg-color);
-    border: 1px solid var(--global-divider-color);
+    padding: 0.24rem 0.52rem;
+    color: var(--accent);
+    background: var(--page-bg);
+    border: 1px solid var(--border);
     border-radius: 999px;
     font-size: 0.76rem;
     line-height: 1.25;
@@ -197,33 +197,33 @@ social: true
   }
 
   .home-page .journey-theme {
-    color: var(--global-theme-color);
+    color: var(--accent);
     font-weight: 700;
   }
 
   .home-page .journey-focus-label {
-    color: var(--global-text-color);
+    color: var(--text-primary);
     font-weight: 700;
   }
 
   .home-page .journey-card h3 {
     margin-bottom: 0.35rem;
-    color: var(--global-text-color);
-    font-size: 0.98rem;
+    color: var(--text-primary);
+    font-size: 1.1rem;
     line-height: 1.35;
-    font-weight: 700;
+    font-weight: 600;
   }
 
   .home-page .journey-card h3.journey-title-long {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .home-page .journey-affiliation {
     display: grid;
     gap: 0.12rem;
     margin: -0.05rem 0 0.45rem;
-    color: var(--global-text-color);
-    font-size: 0.78rem;
+    color: var(--text-secondary);
+    font-size: 0.86rem;
     line-height: 1.35;
   }
 
@@ -233,9 +233,9 @@ social: true
 
   .home-page .journey-card p {
     margin-bottom: 0.85rem;
-    color: var(--global-text-color);
-    font-size: 0.9rem;
-    line-height: 1.55;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
 
   .home-page .journey-tags {
@@ -248,24 +248,24 @@ social: true
   .home-page .journey-tag {
     display: inline-flex;
     align-items: center;
-    padding: 0.22rem 0.48rem;
-    color: var(--global-text-color);
-    background: var(--global-bg-color);
-    border: 1px solid var(--global-divider-color);
+    padding: 0.24rem 0.52rem;
+    color: var(--text-secondary);
+    background: var(--page-bg);
+    border: 1px solid var(--border);
     border-radius: 999px;
-    font-size: 0.76rem;
+    font-size: 0.78rem;
     line-height: 1.25;
   }
 
   .home-page .journey-link {
     align-self: flex-start;
     margin: 0.9rem 0 0;
-    padding: 0.34rem 0.62rem;
-    color: var(--global-theme-color);
-    background: var(--global-bg-color);
-    border: 1px solid var(--global-divider-color);
+    padding: 0.36rem 0.68rem;
+    color: var(--accent);
+    background: var(--page-bg);
+    border: 1px solid var(--border);
     border-radius: 999px;
-    font-size: 0.8rem;
+    font-size: 0.82rem;
     line-height: 1.25;
     font-weight: 600;
   }
@@ -287,8 +287,8 @@ social: true
     overflow: hidden;
     --home-card-accent: var(--global-theme-color);
     --home-card-tint: transparent;
-    --home-card-badge-bg: var(--global-bg-color);
-    --home-card-badge-border: var(--global-divider-color);
+    --home-card-badge-bg: var(--page-bg);
+    --home-card-badge-border: var(--border);
     border-top: 3px solid var(--home-card-accent);
     background:
       linear-gradient(180deg, var(--home-card-tint) 0, transparent 4.75rem),
@@ -351,8 +351,8 @@ social: true
     flex-direction: column;
     height: 100%;
     padding: 1.35rem;
-    background: var(--global-card-bg-color);
-    border: 1px solid var(--global-divider-color);
+    background: var(--card-bg);
+    border: 1px solid var(--border);
     border-radius: 8px;
   }
 
@@ -363,8 +363,8 @@ social: true
     width: 2rem;
     height: 2rem;
     margin-bottom: 0.9rem;
-    color: var(--global-theme-color);
-    border: 1px solid var(--global-divider-color);
+    color: var(--accent);
+    border: 1px solid var(--border);
     border-radius: 999px;
     font-size: 0.78rem;
     font-weight: 700;
@@ -388,24 +388,24 @@ social: true
     justify-content: center;
     width: 2rem;
     height: 2rem;
-    color: var(--global-theme-color);
-    background: var(--global-bg-color);
-    border: 1px solid var(--global-divider-color);
+    color: var(--accent);
+    background: var(--page-bg);
+    border: 1px solid var(--border);
     border-radius: 999px;
     font-size: 0.85rem;
   }
 
   .home-page .home-card h3 {
     margin-bottom: 0.7rem;
-    color: var(--global-text-color);
-    font-size: 1rem;
+    color: var(--text-primary);
+    font-size: 1.1rem;
     line-height: 1.35;
-    font-weight: 700;
+    font-weight: 600;
   }
 
   .home-page .home-card p {
     margin-bottom: 1rem;
-    color: var(--global-text-color);
+    color: var(--text-secondary);
     font-size: 0.95rem;
     line-height: 1.65;
   }
@@ -424,12 +424,12 @@ social: true
   .home-page .method-tag {
     display: inline-flex;
     align-items: center;
-    padding: 0.28rem 0.55rem;
-    color: var(--global-text-color);
-    background: var(--global-bg-color);
-    border: 1px solid var(--global-divider-color);
+    padding: 0.24rem 0.52rem;
+    color: var(--text-secondary);
+    background: var(--page-bg);
+    border: 1px solid var(--border);
     border-radius: 999px;
-    font-size: 0.82rem;
+    font-size: 0.78rem;
     line-height: 1.25;
   }
 

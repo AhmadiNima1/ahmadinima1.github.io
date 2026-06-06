@@ -9,7 +9,7 @@ nav_order: 3
 
 <style>
   .publication-page {
-    color: var(--global-text-color);
+    color: var(--text-secondary);
   }
 
   .publication-page .publication-section {
@@ -18,44 +18,54 @@ nav_order: 3
 
   .publication-page .publication-section h2 {
     margin-bottom: 1rem;
-    color: var(--global-text-color);
-    font-size: 1.45rem;
-    font-weight: 700;
+    color: var(--text-primary);
+    font-size: 1.6rem;
+    font-weight: 600;
   }
 
   .publication-page .publication-year {
     margin: 1.75rem 0 0.75rem;
-    color: var(--global-text-color);
+    color: var(--text-primary);
     font-size: 1.05rem;
-    font-weight: 700;
+    font-weight: 600;
   }
 
   .publication-page .publication-card {
     margin-bottom: 1rem;
     padding: 1.15rem 1.2rem;
-    background: var(--global-card-bg-color);
-    border: 1px solid var(--global-divider-color);
+    background: var(--card-bg);
+    border: 1px solid var(--border);
     border-radius: 8px;
+    transition:
+      transform 160ms ease,
+      border-color 160ms ease,
+      box-shadow 160ms ease;
+  }
+
+  .publication-page .publication-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+    box-shadow: 0 0.45rem 1.25rem rgba(0, 0, 0, 0.08);
   }
 
   .publication-page .publication-title {
     margin-bottom: 0.35rem;
-    color: var(--global-text-color);
-    font-size: 1.02rem;
+    color: var(--text-primary);
+    font-size: 1.1rem;
     line-height: 1.4;
-    font-weight: 700;
+    font-weight: 600;
   }
 
   .publication-page .publication-meta {
     margin-bottom: 0.75rem;
-    color: var(--global-text-color-light);
+    color: var(--text-muted);
     font-size: 0.9rem;
     line-height: 1.45;
   }
 
   .publication-page .publication-description {
     margin-bottom: 0.9rem;
-    color: var(--global-text-color);
+    color: var(--text-secondary);
     font-size: 0.95rem;
     line-height: 1.65;
   }
@@ -71,10 +81,10 @@ nav_order: 3
     display: inline-flex;
     align-items: center;
     gap: 0.3rem;
-    padding: 0.28rem 0.58rem;
-    color: var(--global-theme-color);
-    background: var(--global-bg-color);
-    border: 1px solid var(--global-divider-color);
+    padding: 0.36rem 0.68rem;
+    color: var(--accent);
+    background: var(--page-bg);
+    border: 1px solid var(--border);
     border-radius: 999px;
     font-size: 0.82rem;
     line-height: 1.25;
@@ -82,7 +92,7 @@ nav_order: 3
   }
 
   .publication-page .publication-link:hover {
-    color: var(--global-theme-color);
+    color: var(--accent);
     text-decoration: none;
   }
 
@@ -96,11 +106,11 @@ nav_order: 3
     display: inline-flex;
     align-items: center;
     padding: 0.24rem 0.52rem;
-    color: var(--global-text-color);
-    background: var(--global-bg-color);
-    border: 1px solid var(--global-divider-color);
+    color: var(--text-secondary);
+    background: var(--page-bg);
+    border: 1px solid var(--border);
     border-radius: 999px;
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     line-height: 1.25;
   }
 

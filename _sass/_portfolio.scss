@@ -1,0 +1,87 @@
+/*******************************************************************************
+ * Portfolio design-system layer
+ ******************************************************************************/
+
+.post {
+  color: var(--text-secondary);
+}
+
+.post .post-header {
+  margin-bottom: 1.35rem;
+}
+
+.post .post-title {
+  margin-bottom: 0.45rem;
+  color: var(--text-primary);
+  font-size: 2.5rem;
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.post .desc,
+.post-description,
+.page__content p {
+  color: var(--text-secondary);
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
+.post a {
+  color: var(--accent);
+}
+
+.post a:hover {
+  color: var(--accent);
+}
+
+a.btncv {
+  padding: 0.36rem 0.68rem;
+  color: var(--accent) !important;
+  background: var(--page-bg);
+  border-color: var(--border) !important;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  line-height: 1.25;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.cv-group-card,
+.cv-highlight-card {
+  background: var(--card-bg);
+  border-color: var(--border);
+  border-radius: 8px;
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.cv-group-card:hover,
+.cv-highlight-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  box-shadow: 0 0.45rem 1.25rem rgba(0, 0, 0, 0.08);
+}
+
+.cv-group-header h4,
+.cv-highlight-card h4 {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.cv-group-header span,
+.cv-group-card li,
+.cv-highlight-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.cv-tag-list span {
+  padding: 0.24rem 0.52rem;
+  color: var(--text-secondary);
+  background: var(--page-bg);
+  border-color: var(--border);
+  font-size: 0.78rem;
+}
