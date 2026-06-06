@@ -14,8 +14,13 @@ nav_order: 6
 
   .contact-page .contact-intro {
     max-width: 820px;
-    margin-bottom: 1.45rem;
+    margin-bottom: 1.6rem;
+    padding: 0.9rem 1rem;
     color: var(--text-secondary);
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
     font-size: 0.98rem;
     line-height: 1.65;
   }
@@ -31,22 +36,32 @@ nav_order: 6
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 0.95rem;
+    gap: 1rem;
     height: 100%;
-    min-height: 17rem;
+    min-height: 16.75rem;
     overflow: hidden;
-    padding: 1.35rem;
+    padding: 1.4rem;
     color: var(--text-secondary);
     background:
-      linear-gradient(180deg, var(--accent-soft) 0, transparent 4.25rem),
+      linear-gradient(180deg, var(--accent-soft) 0, transparent 5rem),
       var(--card-bg);
     border: 1px solid var(--border);
-    border-top: 3px solid var(--accent);
     border-radius: 8px;
+    box-shadow: 0 0.2rem 0.9rem rgba(0, 0, 0, 0.04);
     transition:
       transform 160ms ease,
       border-color 160ms ease,
       box-shadow 160ms ease;
+  }
+
+  .contact-page .contact-card::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 3px;
+    background: var(--accent);
+    content: "";
   }
 
   .contact-page .contact-card:hover {
@@ -59,6 +74,8 @@ nav_order: 6
     display: flex;
     gap: 0.75rem;
     align-items: center;
+    padding-bottom: 0.9rem;
+    border-bottom: 1px solid var(--border);
   }
 
   .contact-page .contact-icon {
@@ -83,10 +100,28 @@ nav_order: 6
     font-weight: 600;
   }
 
+  .contact-page .contact-detail {
+    display: grid;
+    gap: 0.35rem;
+    padding: 0.75rem 0.85rem;
+    background: var(--page-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+  }
+
+  .contact-page .contact-detail-label {
+    color: var(--text-muted);
+    font-size: 0.76rem;
+    line-height: 1.25;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
   .contact-page .contact-content-link {
     display: inline-flex;
     align-self: flex-start;
-    margin: 0.05rem 0 0.1rem;
+    margin: 0;
     color: var(--accent);
     font-size: 0.95rem;
     font-weight: 600;
@@ -111,7 +146,7 @@ nav_order: 6
     align-items: center;
     align-self: flex-start;
     margin-top: auto;
-    padding: 0.36rem 0.68rem;
+    padding: 0.42rem 0.78rem;
     color: var(--accent);
     background: var(--page-bg);
     border: 1px solid var(--border);
@@ -122,7 +157,9 @@ nav_order: 6
   }
 
   .contact-page .contact-button:hover {
-    color: var(--accent);
+    color: var(--page-bg);
+    background: var(--accent);
+    border-color: var(--accent);
     text-decoration: none;
   }
 
@@ -143,14 +180,19 @@ nav_order: 6
 
   html:not([data-theme="dark"]) .contact-page .contact-card {
     background:
-      linear-gradient(180deg, rgba(47, 80, 104, 0.08) 0, transparent 4.25rem),
+      linear-gradient(180deg, rgba(47, 80, 104, 0.08) 0, transparent 5rem),
       #fafafa;
     border-color: #dedede;
-    border-top-color: #2f5068;
   }
 
   html:not([data-theme="dark"]) .contact-page .contact-card:hover {
     box-shadow: 0 0.45rem 1.25rem rgba(0, 0, 0, 0.08);
+  }
+
+  html:not([data-theme="dark"]) .contact-page .contact-intro,
+  html:not([data-theme="dark"]) .contact-page .contact-detail {
+    background: #ffffff;
+    border-color: #dedede;
   }
 
   html:not([data-theme="dark"]) .contact-page .contact-icon {
@@ -169,6 +211,12 @@ nav_order: 6
     border-color: #d8d8d8;
   }
 
+  html:not([data-theme="dark"]) .contact-page .contact-button:hover {
+    color: #ffffff;
+    background: #2f5068;
+    border-color: #2f5068;
+  }
+
   html:not([data-theme="dark"]) .contact-page .contact-closing {
     color: #4a4a4a;
   }
@@ -176,6 +224,10 @@ nav_order: 6
   @media (max-width: 900px) {
     .contact-page .contact-grid {
       grid-template-columns: 1fr;
+    }
+
+    .contact-page .contact-card {
+      min-height: 0;
     }
   }
 </style>
@@ -192,7 +244,10 @@ nav_order: 6
         <span class="contact-icon" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></span>
         <h2>Academic / RPI</h2>
       </div>
-      <a class="contact-content-link email-link" href="mailto:ahmadn4@rpi.edu">ahmadn4@rpi.edu</a>
+      <div class="contact-detail">
+        <span class="contact-detail-label">Email</span>
+        <a class="contact-content-link email-link" href="mailto:ahmadn4@rpi.edu">ahmadn4@rpi.edu</a>
+      </div>
       <p>For teaching, students, academic collaborations, and university-related communication.</p>
     </article>
 
@@ -201,7 +256,10 @@ nav_order: 6
         <span class="contact-icon" aria-hidden="true"><i class="fa-solid fa-briefcase"></i></span>
         <h2>Professional / Industry</h2>
       </div>
-      <a class="contact-content-link email-link" href="mailto:ahmadi.nima@gmail.com">ahmadi.nima@gmail.com</a>
+      <div class="contact-detail">
+        <span class="contact-detail-label">Email</span>
+        <a class="contact-content-link email-link" href="mailto:ahmadi.nima@gmail.com">ahmadi.nima@gmail.com</a>
+      </div>
       <p>
         For industry roles, consulting, human factors opportunities, healthcare systems, usability research, aviation safety,
         and applied AI.
