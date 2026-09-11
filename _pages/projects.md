@@ -818,9 +818,9 @@ nav_order: 2
   </script>
 
   <section class="project-case-studies" aria-labelledby="project-case-studies-heading">
-    <h2 id="project-case-studies-heading">Project Case Studies</h2>
+    <h2 id="project-case-studies-heading">Projects</h2>
     <p class="project-case-studies-intro">
-      Detailed case studies below include methods, results, and supporting visuals for each selected project.
+      Detailed project sections below include methods, results, and supporting visuals for each selected project.
     </p>
   </section>
 
