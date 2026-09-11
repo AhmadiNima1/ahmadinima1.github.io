@@ -60,11 +60,11 @@ nav_order: 2
     align-items: center;
     margin-bottom: 0.45rem;
     color: var(--text-muted);
-    font-size: 0.82rem;
-    font-weight: 700;
-    line-height: 1.25;
+    font-size: 0.78rem;
+    font-weight: 650;
+    line-height: 1.3;
     text-transform: uppercase;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.035em;
   }
 
   .projects .project-category i {
@@ -75,9 +75,9 @@ nav_order: 2
   .projects .project-header .card-title {
     margin-bottom: 0;
     color: var(--text-primary);
-    font-size: 1.2rem;
-    line-height: 1.35;
-    font-weight: 600;
+    font-size: 1.12rem;
+    line-height: 1.34;
+    font-weight: 650;
   }
 
   .projects > .card {
@@ -122,11 +122,11 @@ nav_order: 2
     align-items: center;
     margin-bottom: 0.45rem;
     color: var(--text-muted);
-    font-size: 0.8rem;
-    font-weight: 700;
-    line-height: 1.25;
+    font-size: 0.78rem;
+    font-weight: 650;
+    line-height: 1.3;
     text-transform: uppercase;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.035em;
   }
 
   .projects .project-subsection-label i {
@@ -137,9 +137,9 @@ nav_order: 2
   .projects .project-subsection h6 {
     margin-bottom: 0.65rem;
     color: var(--text-primary);
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     line-height: 1.35;
-    font-weight: 600;
+    font-weight: 650;
   }
 
   .projects .project-subsection .card-text {
@@ -147,8 +147,9 @@ nav_order: 2
   }
 
   .projects .card-body .card-text {
-    font-size: 0.95rem;
-    line-height: 1.6;
+    font-size: 0.93rem;
+    line-height: 1.64;
+    font-weight: 400;
   }
 
   html:not([data-theme="dark"]) .projects .project-category {
@@ -181,17 +182,18 @@ nav_order: 2
   .projects .project-overview h2 {
     margin-bottom: 0.45rem;
     color: var(--text-primary);
-    font-size: 1.6rem;
-    line-height: 1.3;
-    font-weight: 600;
+    font-size: 1.52rem;
+    line-height: 1.24;
+    font-weight: 650;
   }
 
   .projects .project-overview-intro {
     max-width: 860px;
     margin-bottom: 1.25rem;
     color: var(--text-secondary);
-    font-size: 0.98rem;
-    line-height: 1.65;
+    font-size: 0.96rem;
+    line-height: 1.68;
+    font-weight: 400;
   }
 
   .projects .project-overview-grid {
@@ -265,9 +267,9 @@ nav_order: 2
   .projects .project-detail-placeholder span {
     max-width: 18rem;
     color: var(--text-primary);
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     line-height: 1.35;
-    font-weight: 700;
+    font-weight: 650;
   }
 
   .projects .project-overview-image {
@@ -289,26 +291,27 @@ nav_order: 2
     align-items: center;
     margin-bottom: 0.45rem;
     color: var(--project-accent);
-    font-size: 0.82rem;
-    line-height: 1.25;
-    font-weight: 700;
-    letter-spacing: 0.04em;
+    font-size: 0.78rem;
+    line-height: 1.3;
+    font-weight: 650;
+    letter-spacing: 0.035em;
     text-transform: uppercase;
   }
 
   .projects .project-overview-card h3 {
     margin-bottom: 0.55rem;
     color: var(--text-primary);
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     line-height: 1.35;
-    font-weight: 600;
+    font-weight: 650;
   }
 
   .projects .project-overview-card p {
     margin-bottom: 0.85rem;
     color: var(--text-secondary);
-    font-size: 0.95rem;
-    line-height: 1.6;
+    font-size: 0.93rem;
+    line-height: 1.64;
+    font-weight: 400;
   }
 
   .projects .project-overview-tags {
@@ -327,8 +330,9 @@ nav_order: 2
     background: var(--page-bg);
     border: 1px solid var(--border);
     border-radius: 999px;
-    font-size: 0.78rem;
+    font-size: 0.76rem;
     line-height: 1.25;
+    font-weight: 500;
   }
 
   .projects .project-overview-link {
@@ -339,8 +343,8 @@ nav_order: 2
     background: var(--page-bg);
     border: 1px solid var(--border);
     border-radius: 999px;
-    font-size: 0.82rem;
-    line-height: 1.25;
+    font-size: 0.8rem;
+    line-height: 1.3;
     font-weight: 600;
   }
 

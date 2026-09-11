@@ -4,6 +4,27 @@
 
 @use "variables" as v;
 
+:root {
+  --portfolio-font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+}
+
+body,
+button,
+input,
+textarea,
+select {
+  font-family: var(--portfolio-font-sans);
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.62;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 p,
 h1,
 h2,
@@ -19,6 +40,23 @@ strong {
   color: var(--global-text-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.22;
+  font-weight: 650;
+  letter-spacing: 0;
+}
+
+p,
+li {
+  line-height: 1.68;
+  font-weight: 400;
+}
+
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
@@ -31,7 +69,7 @@ table {
   }
 
   th {
-    font-weight: bold;
+    font-weight: 650;
   }
 }
 
@@ -61,7 +99,8 @@ blockquote {
   border-left: 5px solid var(--global-theme-color);
   margin: 1.5em 0;
   padding: 1em;
-  font-size: 1.2rem;
+  font-size: 1.05rem;
+  line-height: 1.68;
 
   p {
     margin-bottom: 0;

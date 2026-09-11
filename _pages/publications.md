@@ -19,15 +19,17 @@ nav_order: 3
   .publication-page .publication-section h2 {
     margin-bottom: 1rem;
     color: var(--text-primary);
-    font-size: 1.6rem;
-    font-weight: 600;
+    font-size: 1.52rem;
+    line-height: 1.24;
+    font-weight: 650;
   }
 
   .publication-page .publication-year {
     margin: 1.75rem 0 0.75rem;
     color: var(--text-primary);
-    font-size: 1.05rem;
-    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.35;
+    font-weight: 650;
   }
 
   .publication-page .publication-card {
@@ -51,23 +53,25 @@ nav_order: 3
   .publication-page .publication-title {
     margin-bottom: 0.35rem;
     color: var(--text-primary);
-    font-size: 1.1rem;
-    line-height: 1.4;
-    font-weight: 600;
+    font-size: 1.05rem;
+    line-height: 1.42;
+    font-weight: 650;
   }
 
   .publication-page .publication-meta {
     margin-bottom: 0.75rem;
     color: var(--text-muted);
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     line-height: 1.45;
+    font-weight: 500;
   }
 
   .publication-page .publication-description {
     margin-bottom: 0.9rem;
     color: var(--text-secondary);
-    font-size: 0.95rem;
-    line-height: 1.65;
+    font-size: 0.93rem;
+    line-height: 1.68;
+    font-weight: 400;
   }
 
   .publication-page .publication-links {
@@ -86,8 +90,8 @@ nav_order: 3
     background: var(--page-bg);
     border: 1px solid var(--border);
     border-radius: 999px;
-    font-size: 0.82rem;
-    line-height: 1.25;
+    font-size: 0.8rem;
+    line-height: 1.3;
     font-weight: 600;
   }
 
@@ -110,8 +114,9 @@ nav_order: 3
     background: var(--page-bg);
     border: 1px solid var(--border);
     border-radius: 999px;
-    font-size: 0.78rem;
+    font-size: 0.76rem;
     line-height: 1.25;
+    font-weight: 500;
   }
 
   html:not([data-theme="dark"]) .publication-page,

@@ -4,7 +4,9 @@
 
 footer.fixed-bottom {
   background-color: var(--global-footer-bg-color);
-  font-size: 0.75rem;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  font-weight: 400;
 
   .container {
     color: var(--global-footer-text-color);
@@ -27,7 +29,9 @@ footer.sticky-bottom {
   border-top: 1px solid var(--global-divider-color);
   padding-top: 10px !important;
   padding-bottom: 10px !important;
-  font-size: 0.75rem;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  font-weight: 400;
 
   .container {
     text-align: center;

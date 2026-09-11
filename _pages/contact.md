@@ -21,8 +21,9 @@ nav_order: 6
     border: 1px solid var(--border);
     border-left: 3px solid var(--accent);
     border-radius: 8px;
-    font-size: 0.98rem;
-    line-height: 1.65;
+    font-size: 0.96rem;
+    line-height: 1.68;
+    font-weight: 400;
   }
 
   .contact-page .contact-grid {
@@ -104,14 +105,15 @@ nav_order: 6
     border: 1px solid var(--border);
     border-radius: 999px;
     font-size: 1rem;
+    line-height: 1;
   }
 
   .contact-page .contact-card h2 {
     margin: 0;
     color: var(--text-primary);
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     line-height: 1.35;
-    font-weight: 600;
+    font-weight: 650;
   }
 
   .contact-page .contact-detail {
@@ -127,8 +129,8 @@ nav_order: 6
     color: var(--text-muted);
     font-size: 0.76rem;
     line-height: 1.25;
-    font-weight: 700;
-    letter-spacing: 0.04em;
+    font-weight: 650;
+    letter-spacing: 0.035em;
     text-transform: uppercase;
   }
 
@@ -137,7 +139,8 @@ nav_order: 6
     align-self: flex-start;
     margin: 0;
     color: var(--accent);
-    font-size: 0.95rem;
+    font-size: 0.93rem;
+    line-height: 1.4;
     font-weight: 600;
     overflow-wrap: anywhere;
   }
@@ -151,8 +154,9 @@ nav_order: 6
   .contact-page .contact-card p {
     margin: 0;
     color: var(--text-secondary);
-    font-size: 0.95rem;
-    line-height: 1.6;
+    font-size: 0.93rem;
+    line-height: 1.64;
+    font-weight: 400;
   }
 
   .contact-page .contact-button {
@@ -165,8 +169,8 @@ nav_order: 6
     background: var(--page-bg);
     border: 1px solid var(--border);
     border-radius: 999px;
-    font-size: 0.82rem;
-    line-height: 1.25;
+    font-size: 0.8rem;
+    line-height: 1.3;
     font-weight: 600;
   }
 
@@ -180,8 +184,9 @@ nav_order: 6
   .contact-page .contact-closing {
     margin: 1.25rem 0 0;
     color: var(--text-muted);
-    font-size: 0.95rem;
-    line-height: 1.6;
+    font-size: 0.93rem;
+    line-height: 1.64;
+    font-weight: 500;
   }
 
   html:not([data-theme="dark"]) .contact-page,

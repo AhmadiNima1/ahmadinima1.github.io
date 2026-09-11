@@ -12,7 +12,9 @@
 }
 .navbar .navbar-brand.title {
   color: var(--text-primary);
-  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: 650;
   white-space: nowrap;
 }
 .navbar .navbar-brand.social {
@@ -32,7 +34,10 @@
 .navbar .navbar-nav .nav-link {
   padding-right: 0.55rem;
   padding-left: 0.55rem;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
+  line-height: 1.35;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 .navbar .dropdown-menu,
 .btn-group.dropdown .dropdown-menu {
@@ -80,7 +85,7 @@
   }
   .navbar-nav .nav-item.active > .nav-link {
     background-color: inherit;
-    font-weight: bolder;
+    font-weight: 650;
     color: var(--global-theme-color);
     &:hover {
       color: var(--global-hover-color);

@@ -66,25 +66,26 @@ social: true
   .home-page .home-hero h1 {
     margin-bottom: 0.55rem;
     color: var(--text-primary);
-    font-size: 3.15rem;
-    line-height: 1.06;
+    font-size: 2.9rem;
+    line-height: 1.08;
     font-weight: 700;
   }
 
   .home-page .home-hero .home-role {
     margin-bottom: 1.45rem;
     color: var(--accent);
-    font-size: 1.18rem;
+    font-size: 1.15rem;
     line-height: 1.35;
-    font-weight: 600;
+    font-weight: 650;
   }
 
   .home-page .home-hero .home-statement {
     max-width: 620px;
     margin-bottom: 1.9rem;
     color: var(--text-secondary);
-    font-size: 1.03rem;
-    line-height: 1.7;
+    font-size: 1rem;
+    line-height: 1.68;
+    font-weight: 400;
   }
 
   .home-page .home-actions {
@@ -103,8 +104,8 @@ social: true
     background: var(--home-surface);
     border: 1px solid var(--home-border);
     border-radius: var(--home-radius);
-    font-size: 0.92rem;
-    line-height: 1.2;
+    font-size: 0.9rem;
+    line-height: 1.3;
     font-weight: 600;
     text-decoration: none;
   }
@@ -158,7 +159,7 @@ social: true
   .home-page .home-section h2 {
     margin-bottom: 1rem;
     color: var(--text-primary);
-    font-size: 1.72rem;
+    font-size: 1.58rem;
     line-height: 1.2;
     font-weight: 650;
   }
@@ -167,16 +168,18 @@ social: true
     max-width: 780px;
     margin: -0.15rem 0 1.55rem;
     color: var(--text-secondary);
-    font-size: 0.98rem;
-    line-height: 1.65;
+    font-size: 0.96rem;
+    line-height: 1.68;
+    font-weight: 400;
   }
 
   .home-page .home-section-kicker {
     max-width: 760px;
     margin: -0.45rem 0 0.75rem;
     color: var(--text-muted);
-    font-size: 0.93rem;
-    line-height: 1.6;
+    font-size: 0.9rem;
+    line-height: 1.58;
+    font-weight: 500;
   }
 
   .home-page .journey-section {
@@ -248,6 +251,7 @@ social: true
     color: var(--text-muted);
     font-size: 0.84rem;
     line-height: 1.4;
+    font-weight: 500;
   }
 
   .home-page .journey-years {
@@ -263,7 +267,7 @@ social: true
     border-radius: 999px;
     font-size: 0.76rem;
     line-height: 1.25;
-    font-weight: 700;
+    font-weight: 650;
   }
 
   .home-page .journey-theme {
@@ -279,13 +283,13 @@ social: true
   .home-page .journey-card h3 {
     margin-bottom: 0.45rem;
     color: var(--text-primary);
-    font-size: 1.08rem;
+    font-size: 1.05rem;
     line-height: 1.35;
     font-weight: 650;
   }
 
   .home-page .journey-card h3.journey-title-long {
-    font-size: 1.02rem;
+    font-size: 1rem;
   }
 
   .home-page .journey-affiliation {
@@ -293,8 +297,9 @@ social: true
     gap: 0.14rem;
     margin: 0 0 0.65rem;
     color: var(--text-secondary);
-    font-size: 0.86rem;
-    line-height: 1.35;
+    font-size: 0.85rem;
+    line-height: 1.42;
+    font-weight: 500;
   }
 
   .home-page .journey-affiliation span:first-child {
@@ -305,7 +310,8 @@ social: true
     margin-bottom: 0;
     color: var(--text-secondary);
     font-size: 0.93rem;
-    line-height: 1.6;
+    line-height: 1.64;
+    font-weight: 400;
   }
 
   .home-page .journey-tags {
@@ -326,6 +332,7 @@ social: true
     border-radius: 999px;
     font-size: 0.76rem;
     line-height: 1.25;
+    font-weight: 500;
   }
 
   .home-page .journey-link {
@@ -336,8 +343,8 @@ social: true
     background: transparent;
     border: 1px solid var(--home-border);
     border-radius: 999px;
-    font-size: 0.82rem;
-    line-height: 1.25;
+    font-size: 0.8rem;
+    line-height: 1.3;
     font-weight: 600;
   }
 
@@ -463,7 +470,7 @@ social: true
   .home-page .home-card h3 {
     margin-bottom: 0.72rem;
     color: var(--text-primary);
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     line-height: 1.35;
     font-weight: 650;
   }
@@ -472,7 +479,8 @@ social: true
     margin-bottom: 1.05rem;
     color: var(--text-secondary);
     font-size: 0.93rem;
-    line-height: 1.65;
+    line-height: 1.66;
+    font-weight: 400;
   }
 
   .home-page .method-tags {
@@ -496,6 +504,7 @@ social: true
     border-radius: 999px;
     font-size: 0.76rem;
     line-height: 1.25;
+    font-weight: 500;
   }
 
   .post article > .social {
@@ -600,7 +609,7 @@ social: true
     }
 
     .home-page .home-hero h1 {
-      font-size: 2.35rem;
+      font-size: 2.3rem;
     }
   }
 
@@ -617,11 +626,11 @@ social: true
     }
 
     .home-page .home-hero h1 {
-      font-size: 2.12rem;
+      font-size: 2.05rem;
     }
 
     .home-page .home-hero .home-role {
-      font-size: 1.05rem;
+      font-size: 1.02rem;
     }
 
     .home-page .home-actions {

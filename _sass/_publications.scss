@@ -9,7 +9,9 @@
 
   h1 {
     color: var(--global-theme-color);
-    font-size: 2rem;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    font-weight: 700;
     text-align: center;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -19,7 +21,9 @@
     margin-bottom: 1rem;
 
     span {
-      font-size: 1.5rem;
+      font-size: 1.42rem;
+      line-height: 1.25;
+      font-weight: 650;
     }
   }
 
@@ -72,13 +76,19 @@
           color: var(--global-text-color);
         }
 
-        font-weight: bolder;
+        font-size: 1.02rem;
+        line-height: 1.42;
+        font-weight: 650;
       }
 
       .author {
         html:not([data-theme="dark"]) & {
           color: var(--global-text-color);
         }
+
+        font-size: 0.93rem;
+        line-height: 1.55;
+        font-weight: 400;
 
         a {
           border-bottom: 1px dashed var(--global-theme-color);
@@ -115,6 +125,10 @@
           padding-top: 0.25rem;
           padding-bottom: 0.25rem;
           margin-left: 0;
+          font-size: 0.78rem;
+          line-height: 1.3;
+          font-weight: 600;
+          text-transform: none;
 
           &:hover {
             color: var(--global-theme-color);
@@ -142,7 +156,8 @@
       }
 
       .hidden {
-        font-size: 0.875rem;
+        font-size: 0.88rem;
+        line-height: 1.6;
         max-height: 0px;
         overflow: hidden;
         text-align: justify;
@@ -157,7 +172,7 @@
             color: var(--global-text-color);
           }
 
-          line-height: 1.4em;
+          line-height: 1.62;
           margin: 10px;
         }
 

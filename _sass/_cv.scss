@@ -26,8 +26,9 @@ a.btncv {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   text-decoration: none;
-  font-weight: 400;
-  font-size: 0.7rem;
+  font-weight: 600;
+  font-size: 0.76rem;
+  line-height: 1.3;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
@@ -45,7 +46,9 @@ a.btncv:hover {
  *****************************/
 
 p.location {
-  font-size: 0.7rem;
+  font-size: 0.76rem;
+  line-height: 1.35;
+  font-weight: 500;
   white-space: nowrap;
 }
 
@@ -71,7 +74,8 @@ table.institution {
 }
 
 td.department {
-  font-size: 0.8rem;
+  font-size: 0.84rem;
+  line-height: 1.4;
 }
 
 div.container-links {
@@ -119,8 +123,8 @@ div.container-links {
 .cv-highlight-card h4 {
   margin: 0;
   color: var(--global-text-color);
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 1.05rem;
+  font-weight: 650;
   line-height: 1.35;
 }
 
@@ -128,6 +132,7 @@ div.container-links {
   color: var(--global-text-color-light);
   font-size: 0.88rem;
   line-height: 1.4;
+  font-weight: 500;
   text-align: right;
 }
 
@@ -135,7 +140,8 @@ div.container-links {
   margin-bottom: 0.35rem;
   color: var(--global-text-color);
   font-size: 0.9rem;
-  font-weight: 700;
+  line-height: 1.35;
+  font-weight: 650;
 }
 
 .cv-group-card ul {
@@ -146,8 +152,9 @@ div.container-links {
 .cv-group-card li,
 .cv-highlight-card p {
   color: var(--global-text-color);
-  font-size: 0.92rem;
-  line-height: 1.6;
+  font-size: 0.93rem;
+  line-height: 1.64;
+  font-weight: 400;
 }
 
 .cv-highlight-card p {
@@ -168,8 +175,9 @@ div.container-links {
   background: var(--global-bg-color);
   border: 1px solid var(--global-divider-color);
   border-radius: 999px;
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   line-height: 1.25;
+  font-weight: 500;
 }
 
 html:not([data-theme="dark"]) {
@@ -260,7 +268,9 @@ td.list-group-name {
     color: var(--global-text-color);
   }
 
-  font-size: 0.8rem;
+  font-size: 0.84rem;
+  line-height: 1.4;
+  font-weight: 500;
 }
 
 td.list-group-level {
@@ -268,7 +278,9 @@ td.list-group-level {
     color: var(--global-text-color);
   }
 
-  font-size: 0.8rem;
+  font-size: 0.84rem;
+  line-height: 1.4;
+  font-weight: 500;
   padding-left: 0.5rem;
 }
 
@@ -277,7 +289,9 @@ td.list-group-school {
     color: var(--global-text-color-light);
   }
 
-  font-size: 0.7rem;
+  font-size: 0.76rem;
+  line-height: 1.35;
+  font-weight: 500;
   padding-left: 0.5rem;
   text-align: center;
 }
@@ -287,7 +301,9 @@ p.list-group-time {
     color: var(--global-text-color-light);
   }
 
-  font-size: 0.7rem;
+  font-size: 0.76rem;
+  line-height: 1.35;
+  font-weight: 500;
   padding-left: 0.5rem;
 }
 
