@@ -884,9 +884,9 @@ social: true
         <div class="journey-image-wrap">
           <img
             class="journey-image"
-            src="{{ '/assets/img/projects/vascular-access/usgva-simulation-procedure.png' | relative_url }}"
-            width="1448"
-            height="1086"
+            src="{{ '/assets/img/emergency.jpg' | relative_url }}"
+            width="4928"
+            height="3264"
             alt="Clinical workflow and vascular access simulation procedure"
             loading="lazy"
             decoding="async"

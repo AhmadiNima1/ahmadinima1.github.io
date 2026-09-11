@@ -179,6 +179,42 @@ nav_order: 2
     margin-bottom: 2rem;
   }
 
+  .projects .project-carousel-shell {
+    position: relative;
+  }
+
+  .projects .project-carousel-controls {
+    position: absolute;
+    top: -3.1rem;
+    right: 0;
+    display: flex;
+    gap: 0.45rem;
+  }
+
+  .projects .project-carousel-control {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.1rem;
+    height: 2.1rem;
+    color: var(--accent);
+    background: var(--page-bg);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    text-decoration: none;
+    transition:
+      color 160ms ease,
+      border-color 160ms ease,
+      background-color 160ms ease;
+  }
+
+  .projects .project-carousel-control:hover {
+    color: var(--page-bg);
+    background: var(--accent);
+    border-color: var(--accent);
+    text-decoration: none;
+  }
+
   .projects .project-overview h2 {
     margin-bottom: 0.45rem;
     color: var(--text-primary);
@@ -198,9 +234,32 @@ nav_order: 2
 
   .projects .project-overview-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1rem;
+    grid-auto-columns: calc((100% - 1.2rem) / 2);
+    grid-auto-flow: column;
+    grid-template-columns: none;
+    gap: 1.2rem;
+    align-items: stretch;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    padding: 0.15rem 0.1rem 0.9rem;
+    scroll-padding-inline: 0.1rem;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
     --project-accent: #2f5068;
+  }
+
+  .projects .project-overview-grid::-webkit-scrollbar {
+    height: 0.58rem;
+  }
+
+  .projects .project-overview-grid::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .projects .project-overview-grid::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 999px;
   }
 
   .projects .project-overview-card {
@@ -208,12 +267,15 @@ nav_order: 2
     flex-direction: column;
     min-width: 0;
     height: 100%;
+    min-height: 34.5rem;
     overflow: hidden;
     color: var(--text-secondary);
     background: var(--card-bg);
     border: 1px solid var(--border);
     border-top: 3px solid var(--project-accent);
     border-radius: 8px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
     transition:
       transform 160ms ease,
       border-color 160ms ease,
@@ -228,7 +290,8 @@ nav_order: 2
   }
 
   .projects .project-overview-image-wrap {
-    height: 10.5rem;
+    aspect-ratio: 16 / 9;
+    min-height: 0;
     overflow: hidden;
     background: var(--page-bg);
     border-bottom: 1px solid var(--border);
@@ -280,15 +343,16 @@ nav_order: 2
   }
 
   .projects .project-overview-content {
-    display: flex;
+    display: grid;
     flex: 1;
-    flex-direction: column;
-    padding: 1rem;
+    grid-template-rows: minmax(2.6rem, auto) minmax(4.2rem, auto) minmax(5.6rem, auto) auto auto;
+    padding: 1.1rem;
   }
 
   .projects .project-overview-label {
     display: inline-flex;
     align-items: center;
+    min-height: 2.6rem;
     margin-bottom: 0.45rem;
     color: var(--project-accent);
     font-size: 0.78rem;
@@ -299,6 +363,7 @@ nav_order: 2
   }
 
   .projects .project-overview-card h3 {
+    min-height: 4.2rem;
     margin-bottom: 0.55rem;
     color: var(--text-primary);
     font-size: 1.05rem;
@@ -307,6 +372,7 @@ nav_order: 2
   }
 
   .projects .project-overview-card p {
+    min-height: 5.6rem;
     margin-bottom: 0.85rem;
     color: var(--text-secondary);
     font-size: 0.93rem;
@@ -318,7 +384,9 @@ nav_order: 2
     display: flex;
     flex-wrap: wrap;
     gap: 0.35rem;
-    margin-top: 0;
+    align-content: flex-start;
+    min-height: 5.7rem;
+    margin-top: 0.1rem;
     margin-bottom: 0.9rem;
   }
 
@@ -393,24 +461,41 @@ nav_order: 2
   }
 
   html:not([data-theme="dark"]) .projects .project-overview-tag,
-  html:not([data-theme="dark"]) .projects .project-overview-link {
+  html:not([data-theme="dark"]) .projects .project-overview-link,
+  html:not([data-theme="dark"]) .projects .project-carousel-control {
     background: #ffffff;
     border-color: #d8d8d8;
   }
 
   @media (max-width: 1000px) {
     .projects .project-overview-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-auto-columns: calc((100% - 1rem) / 2);
+      gap: 1rem;
     }
   }
 
   @media (max-width: 680px) {
-    .projects .project-overview-grid {
-      grid-template-columns: 1fr;
+    .projects .project-carousel-controls {
+      display: none;
     }
 
-    .projects .project-overview-image-wrap {
-      height: 11rem;
+    .projects .project-overview-grid {
+      grid-auto-columns: minmax(0, 100%);
+    }
+
+    .projects .project-overview-card {
+      min-height: 0;
+    }
+
+    .projects .project-overview-content {
+      grid-template-rows: auto;
+    }
+
+    .projects .project-overview-label,
+    .projects .project-overview-card h3,
+    .projects .project-overview-card p,
+    .projects .project-overview-tags {
+      min-height: 0;
     }
   }
 </style>
@@ -422,8 +507,18 @@ nav_order: 2
       aviation, clinical, and educational settings.
     </p>
 
-    <div class="project-overview-grid">
-      <article class="project-overview-card">
+    <div class="project-carousel-shell">
+      <div class="project-carousel-controls" aria-label="Selected Projects carousel controls">
+        <a class="project-carousel-control" href="#project-overview-first" aria-label="Scroll to first selected project">
+          <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+        </a>
+        <a class="project-carousel-control" href="#project-overview-last" aria-label="Scroll to last selected project">
+          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <div class="project-overview-grid" aria-label="Selected Projects carousel">
+        <article class="project-overview-card" id="project-overview-first">
         <div class="project-overview-image-wrap">
           <img
             class="project-overview-image"
@@ -450,7 +545,7 @@ nav_order: 2
         </div>
       </article>
 
-      <article class="project-overview-card">
+        <article class="project-overview-card">
         <div class="project-overview-image-wrap">
           <img
             class="project-overview-image"
@@ -477,7 +572,7 @@ nav_order: 2
         </div>
       </article>
 
-      <article class="project-overview-card">
+        <article class="project-overview-card">
         <div class="project-overview-image-wrap">
           <img
             class="project-overview-image"
@@ -504,7 +599,7 @@ nav_order: 2
         </div>
       </article>
 
-      <article class="project-overview-card">
+        <article class="project-overview-card">
         <div class="project-overview-image-wrap">
           <img
             class="project-overview-image"
@@ -531,7 +626,7 @@ nav_order: 2
         </div>
       </article>
 
-      <article class="project-overview-card">
+        <article class="project-overview-card">
         <div class="project-overview-image-wrap">
           <div class="project-overview-placeholder" role="img" aria-label="Patient access, live chat, and appointment compliance graphic">
             <i class="fa-solid fa-comments" aria-hidden="true"></i>
@@ -556,7 +651,7 @@ nav_order: 2
         </div>
       </article>
 
-      <article class="project-overview-card">
+        <article class="project-overview-card" id="project-overview-last">
         <div class="project-overview-image-wrap">
           <img
             class="project-overview-image"
@@ -578,7 +673,8 @@ nav_order: 2
           </div>
           <a class="project-overview-link" href="#digital-health-usability">View Project</a>
         </div>
-      </article>
+        </article>
+      </div>
     </div>
 
   </section>
