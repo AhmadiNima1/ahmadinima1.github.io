@@ -3,6 +3,7 @@ layout: about
 title: Nima Ahmadi, PhD
 permalink: /
 subtitle: Human Factors Engineer & Researcher
+custom_home: true
 
 announcements:
   enabled: false
@@ -24,45 +25,115 @@ social: true
 ---
 
 <style>
-  .post-header {
-    display: none;
-  }
-
   .home-page {
     color: var(--text-secondary);
   }
 
+  .home-page a {
+    transition:
+      color 160ms ease,
+      border-color 160ms ease,
+      background-color 160ms ease,
+      box-shadow 160ms ease,
+      transform 160ms ease;
+  }
+
   .home-page .home-hero {
-    margin: 1rem 0 2.75rem;
-    padding: 2.25rem 0 1.75rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(17rem, 0.65fr);
+    gap: 3rem;
+    align-items: center;
+    margin: 1.25rem 0 4.75rem;
+    padding: 3.25rem 0 4rem;
     border-bottom: 1px solid var(--global-divider-color);
+  }
+
+  .home-page .home-hero-content {
+    max-width: 700px;
   }
 
   .home-page .home-hero h1 {
     margin-bottom: 0.45rem;
     color: var(--text-primary);
-    font-size: 2.5rem;
+    font-size: 3rem;
     line-height: 1.1;
-    font-weight: 600;
+    font-weight: 700;
   }
 
   .home-page .home-hero .home-role {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.35rem;
     color: var(--accent);
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     font-weight: 600;
   }
 
   .home-page .home-hero .home-statement {
-    max-width: 790px;
-    margin-bottom: 0;
+    max-width: 650px;
+    margin-bottom: 1.7rem;
     color: var(--text-secondary);
-    font-size: 1rem;
-    line-height: 1.65;
+    font-size: 1.04rem;
+    line-height: 1.7;
+  }
+
+  .home-page .home-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .home-page .home-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.65rem;
+    padding: 0.7rem 1rem;
+    color: var(--text-primary);
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 0.92rem;
+    line-height: 1.2;
+    font-weight: 650;
+    text-decoration: none;
+  }
+
+  .home-page .home-button-primary {
+    color: #ffffff;
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+
+  .home-page .home-button:hover {
+    transform: translateY(-1px);
+    color: var(--global-theme-color);
+    border-color: var(--accent);
+    text-decoration: none;
+    box-shadow: 0 0.45rem 1.25rem rgba(0, 0, 0, 0.08);
+  }
+
+  .home-page .home-button-primary:hover {
+    color: #ffffff;
+    background: var(--global-theme-color);
+  }
+
+  .home-page .home-hero-portrait {
+    justify-self: end;
+    width: min(100%, 21rem);
+  }
+
+  .home-page .home-hero-portrait img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center top;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 0 1rem 2.2rem rgba(0, 0, 0, 0.14);
   }
 
   .home-page .home-section {
-    margin-bottom: 2.75rem;
+    margin-bottom: 4.25rem;
   }
 
   .home-page .home-section h2 {
@@ -89,17 +160,16 @@ social: true
   }
 
   .home-page .journey-section {
-    padding: 1.35rem 0 1.55rem;
-    border-top: 1px solid var(--global-divider-color);
-    border-bottom: 1px solid var(--global-divider-color);
+    padding: 0;
+    border: 0;
   }
 
   .home-page .journey-grid {
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.15rem 1.35rem;
-    margin-top: 1.4rem;
+    gap: 1.35rem;
+    margin-top: 1.75rem;
   }
 
   .home-page .journey-card {
@@ -124,19 +194,7 @@ social: true
   }
 
   .home-page .journey-card::after {
-    position: absolute;
-    z-index: 2;
-    width: 0.9rem;
-    height: 0.9rem;
-    color: var(--accent);
-    background: var(--page-bg);
-    border: 1px solid var(--border);
-    border-radius: 999px;
-    content: ">";
-    font-size: 0.52rem;
-    font-weight: 900;
-    line-height: 0.84rem;
-    text-align: center;
+    display: none;
   }
 
   .home-page .journey-card:nth-child(1)::after,
@@ -174,13 +232,13 @@ social: true
     display: flex;
     flex: 1;
     flex-direction: column;
-    padding: 1rem;
+    padding: 1.15rem;
   }
 
   .home-page .journey-meta {
     display: grid;
-    gap: 0.18rem;
-    margin-bottom: 0.55rem;
+    gap: 0.32rem;
+    margin-bottom: 0.75rem;
     color: var(--text-muted);
     font-size: 0.86rem;
     line-height: 1.35;
@@ -190,7 +248,7 @@ social: true
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 0.55rem;
+    margin-bottom: 0.7rem;
     padding: 0.24rem 0.52rem;
     color: var(--accent);
     background: var(--page-bg);
@@ -212,7 +270,7 @@ social: true
   }
 
   .home-page .journey-card h3 {
-    margin-bottom: 0.35rem;
+    margin-bottom: 0.45rem;
     color: var(--text-primary);
     font-size: 1.1rem;
     line-height: 1.35;
@@ -237,7 +295,7 @@ social: true
   }
 
   .home-page .journey-card p {
-    margin-bottom: 0.85rem;
+    margin-bottom: 0;
     color: var(--text-secondary);
     font-size: 0.95rem;
     line-height: 1.6;
@@ -282,12 +340,11 @@ social: true
 
   .home-page .what-i-do-grid {
     display: grid;
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.2rem;
   }
 
   .home-page .what-i-do-grid .home-card {
-    grid-column: span 2;
     position: relative;
     overflow: hidden;
     --home-card-accent: var(--global-theme-color);
@@ -512,27 +569,26 @@ social: true
   }
 
   @media (min-width: 901px) {
-    .home-page .what-i-do-grid .home-card:nth-child(4) {
-      grid-column: 2 / span 2;
-    }
-
     .home-page .what-i-do-grid .home-card:nth-child(5) {
-      grid-column: 4 / span 2;
+      grid-column: 1 / -1;
     }
   }
 
   @media (max-width: 900px) {
-    .home-page .journey-grid {
+    .home-page .home-hero {
       grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-bottom: 4rem;
+      padding: 2rem 0 3rem;
     }
 
-    .home-page .journey-card:nth-child(1)::after,
-    .home-page .journey-card:nth-child(2)::after,
-    .home-page .journey-card:nth-child(3)::after {
-      top: auto;
-      right: 50%;
-      bottom: -0.72rem;
-      transform: translateX(50%) rotate(90deg);
+    .home-page .home-hero-portrait {
+      justify-self: start;
+      width: min(100%, 18rem);
+    }
+
+    .home-page .journey-grid {
+      grid-template-columns: 1fr;
     }
 
     .home-page .journey-image,
@@ -552,17 +608,47 @@ social: true
       font-size: 2.15rem;
     }
   }
+
+  @media (max-width: 575px) {
+    .home-page .home-hero {
+      gap: 1.5rem;
+      margin-top: 0.25rem;
+      padding-top: 1.25rem;
+    }
+
+    .home-page .home-actions {
+      flex-direction: column;
+    }
+
+    .home-page .home-button {
+      width: 100%;
+    }
+
+    .home-page .home-section {
+      margin-bottom: 3.25rem;
+    }
+  }
 </style>
 
 <div class="home-page">
   <section class="home-hero">
-    <h1>Nima Ahmadi, PhD</h1>
-    <p class="home-role">Human Factors Engineer &amp; Researcher</p>
-    <p class="home-statement">
-      I study how people interact with complex healthcare, aviation, and safety-critical systems, using human factors methods,
-      experimental design, multimodal sensing, statistical analysis, and AI-enabled modeling to support safer and more usable
-      technologies.
-    </p>
+    <div class="home-hero-content">
+      <h1>Nima Ahmadi, PhD</h1>
+      <p class="home-role">Human Factors Engineer &amp; Researcher</p>
+      <p class="home-statement">
+        I study how people interact with complex healthcare, aviation, and safety-critical systems. My work combines human
+        factors methods, experimental design, multimodal sensing, statistical analysis, and AI-enabled modeling to support safer
+        and more usable technologies.
+      </p>
+      <div class="home-actions" aria-label="Portfolio links">
+        <a class="home-button home-button-primary" href="{{ '/projects/' | relative_url }}">View Projects</a>
+        <a class="home-button" href="{{ '/cv/' | relative_url }}">View CV</a>
+        <a class="home-button" href="{{ '/contact/' | relative_url }}">Contact Me</a>
+      </div>
+    </div>
+    <div class="home-hero-portrait">
+      <img src="{{ '/assets/img/profile.png' | relative_url }}" alt="Portrait of Nima Ahmadi" />
+    </div>
   </section>
 
   <section class="home-section journey-section">
@@ -572,10 +658,8 @@ social: true
       in Troy, NY, and healthcare systems work in Albany, NY.
     </p>
     <p class="home-section-intro">
-      My work spans transportation, healthcare, and engineering education, with a consistent focus on human performance in
-      complex, high-stakes systems. Across driving and aviation studies, clinical outcomes research, university teaching, and
-      healthcare systems projects, I have applied human factors methods to improve safety, workflow, decision-making, and system
-      performance.
+      My work spans transportation, healthcare, and engineering education, with a consistent focus on human performance,
+      workflow, decision-making, and safety in complex systems.
     </p>
 
     <div class="journey-grid">
@@ -603,14 +687,12 @@ social: true
             </div>
           </div>
           <p>
-            My human factors work began at the Center for Advanced Training Research and Naturalistic Studies (ATRANS) at Western
-            New England University, where I worked with Dr. Matthew Romoser on transportation safety studies involving teen driver
-            training, aviation simulation, eye tracking, and human performance.
+            Worked with Dr. Matthew Romoser on transportation safety studies involving teen driver training, aviation simulation,
+            eye tracking, and human performance.
           </p>
           <div class="journey-tags" aria-label="Focus areas">
             <span class="journey-tag">Driving Safety</span>
             <span class="journey-tag">Aviation HF</span>
-            <span class="journey-tag">Eye Tracking</span>
             <span class="journey-tag">Simulation</span>
           </div>
           <a
@@ -647,13 +729,11 @@ social: true
             </div>
           </div>
           <p>
-            I then moved to Houston, Texas, where I worked as a postdoctoral researcher with Dr. Farzan Sasangohar at Houston
-            Methodist Hospital&rsquo;s Center for Outcomes Research, applying human factors methods to clinical workflow, clinician
-            workload, stress, well-being, and patient safety.
+            Worked as a postdoctoral researcher with Dr. Farzan Sasangohar, applying human factors methods to clinical workflow,
+            clinician workload, stress, well-being, and patient safety.
           </p>
           <div class="journey-tags" aria-label="Focus areas">
             <span class="journey-tag">Clinical HF</span>
-            <span class="journey-tag">Outcomes Research</span>
             <span class="journey-tag">Wearables</span>
             <span class="journey-tag">Workflow</span>
           </div>
@@ -691,15 +771,13 @@ social: true
             </div>
           </div>
           <p>
-            At RPI, I continued this work through teaching, mentoring, and applied research in human factors, simulation, design
-            of experiments, systems engineering, and industrial engineering projects.
+            Continued teaching, mentoring, and applied research in human factors, simulation, design of experiments, systems
+            engineering, and industrial engineering projects.
           </p>
           <div class="journey-tags" aria-label="Focus areas">
             <span class="journey-tag">Teaching</span>
             <span class="journey-tag">Human Factors</span>
-            <span class="journey-tag">Simulation</span>
             <span class="journey-tag">DOE</span>
-            <span class="journey-tag">Mentoring</span>
           </div>
         </div>
       </article>
@@ -724,13 +802,12 @@ social: true
             </div>
           </div>
           <p>
-            Through collaborations with Albany Medical Center, I worked on healthcare systems research focused on emergency
-            department workflow, vascular access, task analysis, provider performance, and process improvement.
+            Collaborated on healthcare systems research focused on emergency department workflow, vascular access, task analysis,
+            provider performance, and process improvement.
           </p>
           <div class="journey-tags" aria-label="Focus areas">
             <span class="journey-tag">ED Workflow</span>
             <span class="journey-tag">Task Analysis</span>
-            <span class="journey-tag">Process Improvement</span>
             <span class="journey-tag">Patient Safety</span>
           </div>
         </div>
@@ -754,10 +831,7 @@ social: true
         </p>
         <div class="method-tags" aria-label="Methods">
           <span class="method-tag">DOE</span>
-          <span class="method-tag">A/B testing</span>
-          <span class="method-tag">survey design</span>
           <span class="method-tag">simulation studies</span>
-          <span class="method-tag">naturalistic studies</span>
           <span class="method-tag">mixed-methods</span>
           <span class="method-tag">mixed-effects modeling</span>
         </div>
@@ -778,8 +852,6 @@ social: true
           <span class="method-tag">UX/UI research</span>
           <span class="method-tag">task analysis</span>
           <span class="method-tag">workflow analysis</span>
-          <span class="method-tag">risk assessment</span>
-          <span class="method-tag">formative/summative evaluation</span>
         </div>
       </article>
 
@@ -798,8 +870,6 @@ social: true
           <span class="method-tag">wearable sensing</span>
           <span class="method-tag">workload</span>
           <span class="method-tag">stress</span>
-          <span class="method-tag">behavioral data</span>
-          <span class="method-tag">performance measures</span>
         </div>
       </article>
 
@@ -817,8 +887,6 @@ social: true
           <span class="method-tag">simulation-based training</span>
           <span class="method-tag">gaze-based training</span>
           <span class="method-tag">situation awareness</span>
-          <span class="method-tag">feedback</span>
-          <span class="method-tag">instructional design</span>
           <span class="method-tag">performance support</span>
         </div>
       </article>
@@ -836,9 +904,7 @@ social: true
         <div class="method-tags" aria-label="Methods">
           <span class="method-tag">statistical analysis</span>
           <span class="method-tag">machine learning</span>
-          <span class="method-tag">deep learning</span>
           <span class="method-tag">generative AI</span>
-          <span class="method-tag">wearable data</span>
           <span class="method-tag">human performance modeling</span>
         </div>
       </article>
