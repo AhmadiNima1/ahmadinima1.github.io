@@ -895,7 +895,10 @@ social: true
         </div>
         <div class="journey-content">
           <h3>Albany Medical Center</h3>
-          <span class="journey-years">2023&ndash;Present Collaboration</span>
+          <div class="journey-affiliation" aria-label="Collaboration">
+            <span>Emergency Department Research Collaboration</span>
+          </div>
+          <span class="journey-years">2023&ndash;Present</span>
           <div class="journey-meta">
             <div class="journey-location">Albany, NY</div>
             <div class="journey-focus">
