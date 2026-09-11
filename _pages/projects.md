@@ -182,6 +182,7 @@ nav_order: 2
   .projects .project-carousel-shell {
     position: relative;
     --carousel-control-size: 2.35rem;
+    --carousel-control-offset: calc((var(--carousel-control-size) + 0.65rem) * -1);
   }
 
   .projects .project-carousel-controls {
@@ -200,8 +201,8 @@ nav_order: 2
     width: var(--carousel-control-size);
     height: var(--carousel-control-size);
     color: var(--accent);
-    background: var(--page-bg);
-    border: 1px solid var(--border);
+    background: var(--card-bg);
+    border: 1px solid var(--accent);
     border-radius: 999px;
     box-shadow: 0 0.35rem 1rem rgba(20, 34, 45, 0.08);
     cursor: pointer;
@@ -217,11 +218,11 @@ nav_order: 2
   }
 
   .projects .project-carousel-control[data-carousel-direction="prev"] {
-    left: calc(var(--carousel-control-size) / -2);
+    left: var(--carousel-control-offset);
   }
 
   .projects .project-carousel-control[data-carousel-direction="next"] {
-    right: calc(var(--carousel-control-size) / -2);
+    right: var(--carousel-control-offset);
   }
 
   .projects .project-carousel-control:hover:not(:disabled) {
@@ -235,6 +236,8 @@ nav_order: 2
   .projects .project-carousel-control:disabled {
     opacity: 0.34;
     cursor: default;
+    color: var(--text-secondary);
+    border-color: var(--border);
     box-shadow: none;
   }
 
@@ -484,9 +487,17 @@ nav_order: 2
   }
 
   html:not([data-theme="dark"]) .projects .project-overview-tag,
-  html:not([data-theme="dark"]) .projects .project-overview-link,
+  html:not([data-theme="dark"]) .projects .project-overview-link {
+    background: #ffffff;
+    border-color: #d8d8d8;
+  }
+
   html:not([data-theme="dark"]) .projects .project-carousel-control {
     background: #ffffff;
+    border-color: #2f5068;
+  }
+
+  html:not([data-theme="dark"]) .projects .project-carousel-control:disabled {
     border-color: #d8d8d8;
   }
 
