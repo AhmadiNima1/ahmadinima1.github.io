@@ -50,15 +50,16 @@ social: true
 
   .home-page .home-hero {
     display: grid;
-    grid-template-columns: minmax(0, 1.42fr) minmax(17rem, 0.58fr);
-    gap: 3.4rem;
+    grid-template-columns: minmax(0, 3fr) minmax(15rem, 2fr);
+    gap: 2.6rem;
     align-items: center;
-    margin: 0.65rem 0 var(--home-section-space);
-    padding: 3.9rem 0 4.6rem;
+    margin: 0.35rem 0 3.75rem;
+    padding: 2.1rem 0 2.85rem;
     border-bottom: 1px solid var(--global-divider-color);
   }
 
   .home-page .home-hero-content {
+    align-self: center;
     max-width: 680px;
   }
 
@@ -128,8 +129,10 @@ social: true
   }
 
   .home-page .home-hero-portrait {
+    align-self: center;
     justify-self: end;
-    width: min(100%, 20.5rem);
+    width: min(100%, 21rem);
+    max-height: 580px;
     padding: 0.42rem;
     background: var(--home-surface);
     border: 1px solid var(--home-border);
@@ -140,6 +143,8 @@ social: true
   .home-page .home-hero-portrait img {
     display: block;
     width: 100%;
+    height: min(52vh, 560px);
+    min-height: 390px;
     aspect-ratio: 4 / 5;
     object-fit: cover;
     object-position: center top;
@@ -569,14 +574,20 @@ social: true
 
     .home-page .home-hero {
       grid-template-columns: 1fr;
-      gap: 2.1rem;
-      margin-bottom: var(--home-section-space);
-      padding: 2.15rem 0 3.25rem;
+      gap: 1.8rem;
+      margin-bottom: 3.5rem;
+      padding: 1.85rem 0 2.65rem;
     }
 
     .home-page .home-hero-portrait {
       justify-self: start;
-      width: min(100%, 18.5rem);
+      width: min(100%, 18rem);
+      max-height: none;
+    }
+
+    .home-page .home-hero-portrait img {
+      height: auto;
+      min-height: 0;
     }
 
     .home-page .journey-grid,
@@ -599,9 +610,10 @@ social: true
     }
 
     .home-page .home-hero {
-      gap: 1.55rem;
+      gap: 1.35rem;
       margin-top: 0.1rem;
-      padding-top: 1.25rem;
+      margin-bottom: 3rem;
+      padding: 1.15rem 0 2.25rem;
     }
 
     .home-page .home-hero h1 {
