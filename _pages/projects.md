@@ -209,7 +209,7 @@ nav_order: 2
 
   .projects .project-carousel-control {
     position: absolute;
-    top: 50%;
+    top: 56%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -591,7 +591,7 @@ nav_order: 2
 
 <div class="projects">
   <section class="project-overview" id="selected-projects">
-    <h2>Selected Projects &mdash; Overview</h2>
+    <h2>Overview</h2>
     <p class="project-overview-intro">
       Applied human factors, healthcare systems, simulation, usability, and performance research across transportation,
       aviation, clinical, and educational settings.
