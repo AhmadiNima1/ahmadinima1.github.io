@@ -531,49 +531,25 @@ social: true
     font-weight: 500;
   }
 
-  .home-page .course-table {
-    overflow: hidden;
+  .home-page .teaching-teaser {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.25rem;
+    padding: 1.35rem 1.45rem;
     background: var(--home-surface);
     border: 1px solid var(--home-border);
     border-radius: var(--home-radius);
     box-shadow: 0 0.35rem 1rem rgba(20, 34, 45, 0.04);
   }
 
-  .home-page .course-row {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: 1rem;
-    align-items: center;
-    padding: 0.95rem 1.1rem;
-    border-bottom: 1px solid var(--home-border);
-  }
-
-  .home-page .course-row:last-child {
-    border-bottom: 0;
-  }
-
-  .home-page .course-name {
+  .home-page .teaching-teaser p {
+    max-width: 720px;
+    margin: 0;
     color: var(--text-primary);
     font-size: 0.96rem;
-    line-height: 1.45;
-    font-weight: 550;
-  }
-
-  .home-page .course-category {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 10.5rem;
-    padding: 0.28rem 0.58rem;
-    color: var(--text-secondary);
-    background: var(--home-surface-soft);
-    border: 1px solid var(--home-border);
-    border-radius: 999px;
-    font-size: 0.78rem;
-    line-height: 1.25;
-    font-weight: 550;
-    text-align: center;
-    white-space: nowrap;
+    line-height: 1.6;
+    font-weight: 400;
   }
 
   .post article > .social {
@@ -635,8 +611,7 @@ social: true
   }
 
   html[data-theme="dark"] .home-page .journey-tag,
-  html[data-theme="dark"] .home-page .method-tag,
-  html[data-theme="dark"] .home-page .course-category {
+  html[data-theme="dark"] .home-page .method-tag {
     color: var(--text-muted);
   }
 
@@ -731,18 +706,10 @@ social: true
       min-height: 0;
     }
 
-    .home-page .course-row {
-      grid-template-columns: 1fr;
-      gap: 0.52rem;
-      padding: 0.95rem 1rem;
-    }
-
-    .home-page .course-category {
-      justify-content: flex-start;
-      width: fit-content;
-      min-width: 0;
-      white-space: normal;
-      text-align: left;
+    .home-page .teaching-teaser {
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 1.1rem;
     }
   }
 
@@ -1081,44 +1048,13 @@ social: true
   </section>
 
   <section class="home-section">
-    <h2>Teaching &amp; Courses</h2>
-    <div class="course-table" aria-label="Teaching and courses">
-      <div class="course-row">
-        <span class="course-name">ISYE 4270 &ndash; Multidisciplinary Capstone Design</span>
-        <span class="course-category">Engineering Design / Capstone</span>
-      </div>
-      <div class="course-row">
-        <span class="course-name">Human Performance Modeling &amp; Support</span>
-        <span class="course-category">Human Factors</span>
-      </div>
-      <div class="course-row">
-        <span class="course-name">Human Factors of Data Science &amp; Machine Learning</span>
-        <span class="course-category">Human Factors / AI</span>
-      </div>
-      <div class="course-row">
-        <span class="course-name">Design of Experiments</span>
-        <span class="course-category">Experimental Design</span>
-      </div>
-      <div class="course-row">
-        <span class="course-name">Discrete-Event Simulation (FlexSim)</span>
-        <span class="course-category">Simulation</span>
-      </div>
-      <div class="course-row">
-        <span class="course-name">Modeling &amp; Analysis of Uncertainty</span>
-        <span class="course-category">Statistics / Analytics</span>
-      </div>
-      <div class="course-row">
-        <span class="course-name">Supply Chains</span>
-        <span class="course-category">Systems Engineering</span>
-      </div>
-      <div class="course-row">
-        <span class="course-name">Industrial Engineering Computer Applications</span>
-        <span class="course-category">Computing / Industrial Engineering</span>
-      </div>
-      <div class="course-row">
-        <span class="course-name">Measurement Computing</span>
-        <span class="course-category">Measurement / Computing</span>
-      </div>
+    <h2>Teaching Portfolio</h2>
+    <div class="teaching-teaser">
+      <p>
+        Courses span human factors, engineering design, healthcare and manufacturing simulation, analytics, systems engineering,
+        and computing.
+      </p>
+      <a class="home-button" href="{{ '/teaching/' | relative_url }}">View Teaching Portfolio &rarr;</a>
     </div>
   </section>
 </div>
