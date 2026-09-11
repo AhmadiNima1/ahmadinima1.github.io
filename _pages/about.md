@@ -26,6 +26,16 @@ social: true
 
 <style>
   .home-page {
+    --home-radius: 8px;
+    --home-radius-sm: 6px;
+    --home-border: rgba(47, 80, 104, 0.18);
+    --home-border-strong: rgba(47, 80, 104, 0.28);
+    --home-surface: #ffffff;
+    --home-surface-soft: #f7f9fa;
+    --home-shadow: 0 0.8rem 1.8rem rgba(20, 34, 45, 0.08);
+    --home-shadow-hover: 0 1rem 2.2rem rgba(20, 34, 45, 0.11);
+    --home-photo-shadow: 0 1.3rem 2.8rem rgba(20, 34, 45, 0.16);
+    --home-section-space: 5.25rem;
     color: var(--text-secondary);
   }
 
@@ -40,60 +50,61 @@ social: true
 
   .home-page .home-hero {
     display: grid;
-    grid-template-columns: minmax(0, 1.35fr) minmax(17rem, 0.65fr);
-    gap: 3rem;
+    grid-template-columns: minmax(0, 1.42fr) minmax(17rem, 0.58fr);
+    gap: 3.4rem;
     align-items: center;
-    margin: 1.25rem 0 4.75rem;
-    padding: 3.25rem 0 4rem;
+    margin: 0.65rem 0 var(--home-section-space);
+    padding: 3.9rem 0 4.6rem;
     border-bottom: 1px solid var(--global-divider-color);
   }
 
   .home-page .home-hero-content {
-    max-width: 700px;
+    max-width: 680px;
   }
 
   .home-page .home-hero h1 {
-    margin-bottom: 0.45rem;
+    margin-bottom: 0.55rem;
     color: var(--text-primary);
-    font-size: 3rem;
-    line-height: 1.1;
+    font-size: 3.15rem;
+    line-height: 1.06;
     font-weight: 700;
   }
 
   .home-page .home-hero .home-role {
-    margin-bottom: 1.35rem;
+    margin-bottom: 1.45rem;
     color: var(--accent);
-    font-size: 1.25rem;
+    font-size: 1.18rem;
+    line-height: 1.35;
     font-weight: 600;
   }
 
   .home-page .home-hero .home-statement {
-    max-width: 650px;
-    margin-bottom: 1.7rem;
+    max-width: 620px;
+    margin-bottom: 1.9rem;
     color: var(--text-secondary);
-    font-size: 1.04rem;
+    font-size: 1.03rem;
     line-height: 1.7;
   }
 
   .home-page .home-actions {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.75rem;
+    gap: 0.7rem;
   }
 
   .home-page .home-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 2.65rem;
-    padding: 0.7rem 1rem;
+    min-height: 2.75rem;
+    padding: 0.72rem 1.08rem;
     color: var(--text-primary);
-    background: var(--card-bg);
-    border: 1px solid var(--border);
-    border-radius: 8px;
+    background: var(--home-surface);
+    border: 1px solid var(--home-border);
+    border-radius: var(--home-radius);
     font-size: 0.92rem;
     line-height: 1.2;
-    font-weight: 650;
+    font-weight: 600;
     text-decoration: none;
   }
 
@@ -108,7 +119,7 @@ social: true
     color: var(--global-theme-color);
     border-color: var(--accent);
     text-decoration: none;
-    box-shadow: 0 0.45rem 1.25rem rgba(0, 0, 0, 0.08);
+    box-shadow: var(--home-shadow);
   }
 
   .home-page .home-button-primary:hover {
@@ -118,7 +129,12 @@ social: true
 
   .home-page .home-hero-portrait {
     justify-self: end;
-    width: min(100%, 21rem);
+    width: min(100%, 20.5rem);
+    padding: 0.42rem;
+    background: var(--home-surface);
+    border: 1px solid var(--home-border);
+    border-radius: var(--home-radius);
+    box-shadow: var(--home-photo-shadow);
   }
 
   .home-page .home-hero-portrait img {
@@ -127,35 +143,34 @@ social: true
     aspect-ratio: 4 / 5;
     object-fit: cover;
     object-position: center top;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    box-shadow: 0 1rem 2.2rem rgba(0, 0, 0, 0.14);
+    border-radius: var(--home-radius-sm);
   }
 
   .home-page .home-section {
-    margin-bottom: 4.25rem;
+    margin-bottom: var(--home-section-space);
   }
 
   .home-page .home-section h2 {
-    margin-bottom: 1.15rem;
+    margin-bottom: 1rem;
     color: var(--text-primary);
-    font-size: 1.6rem;
-    font-weight: 600;
+    font-size: 1.72rem;
+    line-height: 1.2;
+    font-weight: 650;
   }
 
   .home-page .home-section-intro {
-    max-width: 860px;
-    margin: -0.35rem 0 1.25rem;
+    max-width: 780px;
+    margin: -0.15rem 0 1.55rem;
     color: var(--text-secondary);
     font-size: 0.98rem;
     line-height: 1.65;
   }
 
   .home-page .home-section-kicker {
-    max-width: 860px;
-    margin: -0.75rem 0 0.75rem;
+    max-width: 760px;
+    margin: -0.45rem 0 0.75rem;
     color: var(--text-muted);
-    font-size: 0.95rem;
+    font-size: 0.93rem;
     line-height: 1.6;
   }
 
@@ -168,8 +183,8 @@ social: true
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.35rem;
-    margin-top: 1.75rem;
+    gap: 1.45rem;
+    margin-top: 1.9rem;
   }
 
   .home-page .journey-card {
@@ -178,9 +193,11 @@ social: true
     flex-direction: column;
     min-width: 0;
     height: 100%;
-    background: var(--card-bg);
-    border: 1px solid var(--border);
-    border-radius: 8px;
+    overflow: hidden;
+    background: var(--home-surface);
+    border: 1px solid var(--home-border);
+    border-radius: var(--home-radius);
+    box-shadow: 0 0.35rem 1rem rgba(20, 34, 45, 0.04);
     transition:
       transform 160ms ease,
       border-color 160ms ease,
@@ -188,71 +205,56 @@ social: true
   }
 
   .home-page .journey-card:hover {
-    transform: translateY(-2px);
-    border-color: var(--accent);
-    box-shadow: 0 0.45rem 1.25rem rgba(0, 0, 0, 0.08);
+    transform: translateY(-1px);
+    border-color: var(--home-border-strong);
+    box-shadow: var(--home-shadow-hover);
   }
 
   .home-page .journey-card::after {
     display: none;
   }
 
-  .home-page .journey-card:nth-child(1)::after,
-  .home-page .journey-card:nth-child(3)::after {
-    top: 5.2rem;
-    right: -1.12rem;
-  }
-
-  .home-page .journey-card:nth-child(2)::after {
-    right: 50%;
-    bottom: -1.04rem;
-    transform: translateX(50%) rotate(90deg);
-  }
-
-  .home-page .journey-card:nth-child(4)::after {
-    display: none;
-  }
-
   .home-page .journey-image-wrap {
-    min-height: 8.7rem;
+    aspect-ratio: 16 / 9;
     overflow: hidden;
-    background: var(--page-bg);
-    border-bottom: 1px solid var(--border);
-    border-radius: 8px 8px 0 0;
+    background: var(--home-surface-soft);
+    border-bottom: 1px solid var(--home-border);
   }
 
   .home-page .journey-image {
     display: block;
     width: 100%;
-    height: 8.7rem;
+    height: 100%;
     object-fit: cover;
+    object-position: center;
   }
 
   .home-page .journey-content {
     display: flex;
     flex: 1;
     flex-direction: column;
-    padding: 1.15rem;
+    padding: 1.2rem 1.2rem 1.15rem;
   }
 
   .home-page .journey-meta {
     display: grid;
-    gap: 0.32rem;
-    margin-bottom: 0.75rem;
+    gap: 0.28rem;
+    margin-bottom: 0.85rem;
     color: var(--text-muted);
-    font-size: 0.86rem;
-    line-height: 1.35;
+    font-size: 0.84rem;
+    line-height: 1.4;
   }
 
   .home-page .journey-years {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 0.7rem;
-    padding: 0.24rem 0.52rem;
+    width: fit-content;
+    margin-bottom: 0.78rem;
+    padding: 0.28rem 0.56rem;
     color: var(--accent);
-    background: var(--page-bg);
-    border: 1px solid var(--border);
+    background: var(--accent-soft);
+    border: 1px solid transparent;
     border-radius: 999px;
     font-size: 0.76rem;
     line-height: 1.25;
@@ -272,19 +274,19 @@ social: true
   .home-page .journey-card h3 {
     margin-bottom: 0.45rem;
     color: var(--text-primary);
-    font-size: 1.1rem;
+    font-size: 1.08rem;
     line-height: 1.35;
-    font-weight: 600;
+    font-weight: 650;
   }
 
   .home-page .journey-card h3.journey-title-long {
-    font-size: 1rem;
+    font-size: 1.02rem;
   }
 
   .home-page .journey-affiliation {
     display: grid;
-    gap: 0.12rem;
-    margin: -0.05rem 0 0.45rem;
+    gap: 0.14rem;
+    margin: 0 0 0.65rem;
     color: var(--text-secondary);
     font-size: 0.86rem;
     line-height: 1.35;
@@ -297,36 +299,37 @@ social: true
   .home-page .journey-card p {
     margin-bottom: 0;
     color: var(--text-secondary);
-    font-size: 0.95rem;
+    font-size: 0.93rem;
     line-height: 1.6;
   }
 
   .home-page .journey-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.35rem;
+    gap: 0.38rem;
     margin-top: auto;
+    padding-top: 1rem;
   }
 
   .home-page .journey-tag {
     display: inline-flex;
     align-items: center;
-    padding: 0.24rem 0.52rem;
+    padding: 0.25rem 0.54rem;
     color: var(--text-secondary);
-    background: var(--page-bg);
-    border: 1px solid var(--border);
+    background: var(--home-surface-soft);
+    border: 1px solid var(--home-border);
     border-radius: 999px;
-    font-size: 0.78rem;
+    font-size: 0.76rem;
     line-height: 1.25;
   }
 
   .home-page .journey-link {
     align-self: flex-start;
-    margin: 0.9rem 0 0;
-    padding: 0.36rem 0.68rem;
+    margin: 1rem 0 0;
+    padding: 0.38rem 0.68rem;
     color: var(--accent);
-    background: var(--page-bg);
-    border: 1px solid var(--border);
+    background: transparent;
+    border: 1px solid var(--home-border);
     border-radius: 999px;
     font-size: 0.82rem;
     line-height: 1.25;
@@ -335,6 +338,7 @@ social: true
 
   .home-page .journey-link:hover {
     color: var(--global-theme-color);
+    border-color: var(--home-border-strong);
     text-decoration: none;
   }
 
@@ -348,13 +352,11 @@ social: true
     position: relative;
     overflow: hidden;
     --home-card-accent: var(--global-theme-color);
-    --home-card-tint: transparent;
-    --home-card-badge-bg: var(--page-bg);
-    --home-card-badge-border: var(--border);
-    border-top: 3px solid var(--home-card-accent);
-    background:
-      linear-gradient(180deg, var(--home-card-tint) 0, transparent 4.75rem),
-      var(--global-card-bg-color);
+    --home-card-badge-bg: var(--home-surface-soft);
+    --home-card-badge-border: var(--home-border);
+    border-top: 2px solid var(--home-card-accent);
+    background: var(--home-surface);
+    box-shadow: 0 0.35rem 1rem rgba(20, 34, 45, 0.04);
     transition:
       transform 160ms ease,
       border-color 160ms ease,
@@ -362,41 +364,37 @@ social: true
   }
 
   .home-page .what-i-do-grid .home-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 0.45rem 1.25rem rgba(0, 0, 0, 0.08);
+    transform: translateY(-1px);
+    border-color: var(--home-border-strong);
+    box-shadow: var(--home-shadow-hover);
   }
 
   .home-page .what-i-do-grid .home-card:nth-child(1) {
     --home-card-accent: #2f7d87;
-    --home-card-tint: rgba(47, 125, 135, 0.08);
     --home-card-badge-bg: rgba(47, 125, 135, 0.1);
     --home-card-badge-border: rgba(47, 125, 135, 0.28);
   }
 
   .home-page .what-i-do-grid .home-card:nth-child(2) {
     --home-card-accent: #8b5f8e;
-    --home-card-tint: rgba(139, 95, 142, 0.08);
     --home-card-badge-bg: rgba(139, 95, 142, 0.1);
     --home-card-badge-border: rgba(139, 95, 142, 0.28);
   }
 
   .home-page .what-i-do-grid .home-card:nth-child(3) {
     --home-card-accent: #4f8461;
-    --home-card-tint: rgba(79, 132, 97, 0.08);
     --home-card-badge-bg: rgba(79, 132, 97, 0.1);
     --home-card-badge-border: rgba(79, 132, 97, 0.28);
   }
 
   .home-page .what-i-do-grid .home-card:nth-child(4) {
     --home-card-accent: #9a762d;
-    --home-card-tint: rgba(154, 118, 45, 0.08);
     --home-card-badge-bg: rgba(154, 118, 45, 0.1);
     --home-card-badge-border: rgba(154, 118, 45, 0.28);
   }
 
   .home-page .what-i-do-grid .home-card:nth-child(5) {
     --home-card-accent: #526783;
-    --home-card-tint: rgba(82, 103, 131, 0.08);
     --home-card-badge-bg: rgba(82, 103, 131, 0.1);
     --home-card-badge-border: rgba(82, 103, 131, 0.28);
   }
@@ -413,9 +411,9 @@ social: true
     flex-direction: column;
     height: 100%;
     padding: 1.35rem;
-    background: var(--card-bg);
-    border: 1px solid var(--border);
-    border-radius: 8px;
+    background: var(--home-surface);
+    border: 1px solid var(--home-border);
+    border-radius: var(--home-radius);
   }
 
   .home-page .home-card-number {
@@ -426,7 +424,7 @@ social: true
     height: 2rem;
     margin-bottom: 0.9rem;
     color: var(--accent);
-    border: 1px solid var(--border);
+    border: 1px solid var(--home-border);
     border-radius: 999px;
     font-size: 0.78rem;
     font-weight: 700;
@@ -436,8 +434,8 @@ social: true
   .home-page .home-card-top {
     display: flex;
     align-items: center;
-    gap: 0.55rem;
-    margin-bottom: 0.9rem;
+    gap: 0.62rem;
+    margin-bottom: 0.95rem;
   }
 
   .home-page .home-card-top .home-card-number {
@@ -451,31 +449,31 @@ social: true
     width: 2rem;
     height: 2rem;
     color: var(--accent);
-    background: var(--page-bg);
-    border: 1px solid var(--border);
+    background: var(--home-surface-soft);
+    border: 1px solid var(--home-border);
     border-radius: 999px;
     font-size: 0.85rem;
   }
 
   .home-page .home-card h3 {
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.72rem;
     color: var(--text-primary);
     font-size: 1.1rem;
     line-height: 1.35;
-    font-weight: 600;
+    font-weight: 650;
   }
 
   .home-page .home-card p {
-    margin-bottom: 1rem;
+    margin-bottom: 1.05rem;
     color: var(--text-secondary);
-    font-size: 0.95rem;
+    font-size: 0.93rem;
     line-height: 1.65;
   }
 
   .home-page .method-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.45rem;
+    gap: 0.42rem;
     margin-top: 0.85rem;
   }
 
@@ -486,13 +484,19 @@ social: true
   .home-page .method-tag {
     display: inline-flex;
     align-items: center;
-    padding: 0.24rem 0.52rem;
+    padding: 0.25rem 0.54rem;
     color: var(--text-secondary);
-    background: var(--page-bg);
-    border: 1px solid var(--border);
+    background: var(--home-surface-soft);
+    border: 1px solid var(--home-border);
     border-radius: 999px;
-    font-size: 0.78rem;
+    font-size: 0.76rem;
     line-height: 1.25;
+  }
+
+  .post article > .social {
+    margin-top: 0.75rem;
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--global-divider-color);
   }
 
   html:not([data-theme="dark"]) .home-page,
@@ -510,62 +514,46 @@ social: true
     color: #333333;
   }
 
+  html:not([data-theme="dark"]) .home-page .home-button-primary {
+    color: #ffffff;
+  }
+
   html:not([data-theme="dark"]) .home-page .home-section-kicker,
   html:not([data-theme="dark"]) .home-page .journey-meta {
-    color: #4a4a4a;
+    color: #5b6268;
   }
 
-  html:not([data-theme="dark"]) .home-page .journey-card {
-    background: #fafafa;
-    border-color: #dedede;
-  }
-
-  html:not([data-theme="dark"]) .home-page .home-card {
-    border-color: #dedede;
-  }
-
-  html:not([data-theme="dark"]) .home-page .what-i-do-grid .home-card {
-    border-top-color: var(--home-card-accent);
-  }
-
-  html:not([data-theme="dark"]) .home-page .journey-card:hover {
-    box-shadow: 0 0.45rem 1.25rem rgba(0, 0, 0, 0.08);
-  }
-
-  html:not([data-theme="dark"]) .home-page .journey-image-wrap {
-    background: #f1f1f1;
-    border-color: #dedede;
-  }
-
-  html:not([data-theme="dark"]) .home-page .home-card-number {
-    background: #ffffff;
-    border-color: #d6d6d6;
-  }
-
-  html:not([data-theme="dark"]) .home-page .home-card-icon {
-    background: #ffffff;
-    border-color: #d6d6d6;
-  }
-
-  html:not([data-theme="dark"]) .home-page .what-i-do-grid .home-card .home-card-number,
-  html:not([data-theme="dark"]) .home-page .what-i-do-grid .home-card .home-card-icon {
-    color: var(--home-card-accent);
-    background: var(--home-card-badge-bg);
-    border-color: var(--home-card-badge-border);
-  }
-
-  html:not([data-theme="dark"]) .home-page .journey-tag,
-  html:not([data-theme="dark"]) .home-page .journey-years,
-  html:not([data-theme="dark"]) .home-page .journey-link,
-  html:not([data-theme="dark"]) .home-page .method-tag {
-    background: #ffffff;
-    border-color: #d8d8d8;
-  }
-
-  html:not([data-theme="dark"]) .home-page .journey-link,
-  html:not([data-theme="dark"]) .home-page .journey-years,
   html:not([data-theme="dark"]) .home-page .journey-theme {
     color: #2f5068;
+  }
+
+  html[data-theme="dark"] .home-page {
+    --home-border: rgba(143, 206, 225, 0.18);
+    --home-border-strong: rgba(143, 206, 225, 0.32);
+    --home-surface: #24282d;
+    --home-surface-soft: #1f2328;
+    --home-shadow: 0 0.8rem 1.8rem rgba(0, 0, 0, 0.18);
+    --home-shadow-hover: 0 1rem 2.2rem rgba(0, 0, 0, 0.24);
+    --home-photo-shadow: 0 1.3rem 2.8rem rgba(0, 0, 0, 0.3);
+  }
+
+  html[data-theme="dark"] .home-page .home-button-primary {
+    color: #101417;
+  }
+
+  html[data-theme="dark"] .home-page .home-button-primary:hover {
+    color: #101417;
+  }
+
+  html[data-theme="dark"] .home-page .what-i-do-grid .home-card:nth-child(4) {
+    --home-card-accent: #d2aa55;
+    --home-card-badge-bg: rgba(210, 170, 85, 0.14);
+    --home-card-badge-border: rgba(210, 170, 85, 0.28);
+  }
+
+  html[data-theme="dark"] .home-page .journey-tag,
+  html[data-theme="dark"] .home-page .method-tag {
+    color: var(--text-muted);
   }
 
   @media (min-width: 901px) {
@@ -575,27 +563,23 @@ social: true
   }
 
   @media (max-width: 900px) {
+    .home-page {
+      --home-section-space: 4rem;
+    }
+
     .home-page .home-hero {
       grid-template-columns: 1fr;
-      gap: 2rem;
-      margin-bottom: 4rem;
-      padding: 2rem 0 3rem;
+      gap: 2.1rem;
+      margin-bottom: var(--home-section-space);
+      padding: 2.15rem 0 3.25rem;
     }
 
     .home-page .home-hero-portrait {
       justify-self: start;
-      width: min(100%, 18rem);
+      width: min(100%, 18.5rem);
     }
 
-    .home-page .journey-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .home-page .journey-image,
-    .home-page .journey-image-wrap {
-      height: 10.5rem;
-    }
-
+    .home-page .journey-grid,
     .home-page .what-i-do-grid {
       grid-template-columns: 1fr;
     }
@@ -605,15 +589,27 @@ social: true
     }
 
     .home-page .home-hero h1 {
-      font-size: 2.15rem;
+      font-size: 2.35rem;
     }
   }
 
   @media (max-width: 575px) {
+    .home-page {
+      --home-section-space: 3.4rem;
+    }
+
     .home-page .home-hero {
-      gap: 1.5rem;
-      margin-top: 0.25rem;
+      gap: 1.55rem;
+      margin-top: 0.1rem;
       padding-top: 1.25rem;
+    }
+
+    .home-page .home-hero h1 {
+      font-size: 2.12rem;
+    }
+
+    .home-page .home-hero .home-role {
+      font-size: 1.05rem;
     }
 
     .home-page .home-actions {
@@ -624,8 +620,24 @@ social: true
       width: 100%;
     }
 
-    .home-page .home-section {
-      margin-bottom: 3.25rem;
+    .home-page .home-card,
+    .home-page .journey-content {
+      padding: 1.1rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .home-page a,
+    .home-page .home-button,
+    .home-page .journey-card,
+    .home-page .home-card {
+      transition: none;
+    }
+
+    .home-page .home-button:hover,
+    .home-page .journey-card:hover,
+    .home-page .what-i-do-grid .home-card:hover {
+      transform: none;
     }
   }
 </style>
@@ -647,7 +659,14 @@ social: true
       </div>
     </div>
     <div class="home-hero-portrait">
-      <img src="{{ '/assets/img/profile.png' | relative_url }}" alt="Portrait of Nima Ahmadi" />
+      <img
+        src="{{ '/assets/img/profile.png' | relative_url }}"
+        width="1122"
+        height="1402"
+        alt="Portrait of Nima Ahmadi"
+        loading="eager"
+        decoding="async"
+      />
     </div>
   </section>
 
@@ -668,7 +687,11 @@ social: true
           <img
             class="journey-image"
             src="{{ '/assets/img/projects/atrans/WNEU.JPG' | relative_url }}"
+            width="4032"
+            height="3024"
             alt="Western New England University campus associated with ATRANS"
+            loading="lazy"
+            decoding="async"
             onerror="this.style.display='none';"
           />
         </div>
@@ -711,7 +734,11 @@ social: true
           <img
             class="journey-image"
             src="{{ '/assets/img/projects/houston_methodist/HMH.jpg' | relative_url }}"
+            width="4608"
+            height="3072"
             alt="Houston Methodist facility"
+            loading="lazy"
+            decoding="async"
             onerror="this.style.display='none';"
           />
         </div>
@@ -753,7 +780,11 @@ social: true
           <img
             class="journey-image"
             src="{{ '/assets/img/projects/rpi/RPI.JPG' | relative_url }}"
+            width="4032"
+            height="3024"
             alt="Rensselaer Polytechnic Institute campus"
+            loading="lazy"
+            decoding="async"
             onerror="this.style.display='none';"
           />
         </div>
@@ -787,7 +818,11 @@ social: true
           <img
             class="journey-image"
             src="{{ '/assets/img/projects/vascular-access/usgva-simulation-procedure.png' | relative_url }}"
+            width="1448"
+            height="1086"
             alt="Clinical workflow and vascular access simulation procedure"
+            loading="lazy"
+            decoding="async"
             onerror="this.style.display='none';"
           />
         </div>
