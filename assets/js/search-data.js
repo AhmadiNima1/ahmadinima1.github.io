@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
+        },{id: "nav-teaching-portfolio",
+          title: "Teaching Portfolio",
+          description: "Courses taught across human factors, engineering design, simulation, analytics, and computing.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/teaching/";
+          },
         },{id: "nav-cv",
           title: "CV",
           description: "Curriculum vitae for Nima Ahmadi.",
