@@ -925,7 +925,7 @@ social: true
   </section>
 
   <section class="home-section">
-    <h2>What I Do</h2>
+    <h2>Core Expertise</h2>
     <div class="what-i-do-grid">
       <article class="home-card">
         <div class="home-card-top" aria-hidden="true">
