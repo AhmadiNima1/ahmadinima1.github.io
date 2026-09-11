@@ -72,6 +72,21 @@ nav_order: 2
     font-size: 0.9rem;
   }
 
+  .projects .project-index {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1.8rem;
+    padding: 0.14rem 0.42rem;
+    color: var(--accent);
+    background: var(--page-bg);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    font-size: 0.72rem;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+
   .projects .project-header .card-title {
     margin-bottom: 0;
     color: var(--text-primary);
@@ -251,11 +266,35 @@ nav_order: 2
 
   .projects .project-overview-intro {
     max-width: 860px;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.55rem;
     color: var(--text-secondary);
     font-size: 0.96rem;
     line-height: 1.68;
     font-weight: 400;
+  }
+
+  .projects .project-overview-note,
+  .projects .project-case-studies-intro {
+    max-width: 860px;
+    margin: 0 0 1.25rem;
+    color: var(--text-muted);
+    font-size: 0.92rem;
+    line-height: 1.6;
+    font-weight: 450;
+  }
+
+  .projects .project-case-studies {
+    margin: 2.35rem 0 1.2rem;
+    padding-top: 1.55rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .projects .project-case-studies h2 {
+    margin-bottom: 0.45rem;
+    color: var(--text-primary);
+    font-size: 1.48rem;
+    line-height: 1.25;
+    font-weight: 650;
   }
 
   .projects .project-overview-grid {
@@ -378,6 +417,7 @@ nav_order: 2
   .projects .project-overview-label {
     display: inline-flex;
     align-items: center;
+    gap: 0.45rem;
     min-height: 2.6rem;
     margin-bottom: 0.45rem;
     color: var(--project-accent);
@@ -450,6 +490,9 @@ nav_order: 2
   html:not([data-theme="dark"]) .projects .project-overview,
   html:not([data-theme="dark"]) .projects .project-overview h2,
   html:not([data-theme="dark"]) .projects .project-overview-intro,
+  html:not([data-theme="dark"]) .projects .project-overview-note,
+  html:not([data-theme="dark"]) .projects .project-case-studies h2,
+  html:not([data-theme="dark"]) .projects .project-case-studies-intro,
   html:not([data-theme="dark"]) .projects .project-overview-card,
   html:not([data-theme="dark"]) .projects .project-overview-card h3,
   html:not([data-theme="dark"]) .projects .project-overview-card p,
@@ -487,7 +530,8 @@ nav_order: 2
   }
 
   html:not([data-theme="dark"]) .projects .project-overview-tag,
-  html:not([data-theme="dark"]) .projects .project-overview-link {
+  html:not([data-theme="dark"]) .projects .project-overview-link,
+  html:not([data-theme="dark"]) .projects .project-index {
     background: #ffffff;
     border-color: #d8d8d8;
   }
@@ -547,10 +591,12 @@ nav_order: 2
 
 <div class="projects">
   <section class="project-overview" id="selected-projects">
+    <h2>Selected Projects &mdash; Overview</h2>
     <p class="project-overview-intro">
       Applied human factors, healthcare systems, simulation, usability, and performance research across transportation,
       aviation, clinical, and educational settings.
     </p>
+    <p class="project-overview-note">Select <strong>View Project</strong> on any card to jump to the full case study below.</p>
 
     <div class="project-carousel-shell">
       <div class="project-carousel-controls" aria-label="Selected Projects carousel controls">
@@ -573,7 +619,7 @@ nav_order: 2
           >
         </div>
         <div class="project-overview-content">
-          <span class="project-overview-label">Driving Safety / Human Performance</span>
+          <span class="project-overview-label"><span class="project-index">01</span> Driving Safety / Human Performance</span>
           <h3>Tablet-Based Hazard Anticipation Training for Novice Teen Drivers</h3>
           <p>
             Studied teen driver training and hazard anticipation using driving simulation, eye tracking, and performance-based
@@ -600,7 +646,7 @@ nav_order: 2
           >
         </div>
         <div class="project-overview-content">
-          <span class="project-overview-label">Aviation Human Factors</span>
+          <span class="project-overview-label"><span class="project-index">02</span> Aviation Human Factors</span>
           <h3>Gaze-Based Training for General Aviation Pilots</h3>
           <p>
             Evaluated pilot attention, scan patterns, workload, and performance in simulator-based aviation studies using eye
@@ -627,7 +673,7 @@ nav_order: 2
           >
         </div>
         <div class="project-overview-content">
-          <span class="project-overview-label">Clinical Human Factors</span>
+          <span class="project-overview-label"><span class="project-index">03</span> Clinical Human Factors</span>
           <h3>Clinician Stress, Workload &amp; Well-Being</h3>
           <p>
             Applied human factors, wearable sensing, surveys, and statistical modeling to study clinician stress, workload,
@@ -654,7 +700,7 @@ nav_order: 2
           >
         </div>
         <div class="project-overview-content">
-          <span class="project-overview-label">Healthcare Systems</span>
+          <span class="project-overview-label"><span class="project-index">04</span> Healthcare Systems</span>
           <h3>Emergency Department Vascular Access Workflow</h3>
           <p>
             Used task analysis, clinical observation, simulation, and workflow methods to study emergency department vascular
@@ -679,7 +725,7 @@ nav_order: 2
           </div>
         </div>
         <div class="project-overview-content">
-          <span class="project-overview-label">Healthcare Operations</span>
+          <span class="project-overview-label"><span class="project-index">05</span> Healthcare Operations</span>
           <h3>Outpatient Appointment Compliance &amp; Live Chat Intervention</h3>
           <p>
             Analyzed large-scale outpatient appointment data to evaluate live chat/text-based communication and its association
@@ -706,7 +752,7 @@ nav_order: 2
           >
         </div>
         <div class="project-overview-content">
-          <span class="project-overview-label">Digital Health / Usability</span>
+          <span class="project-overview-label"><span class="project-index">06</span> Digital Health / Usability</span>
           <h3>SU2C Mobile App Usability &amp; Patient Engagement</h3>
           <p>Evaluated usability, patient-facing digital health design, and engagement considerations for mobile health technology.</p>
           <div class="project-overview-tags" aria-label="Methods">
@@ -771,9 +817,16 @@ nav_order: 2
     });
   </script>
 
+  <section class="project-case-studies" aria-labelledby="project-case-studies-heading">
+    <h2 id="project-case-studies-heading">Project Case Studies</h2>
+    <p class="project-case-studies-intro">
+      Detailed case studies below include methods, results, and supporting visuals for each selected project.
+    </p>
+  </section>
+
   <div class="card mt-3" id="driving-safety">
     <div class="card-body project-header">
-      <div class="project-category"><i class="fa-solid fa-car-side" aria-hidden="true"></i> Driving Safety / Human Performance</div>
+      <div class="project-category"><span class="project-index">01</span><i class="fa-solid fa-car-side" aria-hidden="true"></i> Driving Safety / Human Performance</div>
       <h5 class="card-title">Tablet-Based Hazard Anticipation Training for Novice Teen Drivers</h5>
     </div>
     <img
@@ -820,7 +873,7 @@ nav_order: 2
 
   <div class="card mt-3" id="aviation-human-factors">
     <div class="card-body project-header">
-      <div class="project-category"><i class="fa-solid fa-plane-up" aria-hidden="true"></i> Aviation Training / Human Performance</div>
+      <div class="project-category"><span class="project-index">02</span><i class="fa-solid fa-plane-up" aria-hidden="true"></i> Aviation Training / Human Performance</div>
       <h5 class="card-title">Gaze-Based Training for General Aviation Pilots in VFR-into-IMC Transitions</h5>
     </div>
     <img
@@ -898,7 +951,7 @@ nav_order: 2
 
   <div class="card mt-3" id="clinician-stress-workload">
     <div class="card-body project-header">
-      <div class="project-category"><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i> Healthcare Human Factors / Clinical Workflow</div>
+      <div class="project-category"><span class="project-index">03</span><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i> Healthcare Human Factors / Clinical Workflow</div>
       <h5 class="card-title">Naturalistic Stress and Workload Monitoring in ICU Nurses</h5>
     </div>
     <img
@@ -937,7 +990,7 @@ nav_order: 2
 
   <div class="card mt-3" id="digital-health-usability">
     <div class="card-body project-header">
-      <div class="project-category"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i> Digital Health UX/UI / Patient Engagement</div>
+      <div class="project-category"><span class="project-index">06</span><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i> Digital Health UX/UI / Patient Engagement</div>
       <h5 class="card-title">User-Centered Design of a Digital Patient Navigation Tool for Breast Cancer Care</h5>
     </div>
     <img
@@ -958,7 +1011,7 @@ nav_order: 2
 
   <div class="card mt-3" id="vascular-access-workflow">
     <div class="card-body project-header">
-      <div class="project-category"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i> Healthcare Human Factors / Clinical Workflow</div>
+      <div class="project-category"><span class="project-index">04</span><i class="fa-solid fa-diagram-project" aria-hidden="true"></i> Healthcare Human Factors / Clinical Workflow</div>
       <h5 class="card-title">Hierarchical Task Analysis of Ultrasound-Guided Vascular Access Procedures</h5>
     </div>
     <img
@@ -982,7 +1035,7 @@ nav_order: 2
 
   <div class="card mt-3" id="outpatient-compliance-live-chat">
     <div class="card-body project-header">
-      <div class="project-category"><i class="fa-solid fa-comments" aria-hidden="true"></i> Healthcare Operations / Patient Access</div>
+      <div class="project-category"><span class="project-index">05</span><i class="fa-solid fa-comments" aria-hidden="true"></i> Healthcare Operations / Patient Access</div>
       <h5 class="card-title">Outpatient Appointment Compliance and Live Chat Communication</h5>
     </div>
     <div class="project-detail-placeholder" role="img" aria-label="Patient access, live chat, and appointment compliance graphic">
