@@ -191,8 +191,9 @@ social: true
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.45rem;
+    gap: 1.5rem;
     margin-top: 1.9rem;
+    align-items: stretch;
   }
 
   .home-page .journey-card {
@@ -224,6 +225,7 @@ social: true
 
   .home-page .journey-image-wrap {
     aspect-ratio: 16 / 9;
+    min-height: 0;
     overflow: hidden;
     background: var(--home-surface-soft);
     border-bottom: 1px solid var(--home-border);
@@ -238,16 +240,17 @@ social: true
   }
 
   .home-page .journey-content {
-    display: flex;
+    display: grid;
     flex: 1;
-    flex-direction: column;
+    grid-template-rows: auto auto auto minmax(6.15rem, auto) auto;
     padding: 1.2rem 1.2rem 1.15rem;
   }
 
   .home-page .journey-meta {
     display: grid;
     gap: 0.28rem;
-    margin-bottom: 0.85rem;
+    min-height: 3.25rem;
+    margin-bottom: 0.9rem;
     color: var(--text-muted);
     font-size: 0.84rem;
     line-height: 1.4;
@@ -281,6 +284,7 @@ social: true
   }
 
   .home-page .journey-card h3 {
+    min-height: 2.85rem;
     margin-bottom: 0.45rem;
     color: var(--text-primary);
     font-size: 1.05rem;
@@ -295,6 +299,7 @@ social: true
   .home-page .journey-affiliation {
     display: grid;
     gap: 0.14rem;
+    min-height: 2.45rem;
     margin: 0 0 0.65rem;
     color: var(--text-secondary);
     font-size: 0.85rem;
@@ -314,12 +319,19 @@ social: true
     font-weight: 400;
   }
 
+  .home-page .journey-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 4.9rem;
+    margin-top: 1.05rem;
+  }
+
   .home-page .journey-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.38rem;
-    margin-top: auto;
-    padding-top: 1rem;
+    margin-top: 0;
   }
 
   .home-page .journey-tag {
@@ -348,6 +360,12 @@ social: true
     font-weight: 600;
   }
 
+  .home-page .journey-link-spacer {
+    display: block;
+    height: 2.08rem;
+    margin-top: 1rem;
+  }
+
   .home-page .journey-link:hover {
     color: var(--global-theme-color);
     border-color: var(--home-border-strong);
@@ -357,7 +375,8 @@ social: true
   .home-page .what-i-do-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.2rem;
+    gap: 1.5rem;
+    align-items: stretch;
   }
 
   .home-page .what-i-do-grid .home-card {
@@ -422,7 +441,8 @@ social: true
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 1.35rem;
+    min-height: 18rem;
+    padding: 1.45rem;
     background: var(--home-surface);
     border: 1px solid var(--home-border);
     border-radius: var(--home-radius);
@@ -447,6 +467,7 @@ social: true
     display: flex;
     align-items: center;
     gap: 0.62rem;
+    min-height: 2.25rem;
     margin-bottom: 0.95rem;
   }
 
@@ -468,6 +489,7 @@ social: true
   }
 
   .home-page .home-card h3 {
+    min-height: 2.85rem;
     margin-bottom: 0.72rem;
     color: var(--text-primary);
     font-size: 1.05rem;
@@ -476,6 +498,7 @@ social: true
   }
 
   .home-page .home-card p {
+    min-height: 6.2rem;
     margin-bottom: 1.05rem;
     color: var(--text-secondary);
     font-size: 0.93rem;
@@ -492,6 +515,7 @@ social: true
 
   .home-page .home-card .method-tags {
     margin-top: auto;
+    padding-top: 0.1rem;
   }
 
   .home-page .method-tag {
@@ -570,12 +594,6 @@ social: true
     color: var(--text-muted);
   }
 
-  @media (min-width: 901px) {
-    .home-page .what-i-do-grid .home-card:nth-child(5) {
-      grid-column: 1 / -1;
-    }
-  }
-
   @media (max-width: 900px) {
     .home-page {
       --home-section-space: 4rem;
@@ -599,17 +617,22 @@ social: true
       min-height: 0;
     }
 
-    .home-page .journey-grid,
+    .home-page .journey-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .home-page .home-hero h1 {
+      font-size: 2.3rem;
+    }
+  }
+
+  @media (max-width: 760px) {
     .home-page .what-i-do-grid {
       grid-template-columns: 1fr;
     }
 
     .home-page .what-i-do-grid .home-card {
       grid-column: auto;
-    }
-
-    .home-page .home-hero h1 {
-      font-size: 2.3rem;
     }
   }
 
@@ -644,6 +667,22 @@ social: true
     .home-page .home-card,
     .home-page .journey-content {
       padding: 1.1rem;
+    }
+
+    .home-page .journey-content {
+      grid-template-rows: auto;
+    }
+
+    .home-page .journey-card h3,
+    .home-page .journey-affiliation,
+    .home-page .journey-meta,
+    .home-page .home-card h3,
+    .home-page .home-card p {
+      min-height: 0;
+    }
+
+    .home-page .journey-footer {
+      min-height: 0;
     }
   }
 
@@ -734,19 +773,21 @@ social: true
             Worked with Dr. Matthew Romoser on transportation safety studies involving teen driver training, aviation simulation,
             eye tracking, and human performance.
           </p>
-          <div class="journey-tags" aria-label="Focus areas">
-            <span class="journey-tag">Driving Safety</span>
-            <span class="journey-tag">Aviation HF</span>
-            <span class="journey-tag">Simulation</span>
+          <div class="journey-footer">
+            <div class="journey-tags" aria-label="Focus areas">
+              <span class="journey-tag">Driving Safety</span>
+              <span class="journey-tag">Aviation HF</span>
+              <span class="journey-tag">Simulation</span>
+            </div>
+            <a
+              class="journey-link"
+              href="https://wne.edu/engineering/departments/industrial-engineering-and-engineering-management/atrans.cfm"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View ATRANS
+            </a>
           </div>
-          <a
-            class="journey-link"
-            href="https://wne.edu/engineering/departments/industrial-engineering-and-engineering-management/atrans.cfm"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View ATRANS
-          </a>
         </div>
       </article>
 
@@ -780,19 +821,21 @@ social: true
             Worked as a postdoctoral researcher with Dr. Farzan Sasangohar, applying human factors methods to clinical workflow,
             clinician workload, stress, well-being, and patient safety.
           </p>
-          <div class="journey-tags" aria-label="Focus areas">
-            <span class="journey-tag">Clinical HF</span>
-            <span class="journey-tag">Wearables</span>
-            <span class="journey-tag">Workflow</span>
+          <div class="journey-footer">
+            <div class="journey-tags" aria-label="Focus areas">
+              <span class="journey-tag">Clinical HF</span>
+              <span class="journey-tag">Wearables</span>
+              <span class="journey-tag">Workflow</span>
+            </div>
+            <a
+              class="journey-link"
+              href="https://engineering.tamu.edu/industrial/profiles/fsasangohar.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Mentor Profile
+            </a>
           </div>
-          <a
-            class="journey-link"
-            href="https://engineering.tamu.edu/industrial/profiles/fsasangohar.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Mentor Profile
-          </a>
         </div>
       </article>
 
@@ -826,10 +869,13 @@ social: true
             Continued teaching, mentoring, and applied research in human factors, simulation, design of experiments, systems
             engineering, and industrial engineering projects.
           </p>
-          <div class="journey-tags" aria-label="Focus areas">
-            <span class="journey-tag">Teaching</span>
-            <span class="journey-tag">Human Factors</span>
-            <span class="journey-tag">DOE</span>
+          <div class="journey-footer">
+            <div class="journey-tags" aria-label="Focus areas">
+              <span class="journey-tag">Teaching</span>
+              <span class="journey-tag">Human Factors</span>
+              <span class="journey-tag">DOE</span>
+            </div>
+            <span class="journey-link-spacer" aria-hidden="true"></span>
           </div>
         </div>
       </article>
@@ -861,10 +907,13 @@ social: true
             Collaborated on healthcare systems research focused on emergency department workflow, vascular access, task analysis,
             provider performance, and process improvement.
           </p>
-          <div class="journey-tags" aria-label="Focus areas">
-            <span class="journey-tag">ED Workflow</span>
-            <span class="journey-tag">Task Analysis</span>
-            <span class="journey-tag">Patient Safety</span>
+          <div class="journey-footer">
+            <div class="journey-tags" aria-label="Focus areas">
+              <span class="journey-tag">ED Workflow</span>
+              <span class="journey-tag">Task Analysis</span>
+              <span class="journey-tag">Patient Safety</span>
+            </div>
+            <span class="journey-link-spacer" aria-hidden="true"></span>
           </div>
         </div>
       </article>
