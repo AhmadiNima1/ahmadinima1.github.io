@@ -758,7 +758,7 @@ social: true
   </section>
 
   <section class="home-section journey-section">
-    <h2>Experience Across High-Stakes Human Systems</h2>
+    <h2>Professional &amp; Research Experience</h2>
     <p class="home-section-kicker">
       From transportation human factors in Springfield, MA to clinical outcomes research in Houston, TX, engineering education
       in Troy, NY, and healthcare systems work in Albany, NY.
