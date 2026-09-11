@@ -242,14 +242,20 @@ social: true
   .home-page .journey-content {
     display: grid;
     flex: 1;
-    grid-template-rows: auto auto auto minmax(6.15rem, auto) auto;
+    grid-template-rows:
+      minmax(2.85rem, auto)
+      minmax(3.05rem, auto)
+      minmax(2.05rem, auto)
+      minmax(3.65rem, auto)
+      minmax(6.15rem, auto)
+      minmax(4.9rem, auto);
     padding: 1.2rem 1.2rem 1.15rem;
   }
 
   .home-page .journey-meta {
     display: grid;
+    grid-template-rows: minmax(1.2rem, auto) minmax(2rem, auto);
     gap: 0.28rem;
-    min-height: 3.25rem;
     margin-bottom: 0.9rem;
     color: var(--text-muted);
     font-size: 0.84rem;
@@ -284,7 +290,6 @@ social: true
   }
 
   .home-page .journey-card h3 {
-    min-height: 2.85rem;
     margin-bottom: 0.45rem;
     color: var(--text-primary);
     font-size: 1.05rem;
@@ -299,7 +304,6 @@ social: true
   .home-page .journey-affiliation {
     display: grid;
     gap: 0.14rem;
-    min-height: 2.45rem;
     margin: 0 0 0.65rem;
     color: var(--text-secondary);
     font-size: 0.85rem;
@@ -320,11 +324,11 @@ social: true
   }
 
   .home-page .journey-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    min-height: 4.9rem;
-    margin-top: 1.05rem;
+    display: grid;
+    grid-template-rows: auto 2.08rem;
+    align-content: end;
+    gap: 1rem;
+    margin-top: 0;
   }
 
   .home-page .journey-tags {
@@ -349,7 +353,7 @@ social: true
 
   .home-page .journey-link {
     align-self: flex-start;
-    margin: 1rem 0 0;
+    margin: 0;
     padding: 0.38rem 0.68rem;
     color: var(--accent);
     background: transparent;
@@ -363,7 +367,7 @@ social: true
   .home-page .journey-link-spacer {
     display: block;
     height: 2.08rem;
-    margin-top: 1rem;
+    margin-top: 0;
   }
 
   .home-page .journey-link:hover {
@@ -640,6 +644,14 @@ social: true
 
     .home-page .journey-grid {
       grid-template-columns: 1fr;
+    }
+
+    .home-page .journey-content {
+      grid-template-rows: auto;
+    }
+
+    .home-page .journey-meta {
+      grid-template-rows: auto;
     }
 
     .home-page .home-hero h1 {
