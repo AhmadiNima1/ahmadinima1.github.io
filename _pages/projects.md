@@ -181,38 +181,61 @@ nav_order: 2
 
   .projects .project-carousel-shell {
     position: relative;
+    --carousel-control-size: 2.35rem;
   }
 
   .projects .project-carousel-controls {
     position: absolute;
-    top: -3.1rem;
-    right: 0;
-    display: flex;
-    gap: 0.45rem;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
   }
 
   .projects .project-carousel-control {
+    position: absolute;
+    top: 50%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 2.1rem;
-    height: 2.1rem;
+    width: var(--carousel-control-size);
+    height: var(--carousel-control-size);
     color: var(--accent);
     background: var(--page-bg);
     border: 1px solid var(--border);
     border-radius: 999px;
+    box-shadow: 0 0.35rem 1rem rgba(20, 34, 45, 0.08);
+    cursor: pointer;
+    pointer-events: auto;
+    transform: translateY(-50%);
     text-decoration: none;
     transition:
       color 160ms ease,
       border-color 160ms ease,
-      background-color 160ms ease;
+      background-color 160ms ease,
+      opacity 160ms ease,
+      box-shadow 160ms ease;
   }
 
-  .projects .project-carousel-control:hover {
+  .projects .project-carousel-control[data-carousel-direction="prev"] {
+    left: calc(var(--carousel-control-size) / -2);
+  }
+
+  .projects .project-carousel-control[data-carousel-direction="next"] {
+    right: calc(var(--carousel-control-size) / -2);
+  }
+
+  .projects .project-carousel-control:hover:not(:disabled) {
     color: var(--page-bg);
     background: var(--accent);
     border-color: var(--accent);
+    box-shadow: 0 0.55rem 1.25rem rgba(20, 34, 45, 0.12);
     text-decoration: none;
+  }
+
+  .projects .project-carousel-control:disabled {
+    opacity: 0.34;
+    cursor: default;
+    box-shadow: none;
   }
 
   .projects .project-overview h2 {
@@ -509,12 +532,12 @@ nav_order: 2
 
     <div class="project-carousel-shell">
       <div class="project-carousel-controls" aria-label="Selected Projects carousel controls">
-        <a class="project-carousel-control" href="#project-overview-first" aria-label="Scroll to first selected project">
+        <button class="project-carousel-control" type="button" data-carousel-direction="prev" aria-label="Previous selected project">
           <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
-        </a>
-        <a class="project-carousel-control" href="#project-overview-last" aria-label="Scroll to last selected project">
+        </button>
+        <button class="project-carousel-control" type="button" data-carousel-direction="next" aria-label="Next selected project">
           <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-        </a>
+        </button>
       </div>
 
       <div class="project-overview-grid" aria-label="Selected Projects carousel">
@@ -678,6 +701,53 @@ nav_order: 2
     </div>
 
   </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".project-carousel-shell").forEach(function (shell) {
+        var scroller = shell.querySelector(".project-overview-grid");
+        var previousButton = shell.querySelector('[data-carousel-direction="prev"]');
+        var nextButton = shell.querySelector('[data-carousel-direction="next"]');
+
+        if (!scroller || !previousButton || !nextButton) {
+          return;
+        }
+
+        var getScrollStep = function () {
+          var firstCard = scroller.querySelector(".project-overview-card");
+          var styles = window.getComputedStyle(scroller);
+          var gap = parseFloat(styles.columnGap || styles.gap) || 0;
+
+          return firstCard ? firstCard.getBoundingClientRect().width + gap : scroller.clientWidth;
+        };
+
+        var updateControls = function () {
+          var maxScrollLeft = scroller.scrollWidth - scroller.clientWidth;
+          var scrollLeft = Math.max(0, scroller.scrollLeft);
+          var tolerance = 2;
+
+          previousButton.disabled = scrollLeft <= tolerance;
+          nextButton.disabled = scrollLeft >= maxScrollLeft - tolerance;
+        };
+
+        var requestUpdate = function () {
+          window.requestAnimationFrame(updateControls);
+        };
+
+        previousButton.addEventListener("click", function () {
+          scroller.scrollBy({ left: -getScrollStep(), behavior: "smooth" });
+        });
+
+        nextButton.addEventListener("click", function () {
+          scroller.scrollBy({ left: getScrollStep(), behavior: "smooth" });
+        });
+
+        scroller.addEventListener("scroll", requestUpdate, { passive: true });
+        window.addEventListener("resize", requestUpdate);
+        updateControls();
+      });
+    });
+  </script>
 
   <div class="card mt-3" id="driving-safety">
     <div class="card-body project-header">
