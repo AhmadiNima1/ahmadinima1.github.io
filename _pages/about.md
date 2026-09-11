@@ -783,9 +783,9 @@ social: true
           />
         </div>
         <div class="journey-content">
-          <h3 class="journey-title-long">Center for Advanced Training Research and Naturalistic Studies (ATRANS)</h3>
+          <h3>Western New England University</h3>
           <div class="journey-affiliation" aria-label="Institution and department">
-            <span>Western New England University</span>
+            <span>Center for Advanced Training Research and Naturalistic Studies (ATRANS)</span>
             <span>Department of Industrial Engineering and Engineering Management</span>
           </div>
           <span class="journey-years">2015&ndash;2020</span>

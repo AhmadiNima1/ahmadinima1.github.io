@@ -24,6 +24,22 @@ nav_order: 4
     font-weight: 650;
   }
 
+  .teaching-group {
+    margin-bottom: 1.6rem;
+  }
+
+  .teaching-group:last-child {
+    margin-bottom: 0;
+  }
+
+  .teaching-group-title {
+    margin: 0 0 0.65rem;
+    color: var(--global-text-color);
+    font-size: 1.05rem;
+    line-height: 1.35;
+    font-weight: 650;
+  }
+
   .teaching-table {
     overflow: hidden;
     background: var(--teaching-surface);
@@ -88,42 +104,55 @@ nav_order: 4
 <div class="teaching-portfolio">
   <h2>Courses</h2>
 
-  <div class="teaching-table" aria-label="Courses taught">
-    <div class="teaching-row teaching-header">
-      <span>Course</span>
-      <span>Area</span>
+  <div class="teaching-group">
+    <h3 class="teaching-group-title">Rensselaer Polytechnic Institute (RPI)</h3>
+    <div class="teaching-table" aria-label="Rensselaer Polytechnic Institute courses taught">
+      <div class="teaching-row teaching-header">
+        <span>Course</span>
+        <span>Area</span>
+      </div>
+      <div class="teaching-row">
+        <span class="teaching-course">ISYE 4270 &ndash; Multidisciplinary Capstone Design</span>
+        <span class="teaching-area">Engineering Design / Capstone</span>
+      </div>
+      <div class="teaching-row">
+        <span class="teaching-course">ISYE 4260/6260 &ndash; Human Performance Modeling and Support</span>
+        <span class="teaching-area">Human Factors</span>
+      </div>
+      <div class="teaching-row">
+        <span class="teaching-course">ISYE 4330/6020 &ndash; Design of Experiments</span>
+        <span class="teaching-area">Experimental Design</span>
+      </div>
+      <div class="teaching-row">
+        <span class="teaching-course">ISYE 4290/6620 &ndash; Discrete-Event Simulation Modeling and Analysis</span>
+        <span class="teaching-area">Healthcare &amp; Manufacturing Simulation</span>
+      </div>
+      <div class="teaching-row">
+        <span class="teaching-course">ENGR 2600 &ndash; Modeling and Analysis of Uncertainty</span>
+        <span class="teaching-area">Statistics / Analytics</span>
+      </div>
+      <div class="teaching-row">
+        <span class="teaching-course">ISYE 4210/6600 &ndash; Design and Analysis of Supply Chains</span>
+        <span class="teaching-area">Systems Engineering</span>
+      </div>
     </div>
-    <div class="teaching-row">
-      <span class="teaching-course">ISYE 4270 &ndash; Multidisciplinary Capstone Design</span>
-      <span class="teaching-area">Engineering Design / Capstone</span>
-    </div>
-    <div class="teaching-row">
-      <span class="teaching-course">Human Performance Modeling &amp; Support</span>
-      <span class="teaching-area">Human Factors</span>
-    </div>
-    <div class="teaching-row">
-      <span class="teaching-course">Design of Experiments</span>
-      <span class="teaching-area">Experimental Design</span>
-    </div>
-    <div class="teaching-row">
-      <span class="teaching-course">Discrete-Event Simulation (FlexSim)</span>
-      <span class="teaching-area">Healthcare &amp; Manufacturing Simulation</span>
-    </div>
-    <div class="teaching-row">
-      <span class="teaching-course">Modeling &amp; Analysis of Uncertainty</span>
-      <span class="teaching-area">Statistics / Analytics</span>
-    </div>
-    <div class="teaching-row">
-      <span class="teaching-course">Supply Chains</span>
-      <span class="teaching-area">Systems Engineering</span>
-    </div>
-    <div class="teaching-row">
-      <span class="teaching-course">Industrial Engineering Computer Applications</span>
-      <span class="teaching-area">Computing / Industrial Engineering</span>
-    </div>
-    <div class="teaching-row">
-      <span class="teaching-course">Measurement Computing</span>
-      <span class="teaching-area">Measurement / Computing</span>
+  </div>
+
+  <div class="teaching-group">
+    <h3 class="teaching-group-title">Western New England University (WNEU)</h3>
+    <div class="teaching-table" aria-label="Western New England University courses taught">
+      <div class="teaching-row teaching-header">
+        <span>Course</span>
+        <span>Area</span>
+      </div>
+      <div class="teaching-row">
+        <span class="teaching-course">IE 419 &ndash; Industrial Engineering Computer Applications</span>
+        <span class="teaching-area">Computing / Industrial Engineering</span>
+      </div>
+      <div class="teaching-row">
+        <span class="teaching-course">ME 205 &ndash; Measurement Computing</span>
+        <span class="teaching-area">Measurement / Computing</span>
+      </div>
     </div>
   </div>
 </div>

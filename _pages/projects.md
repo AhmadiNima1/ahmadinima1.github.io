@@ -503,15 +503,21 @@ nav_order: 2
     }
 
     .projects .project-overview-grid {
-      grid-auto-columns: minmax(0, 100%);
+      grid-auto-columns: minmax(0, calc(100% - 2rem));
+      gap: 1.25rem;
+      padding: 0.1rem 1rem 0.9rem;
+      scroll-padding-inline: 1rem;
     }
 
     .projects .project-overview-card {
+      height: auto;
       min-height: 0;
+      scroll-snap-align: start;
     }
 
     .projects .project-overview-content {
       grid-template-rows: auto;
+      padding: 1rem;
     }
 
     .projects .project-overview-label,
