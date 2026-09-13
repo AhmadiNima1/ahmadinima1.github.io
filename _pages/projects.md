@@ -6,7 +6,47 @@ nav: false
 nav_order: 2
 ---
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap" rel="stylesheet">
+
 <style>
+  .post-title,
+  .page-title,
+  .post h1 {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+
+  .projects {
+    --projects-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --project-accent-default: #2f5068;
+    --project-accent-driver: #233f63;
+    --project-accent-aviation: #2f6f9f;
+    --project-accent-teal: #2e7d78;
+    --project-accent-mental-health: #7a5f92;
+    --project-accent-outpatient: #9a6b2f;
+    --project-accent-navigation: #6873b4;
+    font-family: var(--projects-font);
+  }
+
+  html[data-theme="dark"] .projects {
+    --project-accent-driver: #7fa4d2;
+    --project-accent-aviation: #72a9cf;
+    --project-accent-teal: #70b8b2;
+    --project-accent-mental-health: #b49ad0;
+    --project-accent-outpatient: #d4a15b;
+    --project-accent-navigation: #a3ade6;
+  }
+
+  .projects a,
+  .projects button,
+  .projects .card,
+  .projects .project-overview-card {
+    font-family: inherit;
+  }
+
   html:not([data-theme="dark"]) .projects .card,
   html:not([data-theme="dark"]) .projects .card .card-body,
   html:not([data-theme="dark"]) .project-card,
@@ -59,7 +99,7 @@ nav_order: 2
     gap: 0.4rem;
     align-items: center;
     margin-bottom: 0.45rem;
-    color: var(--text-muted);
+    color: var(--project-accent, var(--text-muted));
     font-size: 0.78rem;
     font-weight: 650;
     line-height: 1.3;
@@ -68,7 +108,7 @@ nav_order: 2
   }
 
   .projects .project-category i {
-    color: var(--accent);
+    color: var(--project-accent, var(--accent));
     font-size: 0.9rem;
   }
 
@@ -78,13 +118,13 @@ nav_order: 2
     justify-content: center;
     min-width: 1.8rem;
     padding: 0.14rem 0.42rem;
-    color: var(--accent);
+    color: var(--project-accent, var(--accent));
     background: var(--page-bg);
-    border: 1px solid var(--border);
+    border: 1px solid var(--project-accent, var(--border));
     border-radius: 999px;
     font-size: 0.72rem;
     line-height: 1.2;
-    font-weight: 700;
+    font-weight: 650;
   }
 
   .projects .project-header .card-title {
@@ -99,7 +139,7 @@ nav_order: 2
     overflow: hidden;
     background: var(--card-bg);
     border: 1px solid var(--border);
-    border-left: 4px solid var(--accent);
+    border-left: 4px solid var(--project-accent, var(--accent));
     border-radius: 8px;
     transition:
       transform 160ms ease,
@@ -109,12 +149,39 @@ nav_order: 2
 
   .projects > .card:hover {
     transform: translateY(-2px);
-    border-color: var(--accent);
+    border-color: var(--border);
+    border-left-color: var(--project-accent, var(--accent));
     box-shadow: 0 0.45rem 1.25rem rgba(0, 0, 0, 0.08);
   }
 
   html[data-theme="light"] .projects > .card {
-    border-left-color: #2f5068;
+    border-left-color: var(--project-accent, var(--project-accent-default));
+  }
+
+  .projects > .card#driving-safety {
+    --project-accent: var(--project-accent-driver);
+  }
+
+  .projects > .card#aviation-human-factors,
+  .projects > .card#pilot-performance-vocal-stress {
+    --project-accent: var(--project-accent-aviation);
+  }
+
+  .projects > .card#clinician-stress-workload,
+  .projects > .card#vascular-access-workflow {
+    --project-accent: var(--project-accent-teal);
+  }
+
+  .projects > .card#healthcare-worker-mental-health {
+    --project-accent: var(--project-accent-mental-health);
+  }
+
+  .projects > .card#outpatient-compliance-live-chat {
+    --project-accent: var(--project-accent-outpatient);
+  }
+
+  .projects > .card#digital-health-usability {
+    --project-accent: var(--project-accent-navigation);
   }
 
   .projects > .card .card-img-top {
@@ -145,7 +212,7 @@ nav_order: 2
   }
 
   .projects .project-subsection-label i {
-    color: var(--accent);
+    color: var(--project-accent, var(--accent));
     font-size: 0.9rem;
   }
 
@@ -172,7 +239,7 @@ nav_order: 2
     color: var(--text-primary);
     font-size: 0.9rem;
     line-height: 1.35;
-    font-weight: 700;
+    font-weight: 650;
     letter-spacing: 0.02em;
     text-transform: uppercase;
   }
@@ -197,7 +264,7 @@ nav_order: 2
   }
 
   html:not([data-theme="dark"]) .projects .project-category {
-    color: #555555 !important;
+    color: var(--project-accent, #555555) !important;
   }
 
   html:not([data-theme="dark"]) .projects .project-header .card-title {
@@ -292,7 +359,7 @@ nav_order: 2
     color: var(--text-primary);
     font-size: 1.52rem;
     line-height: 1.24;
-    font-weight: 650;
+    font-weight: 700;
   }
 
   .projects .project-overview-intro {
@@ -311,7 +378,7 @@ nav_order: 2
     color: var(--text-muted);
     font-size: 0.92rem;
     line-height: 1.6;
-    font-weight: 450;
+    font-weight: 500;
   }
 
   .projects .project-case-studies {
@@ -325,7 +392,7 @@ nav_order: 2
     color: var(--text-primary);
     font-size: 1.48rem;
     line-height: 1.25;
-    font-weight: 650;
+    font-weight: 700;
   }
 
   .projects .project-overview-grid {
@@ -342,7 +409,6 @@ nav_order: 2
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    --project-accent: #2f5068;
   }
 
   .projects .project-overview-grid::-webkit-scrollbar {
@@ -359,6 +425,7 @@ nav_order: 2
   }
 
   .projects .project-overview-card {
+    --project-accent: var(--project-accent-default);
     display: flex;
     flex-direction: column;
     min-width: 0;
@@ -376,6 +443,32 @@ nav_order: 2
       transform 160ms ease,
       border-color 160ms ease,
       box-shadow 160ms ease;
+  }
+
+  .projects .project-overview-card:nth-child(1) {
+    --project-accent: var(--project-accent-driver);
+  }
+
+  .projects .project-overview-card:nth-child(2),
+  .projects .project-overview-card:nth-child(3) {
+    --project-accent: var(--project-accent-aviation);
+  }
+
+  .projects .project-overview-card:nth-child(4),
+  .projects .project-overview-card:nth-child(6) {
+    --project-accent: var(--project-accent-teal);
+  }
+
+  .projects .project-overview-card:nth-child(5) {
+    --project-accent: var(--project-accent-mental-health);
+  }
+
+  .projects .project-overview-card:nth-child(7) {
+    --project-accent: var(--project-accent-outpatient);
+  }
+
+  .projects .project-overview-card:nth-child(8) {
+    --project-accent: var(--project-accent-navigation);
   }
 
   .projects .project-overview-card:hover {
@@ -506,7 +599,7 @@ nav_order: 2
     padding: 0.36rem 0.68rem;
     color: var(--project-accent);
     background: var(--page-bg);
-    border: 1px solid var(--border);
+    border: 1px solid var(--project-accent);
     border-radius: 999px;
     font-size: 0.8rem;
     line-height: 1.3;
@@ -534,7 +627,7 @@ nav_order: 2
   html:not([data-theme="dark"]) .projects .project-overview-card {
     background: #fafafa;
     border-color: #dedede;
-    border-top-color: #2f5068;
+    border-top-color: var(--project-accent);
   }
 
   html:not([data-theme="dark"]) .projects .project-overview-image-wrap {
@@ -557,14 +650,18 @@ nav_order: 2
 
   html:not([data-theme="dark"]) .projects .project-overview-label,
   html:not([data-theme="dark"]) .projects .project-overview-link {
-    color: #2f5068 !important;
+    color: var(--project-accent) !important;
   }
 
-  html:not([data-theme="dark"]) .projects .project-overview-tag,
+  html:not([data-theme="dark"]) .projects .project-overview-tag {
+    background: #ffffff;
+    border-color: #d8d8d8;
+  }
+
   html:not([data-theme="dark"]) .projects .project-overview-link,
   html:not([data-theme="dark"]) .projects .project-index {
     background: #ffffff;
-    border-color: #d8d8d8;
+    border-color: var(--project-accent);
   }
 
   html:not([data-theme="dark"]) .projects .project-carousel-control {
