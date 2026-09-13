@@ -892,7 +892,7 @@ social: true
           />
         </div>
         <div class="journey-content">
-          <h3>Rensselaer Polytechnic Institute (RPI)</h3>
+          <h3>Rensselaer Polytechnic Institute</h3>
           <div class="journey-affiliation" aria-label="Department">
             <span>Department of Industrial and Systems Engineering</span>
           </div>
