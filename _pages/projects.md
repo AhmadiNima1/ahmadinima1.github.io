@@ -239,7 +239,7 @@ nav_order: 2
     color: #252a31;
     font-size: 0.9rem;
     line-height: 1.35;
-    font-weight: 600;
+    font-weight: 650;
     letter-spacing: 0.02em;
     text-transform: uppercase;
   }
