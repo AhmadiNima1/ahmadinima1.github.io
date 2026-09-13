@@ -236,12 +236,16 @@ nav_order: 2
 
   .projects .project-detail-heading {
     margin: 1rem 0 0.45rem;
-    color: var(--text-primary);
+    color: #252a31;
     font-size: 0.9rem;
     line-height: 1.35;
-    font-weight: 650;
+    font-weight: 600;
     letter-spacing: 0.02em;
     text-transform: uppercase;
+  }
+
+  html[data-theme="dark"] .projects .project-detail-heading {
+    color: #f1f5f9;
   }
 
   .projects .project-detail-list {
@@ -283,9 +287,12 @@ nav_order: 2
 
   html:not([data-theme="dark"]) .projects .project-subsection h6,
   html:not([data-theme="dark"]) .projects .project-subsection .card-text,
-  html:not([data-theme="dark"]) .projects .project-detail-heading,
   html:not([data-theme="dark"]) .projects .project-detail-list {
     color: #333333 !important;
+  }
+
+  html:not([data-theme="dark"]) .projects .project-detail-heading {
+    color: #252a31 !important;
   }
 
   .projects .project-overview {
@@ -307,7 +314,7 @@ nav_order: 2
 
   .projects .project-carousel-control {
     position: absolute;
-    top: 56%;
+    top: 50%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -965,21 +972,97 @@ nav_order: 2
           return;
         }
 
-        var getScrollStep = function () {
-          var firstCard = scroller.querySelector(".project-overview-card");
-          var styles = window.getComputedStyle(scroller);
-          var gap = parseFloat(styles.columnGap || styles.gap) || 0;
+        var getCards = function () {
+          return Array.prototype.slice.call(scroller.querySelectorAll(".project-overview-card"));
+        };
 
-          return firstCard ? firstCard.getBoundingClientRect().width + gap : scroller.clientWidth;
+        var getMaxScrollLeft = function () {
+          return Math.max(0, scroller.scrollWidth - scroller.clientWidth);
+        };
+
+        var getCardTargetLeft = function (card) {
+          var cardRect = card.getBoundingClientRect();
+          var scrollerRect = scroller.getBoundingClientRect();
+          var targetLeft = cardRect.left - scrollerRect.left + scroller.scrollLeft;
+
+          return Math.min(Math.max(0, targetLeft), getMaxScrollLeft());
+        };
+
+        var getCardTargets = function () {
+          var targets = getCards().map(getCardTargetLeft);
+
+          return targets.filter(function (target, index) {
+            return index === 0 || Math.abs(target - targets[index - 1]) > 2;
+          });
+        };
+
+        var getCurrentTargetIndex = function (targets) {
+          var scrollLeft = Math.max(0, scroller.scrollLeft);
+          var closestIndex = 0;
+          var closestDistance = Number.POSITIVE_INFINITY;
+
+          targets.forEach(function (target, index) {
+            var distance = Math.abs(target - scrollLeft);
+
+            if (distance < closestDistance) {
+              closestIndex = index;
+              closestDistance = distance;
+            }
+          });
+
+          return closestIndex;
+        };
+
+        var scrollToTarget = function (direction) {
+          var targets = getCardTargets();
+
+          if (!targets.length) {
+            return;
+          }
+
+          var tolerance = 3;
+          var scrollLeft = Math.max(0, scroller.scrollLeft);
+          var targetIndex;
+
+          if (direction === "prev") {
+            targetIndex = -1;
+
+            for (var index = targets.length - 1; index >= 0; index -= 1) {
+              if (targets[index] < scrollLeft - tolerance) {
+                targetIndex = index;
+                break;
+              }
+            }
+          } else {
+            targetIndex = targets.findIndex(function (target) {
+              return target > scrollLeft + tolerance;
+            });
+          }
+
+          if (targetIndex === -1) {
+            targetIndex = direction === "prev" ? 0 : targets.length - 1;
+          }
+
+          scroller.scrollTo({ left: targets[targetIndex], behavior: "smooth" });
         };
 
         var updateControls = function () {
-          var maxScrollLeft = scroller.scrollWidth - scroller.clientWidth;
-          var scrollLeft = Math.max(0, scroller.scrollLeft);
-          var tolerance = 2;
+          var targets = getCardTargets();
+          var tolerance = 3;
 
-          previousButton.disabled = scrollLeft <= tolerance;
-          nextButton.disabled = scrollLeft >= maxScrollLeft - tolerance;
+          if (!targets.length) {
+            previousButton.disabled = true;
+            nextButton.disabled = true;
+            return;
+          }
+
+          var currentIndex = getCurrentTargetIndex(targets);
+          var scrollLeft = Math.max(0, scroller.scrollLeft);
+          var firstTarget = targets[0];
+          var lastTarget = targets[targets.length - 1];
+
+          previousButton.disabled = currentIndex === 0 && scrollLeft <= firstTarget + tolerance;
+          nextButton.disabled = currentIndex === targets.length - 1 && scrollLeft >= lastTarget - tolerance;
         };
 
         var requestUpdate = function () {
@@ -987,11 +1070,11 @@ nav_order: 2
         };
 
         previousButton.addEventListener("click", function () {
-          scroller.scrollBy({ left: -getScrollStep(), behavior: "smooth" });
+          scrollToTarget("prev");
         });
 
         nextButton.addEventListener("click", function () {
-          scroller.scrollBy({ left: getScrollStep(), behavior: "smooth" });
+          scrollToTarget("next");
         });
 
         scroller.addEventListener("scroll", requestUpdate, { passive: true });
