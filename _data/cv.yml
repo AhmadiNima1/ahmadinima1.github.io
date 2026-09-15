@@ -1,10 +1,11 @@
 cv:
   name: Nima Ahmadi, PhD
-  label: Human Factors Engineer & Researcher | Human Performance Analytics | Simulation | Applied AI
-  email: ahmadn4@rpi.edu
+  label: Human Factors Engineer & Researcher
+  expertise: Human Performance Analytics &middot; Simulation &middot; Applied AI
+  email: ahmadi.nima@gmail.com
   website: https://ahmadinima1.github.io
   address:
-    city: Clifton Park
+    city: Capital Region
     region: NY
   image: ""
   summary: >

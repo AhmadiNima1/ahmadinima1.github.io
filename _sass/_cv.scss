@@ -77,6 +77,15 @@ table.table-cv {
     font-weight: 650;
   }
 
+  .cv-expertise-line {
+    display: block;
+    margin-top: 0.18rem;
+    color: var(--global-text-color-light);
+    font-size: 0.88rem;
+    line-height: 1.45;
+    font-weight: 500;
+  }
+
   .font-weight-light {
     font-weight: 400 !important;
   }
@@ -183,6 +192,10 @@ html:not([data-theme="dark"]) .cv {
   }
 
   h6:not(.title) {
+    color: #555555;
+  }
+
+  .cv-expertise-line {
     color: #555555;
   }
 }
