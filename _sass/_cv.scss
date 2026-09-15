@@ -116,7 +116,11 @@ table.table-cv {
     min-width: 7.35rem !important;
     min-height: 1.72rem;
     padding: 0.28rem 0.66rem;
-    border-radius: 999px;
+    color: #26384a !important;
+    background-color: #eef3f6 !important;
+    border: 1px solid #c8d3dc;
+    border-radius: 6px;
+    box-shadow: none;
     font-size: 0.72rem;
     line-height: 1.2;
     font-weight: 700 !important;
@@ -168,6 +172,12 @@ table.table-cv {
 html[data-theme="dark"] .cv {
   --cv-accent: #8fcee1;
   --cv-soft: rgba(143, 206, 225, 0.075);
+
+  .badge.danger-color-dark {
+    color: #dceaf1 !important;
+    background-color: rgba(143, 206, 225, 0.12) !important;
+    border-color: rgba(143, 206, 225, 0.32);
+  }
 }
 
 html:not([data-theme="dark"]) .cv {
@@ -582,5 +592,5 @@ ul.timeline li::before {
 }
 */
 span.badge.danger-color-dark {
-  --global-theme-color: #00bcd4 !important;
+  --global-theme-color: #6b7f90 !important;
 }
