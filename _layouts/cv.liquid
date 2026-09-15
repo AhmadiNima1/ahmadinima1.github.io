@@ -171,10 +171,10 @@ layout: default
                     <article class="cv-group-card">
                       <div class="cv-group-header">
                         <h4>{{ entry.institution }}</h4>
-                        <span>
+                        <p class="cv-group-subtitle">
                           {{- entry.role -}}
-                          {%- if entry.dates %}, {{ entry.dates }}{% endif -%}
-                        </span>
+                          {%- if entry.dates %} &middot; {{ entry.dates }}{% endif -%}
+                        </p>
                       </div>
                       {% if entry.label %}
                         <p class="cv-group-label">{{ entry.label }}:</p>

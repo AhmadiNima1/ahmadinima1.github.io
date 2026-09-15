@@ -2,7 +2,6 @@ cv:
   name: Nima Ahmadi, PhD
   label: Human Factors Engineer & Researcher | Human Performance Analytics | Simulation | Applied AI
   email: ahmadn4@rpi.edu
-  phone: (413) 459-7464
   website: https://ahmadinima1.github.io
   address:
     city: Clifton Park
@@ -42,13 +41,22 @@ cv:
           - Contributed to teen-driver hazard anticipation training research using driving simulation, field assessment, eye tracking, and behavioral analysis.
           - Designed and evaluated gaze-based training for general aviation pilots transitioning from visual flight to instrument meteorological conditions.
           - Built and analyzed human performance datasets across transportation, aviation, and training contexts.
-      - company: APEC and COOLSUMMER
-        position: Engineering and Project Leadership Roles
-        start_date: 2009
+      - company: APEC
+        position: Project Manager and Coordinator, Piping Department
+        start_date: 2010
         end_date: 2014
         highlights:
-          - Managed piping-engineering coordination for industrial plant projects and led plate heat-exchanger design, evaluation, testing, and repair activities.
-          - Worked across engineering documentation, project coordination, equipment layout, material selection, and technical review.
+          - Managed and coordinated basic and detailed piping-engineering activities for water-treatment and steelmaking plant projects.
+          - Prepared and reviewed piping material specifications, line lists, piping and equipment layouts, material take-offs, and technical requisitions.
+          - Used AVEVA PDMS for plant layout, routing, equipment arrangement, and design coordination while applying ASME B31.3 and relevant NFPA standards.
+      - company: COOLSUMMER
+        position: Manager, Heat Exchanger Department
+        start_date: 2009
+        end_date: 2010
+        highlights:
+          - Led thermal sizing, rating, selection, and technical evaluation of plate heat exchangers across operating conditions.
+          - Selected plate, frame, and gasket materials based on fluid compatibility, temperature, pressure, and corrosion-resistance requirements.
+          - Directed assembly, hydrostatic and leak testing, performance verification, troubleshooting, and repair activities.
     Research Highlights / Ongoing Projects:
       - title: Healthcare workflow and vascular access research
         summary: >
