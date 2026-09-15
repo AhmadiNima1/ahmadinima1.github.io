@@ -21,6 +21,8 @@ table.table-cv {
   --cv-heading-color: #17324d;
   --cv-secondary-color: #52687a;
   --cv-accent: #274a66;
+  --cv-section-accent: var(--cv-accent);
+  --cv-section-soft: #f3f7fa;
   --cv-card-bg: #ffffff;
   --cv-border: #cfdae3;
   --cv-soft: #f3f7fa;
@@ -35,16 +37,61 @@ table.table-cv {
     padding: 0 !important;
     background: var(--cv-card-bg);
     border: 1px solid var(--cv-border);
-    border-left: 4px solid var(--cv-accent);
+    border-left: 4px solid var(--cv-section-accent);
     border-radius: 8px;
     box-shadow: none;
+  }
+
+  .card:nth-of-type(1) {
+    --cv-section-accent: #2f5f83;
+    --cv-section-soft: #f1f6fa;
+  }
+
+  .card:nth-of-type(2) {
+    --cv-section-accent: #3f7f78;
+    --cv-section-soft: #f0f7f5;
+  }
+
+  .card:nth-of-type(3) {
+    --cv-section-accent: #274a66;
+    --cv-section-soft: #f1f5f8;
+  }
+
+  .card:nth-of-type(4) {
+    --cv-section-accent: #547f78;
+    --cv-section-soft: #f2f8f6;
+  }
+
+  .card:nth-of-type(5) {
+    --cv-section-accent: #64748b;
+    --cv-section-soft: #f4f6f9;
+  }
+
+  .card:nth-of-type(6) {
+    --cv-section-accent: #8a7442;
+    --cv-section-soft: #faf7ef;
+  }
+
+  .card:nth-of-type(7) {
+    --cv-section-accent: #4f7f67;
+    --cv-section-soft: #f2f8f4;
+  }
+
+  .card:nth-of-type(8) {
+    --cv-section-accent: #7b6a8f;
+    --cv-section-soft: #f7f4fa;
+  }
+
+  .card:nth-of-type(9) {
+    --cv-section-accent: #536f88;
+    --cv-section-soft: #f3f6f9;
   }
 
   .card-title {
     margin: 0;
     padding: 0.95rem 1.1rem 0.8rem;
     color: var(--cv-heading-color);
-    background: var(--cv-soft);
+    background: var(--cv-section-soft);
     border-bottom: 1px solid var(--cv-border);
     font-size: 1.05rem;
     line-height: 1.35;
@@ -178,12 +225,59 @@ html[data-theme="dark"] .cv {
   --cv-heading-color: #d9e8f2;
   --cv-secondary-color: #a9bac8;
   --cv-accent: #8caec4;
+  --cv-section-accent: var(--cv-accent);
+  --cv-section-soft: rgba(166, 190, 207, 0.09);
   --cv-card-bg: #111820;
   --cv-border: rgba(166, 190, 207, 0.24);
   --cv-soft: rgba(166, 190, 207, 0.09);
   --cv-badge-bg: rgba(166, 190, 207, 0.12);
   --cv-badge-border: rgba(166, 190, 207, 0.34);
   --cv-badge-text: #d9e8f2;
+
+  .card:nth-of-type(1) {
+    --cv-section-accent: #8caec4;
+    --cv-section-soft: rgba(140, 174, 196, 0.12);
+  }
+
+  .card:nth-of-type(2) {
+    --cv-section-accent: #79b5ad;
+    --cv-section-soft: rgba(121, 181, 173, 0.12);
+  }
+
+  .card:nth-of-type(3) {
+    --cv-section-accent: #8aa7bd;
+    --cv-section-soft: rgba(138, 167, 189, 0.12);
+  }
+
+  .card:nth-of-type(4) {
+    --cv-section-accent: #83b7ae;
+    --cv-section-soft: rgba(131, 183, 174, 0.12);
+  }
+
+  .card:nth-of-type(5) {
+    --cv-section-accent: #9ba9bc;
+    --cv-section-soft: rgba(155, 169, 188, 0.12);
+  }
+
+  .card:nth-of-type(6) {
+    --cv-section-accent: #c2a869;
+    --cv-section-soft: rgba(194, 168, 105, 0.13);
+  }
+
+  .card:nth-of-type(7) {
+    --cv-section-accent: #8fbc9d;
+    --cv-section-soft: rgba(143, 188, 157, 0.12);
+  }
+
+  .card:nth-of-type(8) {
+    --cv-section-accent: #b0a0c5;
+    --cv-section-soft: rgba(176, 160, 197, 0.12);
+  }
+
+  .card:nth-of-type(9) {
+    --cv-section-accent: #9ab0c2;
+    --cv-section-soft: rgba(154, 176, 194, 0.12);
+  }
 
   .badge.danger-color-dark {
     color: var(--cv-badge-text) !important;
@@ -196,7 +290,7 @@ html:not([data-theme="dark"]) .cv {
   .card {
     background: var(--cv-card-bg);
     border-color: var(--cv-border);
-    border-left-color: var(--cv-accent);
+    border-left-color: var(--cv-section-accent);
   }
 
   .card-title {
