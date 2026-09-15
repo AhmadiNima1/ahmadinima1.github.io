@@ -1,5 +1,5 @@
 cv:
-  name: Nima Ahmadi, PhD
+  name: Nima Ahmadi, Ph.D.
   label: Human Factors Engineer
   expertise: Data Scientist &middot; Applied AI &middot; Simulation Modeling
   email: ahmadi.nima@gmail.com
@@ -157,7 +157,7 @@ cv:
         end_date: 2022
       - institution: Western New England University, Springfield, MA, USA
         area: Engineering Management
-        studyType: PhD
+        studyType: Ph.D.
         start_date: 2015
         end_date: 2020
       - institution: Western New England University, Springfield, MA, USA
