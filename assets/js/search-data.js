@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "Curriculum vitae for Nima Ahmadi.",
+          description: "Concise professional overview for Nima Ahmadi. Download the PDF for the full formal CV.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
