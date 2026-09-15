@@ -18,10 +18,15 @@ table.table-cv {
 }
 
 .cv {
-  --cv-accent: #2f5068;
-  --cv-card-bg: var(--global-card-bg-color);
-  --cv-border: var(--global-divider-color);
-  --cv-soft: rgba(47, 80, 104, 0.075);
+  --cv-heading-color: #17324d;
+  --cv-secondary-color: #52687a;
+  --cv-accent: #274a66;
+  --cv-card-bg: #ffffff;
+  --cv-border: #cfdae3;
+  --cv-soft: #f3f7fa;
+  --cv-badge-bg: #eef3f6;
+  --cv-badge-border: #c8d3dc;
+  --cv-badge-text: #26384a;
   color: var(--global-text-color);
 
   .card {
@@ -38,7 +43,7 @@ table.table-cv {
   .card-title {
     margin: 0;
     padding: 0.95rem 1.1rem 0.8rem;
-    color: var(--global-text-color);
+    color: var(--cv-heading-color);
     background: var(--cv-soft);
     border-bottom: 1px solid var(--cv-border);
     font-size: 1.05rem;
@@ -73,14 +78,14 @@ table.table-cv {
 
   .table td:first-child {
     width: 10.5rem;
-    color: var(--global-text-color);
+    color: var(--cv-heading-color);
     font-weight: 650;
   }
 
   .cv-expertise-line {
     display: block;
     margin-top: 0.18rem;
-    color: var(--global-text-color-light);
+    color: var(--cv-secondary-color);
     font-size: 0.88rem;
     line-height: 1.45;
     font-weight: 500;
@@ -116,9 +121,9 @@ table.table-cv {
     min-width: 7.35rem !important;
     min-height: 1.72rem;
     padding: 0.28rem 0.66rem;
-    color: #26384a !important;
-    background-color: #eef3f6 !important;
-    border: 1px solid #c8d3dc;
+    color: var(--cv-badge-text) !important;
+    background-color: var(--cv-badge-bg) !important;
+    border: 1px solid var(--cv-badge-border);
     border-radius: 6px;
     box-shadow: none;
     font-size: 0.72rem;
@@ -130,14 +135,14 @@ table.table-cv {
   }
 
   h6.title {
-    color: var(--global-text-color);
+    color: var(--cv-heading-color);
     font-size: 1rem;
     line-height: 1.35;
     font-weight: 650 !important;
   }
 
   h6:not(.title) {
-    color: var(--global-text-color-light);
+    color: var(--cv-secondary-color);
     line-height: 1.45;
     font-weight: 500;
   }
@@ -164,49 +169,60 @@ table.table-cv {
   }
 
   .skill-item strong {
-    color: var(--global-text-color);
+    color: var(--cv-heading-color);
     font-weight: 650;
   }
 }
 
 html[data-theme="dark"] .cv {
-  --cv-accent: #8fcee1;
-  --cv-soft: rgba(143, 206, 225, 0.075);
+  --cv-heading-color: #d9e8f2;
+  --cv-secondary-color: #a9bac8;
+  --cv-accent: #8caec4;
+  --cv-card-bg: #111820;
+  --cv-border: rgba(166, 190, 207, 0.24);
+  --cv-soft: rgba(166, 190, 207, 0.09);
+  --cv-badge-bg: rgba(166, 190, 207, 0.12);
+  --cv-badge-border: rgba(166, 190, 207, 0.34);
+  --cv-badge-text: #d9e8f2;
 
   .badge.danger-color-dark {
-    color: #dceaf1 !important;
-    background-color: rgba(143, 206, 225, 0.12) !important;
-    border-color: rgba(143, 206, 225, 0.32);
+    color: var(--cv-badge-text) !important;
+    background-color: var(--cv-badge-bg) !important;
+    border-color: var(--cv-badge-border);
   }
 }
 
 html:not([data-theme="dark"]) .cv {
   .card {
-    background: #fafafa;
-    border-color: #dedede;
+    background: var(--cv-card-bg);
+    border-color: var(--cv-border);
     border-left-color: var(--cv-accent);
   }
 
   .card-title {
-    color: #222222;
-    border-bottom-color: #dedede;
+    color: var(--cv-heading-color);
+    border-bottom-color: var(--cv-border);
   }
 
   .card > p,
   .table td,
-  h6.title,
   ul.items li,
-  .skill-item,
-  .skill-item strong {
+  .skill-item {
     color: #333333;
   }
 
+  .table td:first-child,
+  h6.title,
+  .skill-item strong {
+    color: var(--cv-heading-color);
+  }
+
   h6:not(.title) {
-    color: #555555;
+    color: var(--cv-secondary-color);
   }
 
   .cv-expertise-line {
-    color: #555555;
+    color: var(--cv-secondary-color);
   }
 }
 
