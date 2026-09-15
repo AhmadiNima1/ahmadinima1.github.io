@@ -253,47 +253,47 @@ nav_order: 4
     <div class="teaching-highlight-grid">
       <article class="teaching-highlight-card">
         <h3>ISYE 4260/6260 &ndash; Human Performance Modeling and Support</h3>
-        <p>Human factors and ergonomics, human performance measurement, perception and cognition, workload, automation, usability, and experimental methods.</p>
+        <p>Human factors and ergonomics, human performance measurement, perception and cognition, workload and automation, experimental methods, multivariate analysis, logistic regression, and machine-learning methods for activity/performance classification.</p>
       </article>
 
       <article class="teaching-highlight-card">
         <h3>ISYE 4330/6020 &ndash; Design of Experiments</h3>
-        <p>Experimental design principles, factorial designs, ANOVA, repeated-measures designs, regression, mixed models, and interpretation of experimental data.</p>
+        <p>Factorial and fractional-factorial designs, ANOVA, blocking and randomization, repeated-measures and mixed designs, response surface methodology, Plackett-Burman screening designs, regression, and experimental optimization.</p>
       </article>
 
       <article class="teaching-highlight-card">
         <h3>ISYE 4290/6620 &ndash; Discrete-Event Simulation Modeling and Analysis</h3>
-        <p>Process modeling, healthcare and manufacturing simulation, input modeling, verification and validation, and output analysis.</p>
+        <p>Discrete-event process modeling, healthcare and manufacturing simulation, probability-distribution fitting and input modeling, verification and validation, output analysis, scenario comparison, and simulation-based decision support.</p>
       </article>
 
       <article class="teaching-highlight-card">
         <h3>ENGR 2600 &ndash; Modeling and Analysis of Uncertainty</h3>
-        <p>Probability, probability distributions, statistical inference, confidence intervals, hypothesis testing, regression, and engineering applications.</p>
+        <p>Probability distributions, statistical inference, confidence intervals, hypothesis testing, regression, uncertainty modeling, and quantitative engineering decision making.</p>
       </article>
 
       <article class="teaching-highlight-card">
         <h3>ISYE 4210/6600 &ndash; Design and Analysis of Supply Chains</h3>
-        <p>Supply-chain systems, inventory, forecasting, logistics, and quantitative decision making.</p>
+        <p>Demand forecasting, inventory modeling and control, logistics and distribution, supply-chain network analysis, capacity and sourcing decisions, quantitative optimization, and data-driven supply-chain decision making.</p>
       </article>
 
       <article class="teaching-highlight-card">
         <h3>ISYE 4270 &ndash; Multidisciplinary Capstone Design</h3>
-        <p>Engineering design, industry-sponsored projects, requirements, teamwork, project management, design reviews, and technical communication.</p>
+        <p>Engineering requirements, system/design evaluation, industry-sponsored problem solving, project planning, multidisciplinary teamwork, design reviews, prototyping, and technical communication.</p>
       </article>
 
       <article class="teaching-highlight-card">
         <h3>IE 212 &ndash; Probability &amp; Statistics</h3>
-        <p>Probability, statistical distributions, statistical inference, regression, and engineering applications.</p>
+        <p>Probability models, statistical distributions, estimation, hypothesis testing, regression and correlation, and data-driven engineering analysis.</p>
       </article>
 
       <article class="teaching-highlight-card">
         <h3>IE 419 &ndash; Industrial Engineering Computer Applications</h3>
-        <p>Engineering computing, data analysis, programming, and industrial engineering applications.</p>
+        <p>Engineering computation, programming, data analysis and visualization, numerical problem solving, and computational methods for industrial engineering applications.</p>
       </article>
 
       <article class="teaching-highlight-card">
         <h3>ME 205 &ndash; Measurement Computing</h3>
-        <p>Measurement systems, data acquisition, sensors, computing, and engineering experimentation.</p>
+        <p>Measurement systems, sensors and instrumentation, data acquisition, signal/data processing, experimental measurement, and computer-based engineering analysis.</p>
       </article>
     </div>
   </section>
